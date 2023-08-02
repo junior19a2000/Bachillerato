@@ -266,7 +266,7 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
 
 <br>
 
-<a href="https://drive.google.com/file/d/1hlnkEHbD5pchwfrN_JWzpkOtBAQj7sUb/view?usp=sharing" target="_blank">
+<a href="https://drive.google.com/file/d/1SnSMEkxFXbvKZW_C6FvJPJWuIM5gDJ5w/view?usp=sharing" target="_blank">
   <img src="ReadmeRSC/Modulo 1.png" width="100%">
 </a>
 
@@ -276,7 +276,7 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
 
 <br>
 
-<a href="https://drive.google.com/file/d/1hlnkEHbD5pchwfrN_JWzpkOtBAQj7sUb/view?usp=sharing" target="_blank">
+<a href="https://drive.google.com/file/d/1mcWUUkjNiuwjSKB81GX9IC-3T2jdCST7/view?usp=drive_link" target="_blank">
   <img src="ReadmeRSC/Modulo 2.png" width="100%">
 </a>
 
@@ -286,7 +286,7 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
 
 <br>
 
-<a href="https://drive.google.com/file/d/1hlnkEHbD5pchwfrN_JWzpkOtBAQj7sUb/view?usp=sharing" target="_blank">
+<a href="https://drive.google.com/file/d/14oJ6Zq-iL6zhmpZN5OiqtFfjUGRdqwWf/view?usp=drive_link" target="_blank">
   <img src="ReadmeRSC/Modulo 3.png" width="100%">
 </a>
 
@@ -296,7 +296,7 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
 
 <br>
 
-<a href="https://drive.google.com/file/d/1hlnkEHbD5pchwfrN_JWzpkOtBAQj7sUb/view?usp=sharing" target="_blank">
+<a href="https://drive.google.com/file/d/1Vjnv0B2kcEIhDYwia5qtBz-ql60Qezqy/view?usp=drive_link" target="_blank">
   <img src="ReadmeRSC/Modulo 4.png" width="100%">
 </a>
 
@@ -330,7 +330,7 @@ Se analizan bajo dos teorías:
 
 <br>
 
-<a href="https://drive.google.com/file/d/1hlnkEHbD5pchwfrN_JWzpkOtBAQj7sUb/view?usp=sharing" target="_blank">
+<a href="https://drive.google.com/file/d/1pcYZZwgaDm0xWz7tPflK0d0cBODa5N0m/view?usp=drive_link" target="_blank">
   <img src="ReadmeRSC/Modulo 5.png" width="100%">
 </a>
 
