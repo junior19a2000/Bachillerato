@@ -260,7 +260,7 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
 
 ## **3. Módulos de la aplicación desarrollada**
 
-### **3.1 Módulo de correas planas** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Tesis&file=Modulo1/Modulo1.mlapp)
+### **3.1 Módulo de correas planas** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo1.mlapp)
 
 <div align="justify"> Se analizan bajo la metodología desarrollada por la empresa Forbo, la cual, mediante datos de entrada conocidos como la potencia y revoluciones del motor, los diámetros de las poleas y la distancia entre las mismas, permite calcular las dimensiones del tipo de correa elegida junto con las fuerzas que se transmitirán al eje de transmisión de potencia. </div>
 
@@ -270,7 +270,7 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
   <img src="ReadmeRSC/Modulo 1.png" width="100%">
 </a>
 
-### **3.2 Módulo de correas trapezoidales** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Tesis&file=Modulo2/Modulo2.mlapp)
+### **3.2 Módulo de correas trapezoidales** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo2.mlapp)
 
 <div align="justify"> Se analizan bajo la metodología desarrollada por la empresa Optibelt, la cual, mediante datos de entrada conocidos como la potencia y revoluciones del motor, los diámetros de las poleas y la distancia entre las mismas, permite calcular el número de correas a emplear, las dimensiones del tipo de correa elegida junto con las fuerzas que se transmitirán al eje de transmisión de potencia. </div>
 
@@ -280,7 +280,7 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
   <img src="ReadmeRSC/Modulo 2.png" width="100%">
 </a>
 
-### **3.3 Módulo de cadenas** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Tesis&file=Modulo3/Modulo3.mlapp)
+### **3.3 Módulo de cadenas** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo3.mlapp)
 
 <div align="justify"> Se analizan bajo la metodología desarrollada por la empresa Renold, la cual, mediante datos de entrada conocidos como la potencia y revoluciones del motor, el número de dientes de los sprokets y la distancia entre los mismos, permite calcular el número de cadenas a emplear, las dimensiones del tipo de cadena elegida junto con las fuerzas que se transmitirán al eje de transmisión de potencia. </div>
 
@@ -290,7 +290,7 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
   <img src="ReadmeRSC/Modulo 3.png" width="100%">
 </a>
 
-### **3.4 Módulo de engranajes** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Tesis&file=Modulo4/Modulo4.mlapp)
+### **3.4 Módulo de engranajes** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo4.mlapp)
 
 <div align="justify"> Se analizan bajo la norma ANSI / AGMA 2101-D04, en la cual se definen cuatro tipos de fallas, de las cuales, la aplicación permite el cálculo de la falla por picadura y la falla por flexión. </div>
 
@@ -300,7 +300,7 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
   <img src="ReadmeRSC/Modulo 4.png" width="100%">
 </a>
 
-### **3.5 Módulo de ejes de transmisión** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Tesis&file=Modulo5/Modulo5.mlapp)
+### **3.5 Módulo de ejes de transmisión** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo5.mlapp)
 
 Se analizan bajo dos teorías:
 
@@ -334,7 +334,7 @@ Se analizan bajo dos teorías:
   <img src="ReadmeRSC/Modulo 5.png" width="100%">
 </a>
 
-### **3.6 Módulo de análisis bidimensional** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Tesis&file=Modulo6/Modulo6.mlapp)
+### **3.6 Módulo de análisis bidimensional** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo6.mlapp)
 
 <div align="justify"> Se analizan esfuerzos y deformaciones en elementos bidimensionales mediante el método de los elementos finitos. </div>
 
