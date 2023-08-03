@@ -422,7 +422,7 @@ Se analizan bajo dos teorías:
 
 ### **6.1 ¿Cómo acceder al aplicativo?**
 
-+ La primero es ingresar al link del [repositorio de mi tesis](https://github.com/junior19a2000/Bachillerato/blob/main/README.md).
++ La primero es ingresar al link del [repositorio de mi tesis](https://github.com/junior19a2000/Bachillerato/blob/main/README.md) (compartelo !).
 + <div align="justify"> Luego de revisarlo, buscar el módulo que se desea utilizar y hacer click en el logo de matlab online (esto te redireccionara a la pagina de inicio de matlab). Previamente a los pasos siguientes, es necesario contar con una cuenta de matlab online, la cual se crea muy facilmente a partir de cualquier correo electrónico (existen muchos tutoriales sobre esto). esto te permitira utilizar los servicios de matlab de manera gratuita y sin tener que instalar nada en tu equipo !. </div> 
 + <div align="justify"> Si es la primera vez ... en la pagina que te aparecera, debereas logearte con tus credenciales y posterior a ello, se te redireccionara a la version online de matalb. En ella visualizaras un cuadro que indica "Open file from repository". En este deberas hacer click en el cuadrito sobre riesgos (no existe ninguno en este caso) y luego seleccionar "Save and Open" (con este paso se creara una copia del proyecto en tu cuenta de matlab online). Luego, el módulo elegido aparecera en tu pantalla, listo para ser utilizado =).</div>
   <br> <details> <summary>Muestrame !</summary> <br> <div align="center"> <img src="ReadmeRSC/caso1.gif" width="100%"/> </div> </details>
@@ -442,3 +442,7 @@ Se analizan bajo dos teorías:
   <img src="ReadmeRSC/caso3.gif" width="100%"/>
   </div>
 </details>
+
+### **6.3 ¿Algo anda mal?**
+
+<div align="justify"> Si el aplicativo no funcionara correctamente, porfavor registrar el error mediante un video y enviarlo junto a una breve descripción al siguiente correo: junior19a2000@gmail.com. Estare gustoso de corregir cualquier problema que pudiese existir (se corregira para todos los usuarios, como una actualización y sin descargar o instalar nada nuevo !). El correo tambien sirve para críticas y comentarios :). </div>
