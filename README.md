@@ -401,9 +401,13 @@ Se analizan bajo dos teorías:
 
 ## **5. Aplicaciones**
 
-<div align="justify"> Teniendo en cuenta la rapidez y la precisión en el diseño que permite lograr la aplicación desarrollada, es valido utilizarla en el ambito laboral profesional, personal y universitaria. </div>
+<div align="justify"> Teniendo en cuenta la rapidez y la precisión en el diseño que permite lograr la aplicación desarrollada, es valido utilizarla en el ambito laboral profesional, personal y universitario. </div>
 
 <br>
+
+| Validación manual | Deformaciones en un eje de sección variable |
+|:----:|:----:|
+| <img src="ReadmeRSC/validacionm1.png" width="100%"/> | <img src="ReadmeRSC/validacionm2.png" width="100%"/> |
 
 | Validación teórica | Validación del caso de estudio de Shigley |
 |:----:|:----:|
