@@ -11,7 +11,7 @@ from st_cytoscape import cytoscape
 from PIL import Image, ImageOps
 
 # Configuracion de la pagina
-st.set_page_config(page_title = "Tesis", page_icon = "🦅", layout = "wide", initial_sidebar_state = "collapsed")
+st.set_page_config(page_title = "Tesis de bachillerato", page_icon = "🦅", layout = "wide", initial_sidebar_state = "collapsed")
 
 # Funciones 
 def f0_mar(im, mar):
