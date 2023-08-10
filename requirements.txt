@@ -1,0 +1,8 @@
+numpy
+sympy
+pandas
+streamlit
+matplotlib
+scipy
+st_cytoscape
+Pillow
