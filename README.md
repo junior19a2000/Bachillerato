@@ -340,7 +340,7 @@ Se analizan bajo dos teorías:
 
 <br>
 
-<a href="https://drive.google.com/file/d/1hlnkEHbD5pchwfrN_JWzpkOtBAQj7sUb/view?usp=sharing" target="_blank">
+<a href="https://drive.google.com/file/d/1eqKUvTv0myVStJNFlCy5GDt9OuheHLNz/view?usp=drive_link" target="_blank">
   <img src="ReadmeRSC/Modulo 6.png" width="100%">
 </a>
 
