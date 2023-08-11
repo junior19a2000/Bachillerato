@@ -230,14 +230,18 @@ def f4_loa(resources):
      content1 = file_1.read()
      gif1     = base64.b64encode(content1).decode("utf-8")
      file_1.close()
-     file_2   = open(r'Imagenes/ejeanim.gif', "rb")
+     file_2   = open(r'ReadmeRSC/belt.gif', "rb")
      content2 = file_2.read()
      gif2     = base64.b64encode(content2).decode("utf-8")
      file_1.close()
-     file_3   = open(r'Imagenes/dienteanim.gif', "rb")
+     file_3   = open(r'ReadmeRSC/gear.gif', "rb")
      content3 = file_3.read()
      gif3     = base64.b64encode(content3).decode("utf-8")
      file_3.close()
+     file_4   = open(r'ReadmeRSC/pstc.gif', "rb")
+     content4 = file_4.read()
+     gif4     = base64.b64encode(content4).decode("utf-8")
+     file_4.close()
 
      img1  = f0_mar(Image.open(r'Imagenes/forbo.png'), 5).resize((600, 870))
      img2  = f0_mar(Image.open(r'Imagenes/optibelt.png'), 5).resize((600, 870))
@@ -279,10 +283,12 @@ def f4_loa(resources):
      img35 = f0_mar(Image.open(r'Imagenes/mod_ejes3.png'), 5).resize((1000, 550))
      img36 = f0_mar(Image.open(r'Imagenes/mod_ejes4.png'), 5).resize((1000, 550))
      img37 = f0_mar(Image.open(r'Imagenes/mod_plano.png'), 5).resize((1000, 550))
+     
+     img38 = Image.open(r'ReadmeRSC/diagrama4.png').resize((430, 327))
 
-     imgn = mpimg.imread(f'Imagenes/carta1.png')
+     imgn  = mpimg.imread(f'Imagenes/carta1.png')
 
-     return gif1, gif2, gif3, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
+     return gif1, gif2, gif3, gif4, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
             img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24,  \
             img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
             img37, img38, imgn
@@ -480,7 +486,7 @@ def f5_cyt(resources):
      return elements1, layout1, stylesheet1, elements2, layout2, stylesheet2, elements3, layout3, stylesheet3, elements4, layout4, stylesheet4
 
 # Se cargan las imagenes y los datos para los diagramas
-gif1, gif2, gif3, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
+gif1, gif2, gif3, gif4, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
 img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
 img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, img37, img38, imgn = f4_loa('resources')
 elements1, layout1, stylesheet1, elements2, layout2, stylesheet2, elements3, layout3, stylesheet3, elements4, layout4, stylesheet4 = f5_cyt('resoruces')
@@ -1441,7 +1447,7 @@ with col46:
 
 # Resultados
 st.header('Resultados')
-st.subheader('Módulos principales')
+st.subheader('Módulos desarrollados')
 tab16, tab17, tab18, tab19, tab20, tab21, tab22, tab23, tab24 = st.tabs(['Módulo de correas planas', 'Módulo de correas trapezoidales', 'Módulo de cadenas', 'Módulo de engranajes', 'Módulo de parametros del eje', 'Módulo de factores de concentración de esfuerzos', 'Módulo de resultados del eje', 'Módulo de simulación del eje', 'Módulo de elementos bidimensionales'])
 with tab16:
      col75, col76 = st.columns([3, 1], gap = 'medium')
@@ -1676,7 +1682,31 @@ with tab24:
                <br>• Representación bidimensional de los esfuerzos y deformaciones
                <br>• Simulación de la deformación del componente
           </div>''', unsafe_allow_html = True)          
-# st.subheader('Módulos complementarios')
+st.markdown('''<div style="text-align: justify;">
+     La aplicación desarrollada ofrece una gran variedad de resultados, tanto numéricos como gráficos,
+     a partir de los cuales el diseñador puede basarse para efectuar las optimizaciones correspondientes.
+     No obstante, muchas veces resulta necesario una visualización mucho mas intuitiva de ciertos resultados, 
+     por lo que, adicionalmente la aplicación permite crear representaciones visuales mucho mas didacticas como las siguientes:
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+col95, col96, col97 = st.columns([1, 1, 1], gap = 'small')
+with col95:
+     st.image(img38, use_column_width = True)
+with col96:
+     st.markdown(f'<img src = "data:image/gif;base64,{gif2}" width = "406">', unsafe_allow_html = True)
+with col97:
+     st.markdown(f'<img src = "data:image/gif;base64,{gif3}" width = "406">', unsafe_allow_html = True)
+st.markdown('''<div style="text-align: justify;">
+     Todos los modulos desarrollados pueden ser utilizados directamente desde cualquier
+     navegador web, como google chrome, microsoft edge, etc. Esto se debe a que el proyecto
+     se integro con GitHub, la cual es una de las herramientas mas utilizadas
+     por programadores para el desarrollo y distribución de software. Todo el proyecto se encuentra
+     registrado en un repositorio publico, en el cual se explica de manera resumida la aplicación desarrollada, 
+     y se brinda los accesos directos a las aplicaciones junto con sus respectivos tutoriales. Finalmente, permite 
+     la actualización de la aplicación de manera global, en caso fuese necesario una.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.markdown(f'<a href="https://github.com/junior19a2000/Bachillerato/blob/main/README.md"><img src = "data:image/gif;base64,{gif4}" width = "100%">', unsafe_allow_html = True)
 
 # Validación
 st.header('Validación')
