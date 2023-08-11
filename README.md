@@ -254,7 +254,7 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
 
 <br>
 
-> ### **Para mayor entendimiento sobre la metodología de cálculo desarrollada para el presente proyecto, se ha desarrollado una presentación detallada de la misma, la cual puede ser visualizada dando click en el siguiente logo → [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://junior19a2000-streamlit-main-3pi5uq.streamlit.app/?embed_options=light_theme)**
+> ### **Para mayor entendimiento sobre la metodología de cálculo desarrollada para el presente proyecto, se ha desarrollado una presentación detallada de la misma, la cual puede ser visualizada dando click en el siguiente logo → [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bachillerato.streamlit.app/?embed_options=light_theme)**
 
 <br>
 
