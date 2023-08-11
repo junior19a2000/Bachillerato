@@ -1693,11 +1693,11 @@ st.markdown('''<div style="text-align: justify;">
 st.markdown('#####')
 col95, col96, col97 = st.columns([1, 1, 1], gap = 'small')
 with col95:
-     st.markdown(f'<img src = "data:image/gif;base64,{gif5}" width = "406">', unsafe_allow_html = True)
+     st.markdown(f'<img src = "data:image/gif;base64,{gif5}" width = "100%">', unsafe_allow_html = True)
 with col96:
-     st.markdown(f'<img src = "data:image/gif;base64,{gif2}" width = "406">', unsafe_allow_html = True)
+     st.markdown(f'<img src = "data:image/gif;base64,{gif2}" width = "100%">', unsafe_allow_html = True)
 with col97:
-     st.markdown(f'<img src = "data:image/gif;base64,{gif3}" width = "406">', unsafe_allow_html = True)
+     st.markdown(f'<img src = "data:image/gif;base64,{gif3}" width = "100%">', unsafe_allow_html = True)
 st.markdown('#####')
 st.markdown('''<div style="text-align: justify;">
      Todos los modulos desarrollados pueden ser utilizados directamente desde cualquier
