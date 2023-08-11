@@ -238,10 +238,14 @@ def f4_loa(resources):
      content3 = file_3.read()
      gif3     = base64.b64encode(content3).decode("utf-8")
      file_3.close()
-     file_4   = open(r'ReadmeRSC/pstc.gif', "rb")
+     file_4   = open(r'Imagenes/pstc.gif', "rb")
      content4 = file_4.read()
      gif4     = base64.b64encode(content4).decode("utf-8")
      file_4.close()
+     file_5   = open(r'Imagenes/shaftanim.gif', "rb")
+     content5 = file_5.read()
+     gif5     = base64.b64encode(content5).decode("utf-8")
+     file_5.close()
 
      img1  = f0_mar(Image.open(r'Imagenes/forbo.png'), 5).resize((600, 870))
      img2  = f0_mar(Image.open(r'Imagenes/optibelt.png'), 5).resize((600, 870))
@@ -284,11 +288,9 @@ def f4_loa(resources):
      img36 = f0_mar(Image.open(r'Imagenes/mod_ejes4.png'), 5).resize((1000, 550))
      img37 = f0_mar(Image.open(r'Imagenes/mod_plano.png'), 5).resize((1000, 550))
      
-     img38 = Image.open(r'ReadmeRSC/diagrama4.png').resize((430, 327))
-
      imgn  = mpimg.imread(f'Imagenes/carta1.png')
 
-     return gif1, gif2, gif3, gif4, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
+     return gif1, gif2, gif3, gif4, gif5, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
             img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24,  \
             img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
             img37, img38, imgn
@@ -486,7 +488,7 @@ def f5_cyt(resources):
      return elements1, layout1, stylesheet1, elements2, layout2, stylesheet2, elements3, layout3, stylesheet3, elements4, layout4, stylesheet4
 
 # Se cargan las imagenes y los datos para los diagramas
-gif1, gif2, gif3, gif4, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
+gif1, gif2, gif3, gif4, gif5, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
 img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
 img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, img37, img38, imgn = f4_loa('resources')
 elements1, layout1, stylesheet1, elements2, layout2, stylesheet2, elements3, layout3, stylesheet3, elements4, layout4, stylesheet4 = f5_cyt('resoruces')
@@ -1691,19 +1693,20 @@ st.markdown('''<div style="text-align: justify;">
 st.markdown('#####')
 col95, col96, col97 = st.columns([1, 1, 1], gap = 'small')
 with col95:
-     st.image(img38, use_column_width = True)
+     st.markdown(f'<img src = "data:image/gif;base64,{gif5}" width = "406">', unsafe_allow_html = True)
 with col96:
      st.markdown(f'<img src = "data:image/gif;base64,{gif2}" width = "406">', unsafe_allow_html = True)
 with col97:
      st.markdown(f'<img src = "data:image/gif;base64,{gif3}" width = "406">', unsafe_allow_html = True)
+st.markdown('#####')
 st.markdown('''<div style="text-align: justify;">
      Todos los modulos desarrollados pueden ser utilizados directamente desde cualquier
      navegador web, como google chrome, microsoft edge, etc. Esto se debe a que el proyecto
      se integro con GitHub, la cual es una de las herramientas mas utilizadas
      por programadores para el desarrollo y distribución de software. Todo el proyecto se encuentra
      registrado en un repositorio publico, en el cual se explica de manera resumida la aplicación desarrollada, 
-     y se brinda los accesos directos a las aplicaciones junto con sus respectivos tutoriales. Finalmente, permite 
-     la actualización de la aplicación de manera global, en caso fuese necesario una.
+     y se brinda los accesos directos a las aplicaciones junto con sus respectivos tutoriales. Ademas, gracias a 
+     la señalada integración, se puede ejecutar actualizaciones de la aplicación de manera global, en caso fuese necesario una.
 </div>''', unsafe_allow_html = True)
 st.markdown('#####')
 st.markdown(f'<a href="https://github.com/junior19a2000/Bachillerato/blob/main/README.md"><img src = "data:image/gif;base64,{gif4}" width = "100%">', unsafe_allow_html = True)
