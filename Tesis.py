@@ -288,12 +288,17 @@ def f4_loa(resources):
      img36 = f0_mar(Image.open(r'Imagenes/mod_ejes4.png'), 5).resize((1000, 550))
      img37 = f0_mar(Image.open(r'Imagenes/mod_plano.png'), 5).resize((1000, 550))
      
+     img39 = Image.open(r'Imagenes/cortanteshi.png').resize((1000, 500))
+     img40 = Image.open(r'Imagenes/cortantesxz.png').resize((1000, 500))
+     img41 = Image.open(r'Imagenes/pendienteshi.png').resize((1000, 500))
+     img42 = Image.open(r'Imagenes/pendientesxy.png').resize((1000, 500))
+
      imgn  = mpimg.imread(f'Imagenes/carta1.png')
 
      return gif1, gif2, gif3, gif4, gif5, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
             img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24,  \
             img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
-            img37, img38, imgn
+            img37, img38, img39, img40, img41, img42, imgn
 @st.cache_data
 def f5_cyt(resources):
      elements1 = [
@@ -490,7 +495,8 @@ def f5_cyt(resources):
 # Se cargan las imagenes y los datos para los diagramas
 gif1, gif2, gif3, gif4, gif5, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
 img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
-img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, img37, img38, imgn = f4_loa('resources')
+img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
+img37, img38, img39, img40, img41, img42, imgn = f4_loa('resources')
 elements1, layout1, stylesheet1, elements2, layout2, stylesheet2, elements3, layout3, stylesheet3, elements4, layout4, stylesheet4 = f5_cyt('resoruces')
 
 # Titulo y encabezado
@@ -1718,6 +1724,13 @@ col71, col72 = st.columns([1, 1], gap = 'medium')
 with col71:
      url4 = 'https://drive.google.com/file/d/1otj0L-IovilNb5Z0eQEhArahWDnuFvac/preview'
      st.markdown(f'<iframe src={url4} height="650" width="100%"></iframe>', unsafe_allow_html = True)
+     selectbox2 = st.selectbox('Resultado a validar', ('Diagrama xz', 'Diagrama xy', 'Esfuerzos estáticos', 'Esfuerzos dinámicos', 'Velocidad crítica', 'Ciclos de vida', 'Deformaciones'))
+     if selectbox2 == 'Diagrama xz':
+          st.image(img39)
+          st.image(img40)
+     elif selectbox2 == 'Diagrama xy':
+          st.image(img41)
+          st.image(img42)
 with col72:
      st.markdown('''<div style="text-align: justify;">
           Para la validación teórica del módulo de ejes, se ha visto por conveniente utilizar el caso de estudio abordado en el libro: "Diseño en
@@ -1729,6 +1742,17 @@ with col72:
      st.markdown('#####')
      url6 = 'https://sketchfab.com/models/5a30f935158c43a08d28041942d2a98d/embed'
      st.markdown(f'<iframe src={url6} height="290" width="100%"></iframe>', unsafe_allow_html = True)
+     st.latex(r'''\large
+          \begin{array}{|c | c |c | c|}\hline \\
+          \text{Resultado} & \text{P.S.T.C.} & \text{Otros} & \text{\% de Error}\\ \\\hline \\
+          \text{Pendiente (rad)} & 0.0012 & 0 & 100\\ \\\hline \\
+          \text{Deflexiones (m)} & 0.00005319 & 0.00003039 & 42.865\\ \\\hline \\
+          \text{F.S. Von Misses} & 3.5868 & 3.6250 & 1.0650\\ \\\hline \\
+          \text{F.S. ASME} & 1.8356 & 1.8071 & 1.5526\\ \\\hline \\
+          \text{RPM crítico} & 4384.7 & 5164.8 & 17.7914\\ \\\hline \\
+          \text{Horas de vida} & 3.1769 & 3.1821 & 0.1636\\ \\\hline
+          \end{array} 
+     ''')
 st.subheader('Validación práctica')
 
 # Conclusiones
