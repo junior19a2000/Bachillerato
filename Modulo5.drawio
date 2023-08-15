@@ -1,56 +1,346 @@
 <mxfile host="65bd71144e">
     <diagram id="_k8TURm8gIdta8wLQPci" name="Page-1">
-        <mxGraphModel dx="481" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="583" pageHeight="413" math="0" shadow="0">
+        <mxGraphModel dx="1849" dy="1540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="583" pageHeight="413" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="142" value="POWER SYSTEM TRANSMISSION CALCULATOR" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=100;horizontalStack=0;html=1;fontSize=50;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="-280" width="2098" height="5528.5" as="geometry"/>
+                    <mxGeometry x="40" y="-280" width="2098" height="4270" as="geometry"/>
                 </mxCell>
-                <mxCell id="147" value="MÓDULO DE CORREAS PLANAS [FORBO]" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" vertex="1" parent="142">
-                    <mxGeometry y="100" width="2098" height="820" as="geometry"/>
+                <mxCell id="147" value="MÓDULO DE CORREAS PLANAS [FORBO]" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" parent="142" vertex="1">
+                    <mxGeometry y="100" width="2098" height="650" as="geometry"/>
                 </mxCell>
-                <mxCell id="146" value="MÓDULO DE CORREAS TRAPEZOIDALES [OPTIBELT]" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" vertex="1" parent="142">
-                    <mxGeometry y="920" width="2098" height="820" as="geometry"/>
+                <mxCell id="281" value="" style="group" vertex="1" connectable="0" parent="147">
+                    <mxGeometry x="87" y="131.25" width="1915" height="387.5" as="geometry"/>
                 </mxCell>
-                <mxCell id="145" value="MÓDULO DE CADENAS [RENOLD]" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" vertex="1" parent="142">
-                    <mxGeometry y="1740" width="2098" height="820" as="geometry"/>
+                <mxCell id="151" value="Parametros iniciales" style="rounded=1;whiteSpace=wrap;html=1;comic=0;" parent="281" vertex="1">
+                    <mxGeometry x="57" width="140" height="75" as="geometry"/>
                 </mxCell>
-                <mxCell id="144" value="MÓDULO DE ENGRANAJES [AGMA]&amp;nbsp;" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" vertex="1" parent="142">
-                    <mxGeometry y="2560" width="2098" height="820" as="geometry"/>
+                <mxCell id="152" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Potencia del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- RPM del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Diámetro de la polea menor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Diámetro de la polea mayor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Distancia entre poleas&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Gama y recubrimiento de la correa&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Tipo y sentido de giro del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;" parent="281" vertex="1">
+                    <mxGeometry y="127.5" width="254" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="151" value="Parametros iniciales" style="rounded=1;whiteSpace=wrap;html=1;comic=0;" vertex="1" parent="144">
-                    <mxGeometry x="144" y="210" width="140" height="75" as="geometry"/>
+                <mxCell id="176" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="281" source="151" target="152">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="152" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Potencia del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- RPM del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Diámetro de la polea menor&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Diámetro de la polea mayor&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Distancia entre poleas&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;" vertex="1" parent="144">
-                    <mxGeometry x="87" y="330" width="254" height="110" as="geometry"/>
+                <mxCell id="153" value="Ángulo de contacto entre las poleas y la correa plana" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="373" y="87.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="179" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="152" target="153">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="154" value="Velocidad de la correa de transmisión" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="373" y="167.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="177" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="152" target="154">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="155" value="Fuerza tangencial de transmisión" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="373" y="247.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="180" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="152" target="155">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="188" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="154" target="155">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="753" y="197.5"/>
+                            <mxPoint x="753" y="277.5"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="157" value="Coeficientes de transmisión&lt;br&gt;segun la gama de la &lt;br&gt;correa plana" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="281">
+                    <mxGeometry x="813" y="147.5" width="240" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="187" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="153" target="157">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="158" value="Longitud de la correa plana" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="1163" y="7.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="182" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="157" target="158">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" value="Ancho de la correa plana" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="1163" y="87.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="184" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="157" target="159">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="169" value="Frecuencia de exitación" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="1163" y="167.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="186" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="157" target="169">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="170" value="Fuerza de la correa en el ramal con tracción" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="1163" y="247.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="185" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="157" target="170">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="171" value="Fuerza de la correa en el ramal sin tracción" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="1163" y="327.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="183" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="157" target="171">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="172" value="Fuerza resultante sobre el eje de transmisión en el eje Z" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="1595" y="166.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="190" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="170" target="172">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="173" value="Fuerza resultante sobre el eje de transmisión en el eje Y" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="1595" y="246.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="191" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="171" target="173">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="174" value="Momento resultante sobre el eje de transmisión en el eje X" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="281">
+                    <mxGeometry x="1595" y="326.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="196" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="170" target="174">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="197" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="281" source="171" target="174">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="146" value="MÓDULO DE CORREAS TRAPEZOIDALES [OPTIBELT]" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" parent="142" vertex="1">
+                    <mxGeometry y="750" width="2098" height="820" as="geometry"/>
+                </mxCell>
+                <mxCell id="232" value="Parametros iniciales" style="rounded=1;whiteSpace=wrap;html=1;comic=0;" vertex="1" parent="146">
+                    <mxGeometry x="148.5" y="216.25" width="140" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="233" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Potencia del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- RPM del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- RPM de la maquina&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Horas de trabajo&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Distancia entre poleas&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;- Caracteristica del motor&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;- Caracteristica de la maquina&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Sentido de giro del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;" vertex="1" parent="146">
+                    <mxGeometry x="91.5" y="343.75" width="254" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="234" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="146" source="232" target="233">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="235" value="Ángulo de contacto entre las poleas y la correa de transmisión" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="464.5" y="303.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="236" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="233" target="235">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="237" value="Velocidad de la correa de transmisión" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="464.5" y="383.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="238" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="233" target="237">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="239" value="Fuerza tangencial de transmisión" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="464.5" y="463.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="240" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="233" target="239">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="241" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="237" target="239">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="844.5" y="413.75"/>
+                            <mxPoint x="844.5" y="493.75"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="268" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="146" source="242" target="267">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="242" value="- Perfil de la correa trapezoidal&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;- Diámetro de la polea menor o mayor&lt;br&gt;- Longitud de la correa trapezoidal&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="146">
+                    <mxGeometry x="904.5" y="304" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="243" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="235" target="242">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="263" value="coeficientes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="243">
+                    <mxGeometry x="-0.1544" relative="1" as="geometry">
+                        <mxPoint x="11" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="244" value="Longitud de las correas trapezoidales" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="1254.5" y="223.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="245" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="242" target="244">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="246" value="Distancia real entre las poleas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="1254.5" y="303.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="247" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="242" target="246">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="248" value="Número de correas trapezoidales" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="1254.5" y="383.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="249" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="242" target="248">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="250" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="251" target="260">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="275" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="251" target="258">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="276" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="251" target="274">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="251" value="Fuerzas en los ramales de las correas trapezoidales" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="1254.5" y="463.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="252" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="242" target="251">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="254" value="Profundidad de hundimiento del ramal" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="1254.5" y="543.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="255" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="242" target="254">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="256" value="Fuerza resultante sobre el eje de transmisión en el eje Z" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="1686.5" y="303.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="257" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="146" source="251" target="256">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="258" value="Fuerza resultante sobre el eje de transmisión en el eje Y" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="1686.5" y="383.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="260" value="Fuerza resultante sobre el eje de transmisión en el eje X" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="1686.5" y="463.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="267" value="Se verifica la velocidad y&lt;br&gt;la frecuencia de flexión &lt;br&gt;de la correa trapezoidal" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="910" y="383.75" width="230" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="274" value="Momento resultante sobre el eje de transmisión en el eje X" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="146">
+                    <mxGeometry x="1686.5" y="543.75" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" value="MÓDULO DE CADENAS [RENOLD]" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" parent="142" vertex="1">
+                    <mxGeometry y="1570" width="2098" height="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="282" value="" style="group" vertex="1" connectable="0" parent="145">
+                    <mxGeometry x="91.5" y="86.25" width="1915" height="387.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="283" value="Parametros iniciales" style="rounded=1;whiteSpace=wrap;html=1;comic=0;" vertex="1" parent="282">
+                    <mxGeometry x="57" width="140" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="284" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Potencia del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- RPM del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Diámetro de la polea menor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Diámetro de la polea mayor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Distancia entre poleas&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Gama y recubrimiento de la correa&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Tipo y sentido de giro del motor&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;" vertex="1" parent="282">
+                    <mxGeometry y="127.5" width="254" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="285" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="282" source="283" target="284">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="286" value="Ángulo de contacto entre las poleas y la correa plana" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="373" y="87.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="287" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="284" target="286">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="288" value="Velocidad de la correa de transmisión" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="373" y="167.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="289" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="284" target="288">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="290" value="Fuerza tangencial de transmisión" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="373" y="247.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="291" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="284" target="290">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="292" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="288" target="290">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="753" y="197.5"/>
+                            <mxPoint x="753" y="277.5"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="293" value="Coeficientes de transmisión&lt;br&gt;segun la gama de la &lt;br&gt;correa plana" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="282">
+                    <mxGeometry x="813" y="147.5" width="240" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="294" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="286" target="293">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="295" value="Longitud de la correa plana" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="1163" y="7.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="296" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="293" target="295">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="297" value="Ancho de la correa plana" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="1163" y="87.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="298" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="293" target="297">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="299" value="Frecuencia de exitación" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="1163" y="167.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="300" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="293" target="299">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="301" value="Fuerza de la correa en el ramal con tracción" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="1163" y="247.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="302" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="293" target="301">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="303" value="Fuerza de la correa en el ramal sin tracción" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="1163" y="327.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="304" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="293" target="303">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="305" value="Fuerza resultante sobre el eje de transmisión en el eje Z" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="1595" y="166.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="306" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="301" target="305">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="307" value="Fuerza resultante sobre el eje de transmisión en el eje Y" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="1595" y="246.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="308" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="303" target="307">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="309" value="Momento resultante sobre el eje de transmisión en el eje X" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="282">
+                    <mxGeometry x="1595" y="326.5" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="310" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="301" target="309">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="311" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="282" source="303" target="309">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" value="MÓDULO DE ENGRANAJES [AGMA]&amp;nbsp;" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" parent="142" vertex="1">
+                    <mxGeometry y="2130" width="2098" height="570" as="geometry"/>
                 </mxCell>
                 <mxCell id="143" value="MÓDULO DE EJES DE TRANSMISIÓN DE POTENCIA" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" parent="142" vertex="1">
-                    <mxGeometry y="3380" width="2098" height="1328.5" as="geometry"/>
+                    <mxGeometry y="2700" width="2098" height="800" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="Parametros iniciales" style="rounded=1;whiteSpace=wrap;html=1;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="144" y="75" width="140" height="75" as="geometry"/>
+                    <mxGeometry x="144" y="65" width="140" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="Número de nodos" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="143" vertex="1">
-                    <mxGeometry x="144" y="315" width="140" height="60" as="geometry"/>
+                    <mxGeometry x="144" y="305" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="2" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="Se actualizan 6 tablas en función al número de nodos [N] y tramos [N - 1]" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="314" y="315" width="220" height="60" as="geometry"/>
+                    <mxGeometry x="314" y="305" width="220" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="3" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="Tabla de propiedades geométricas y mecánicas, de cargas distribuidas y del número de elementos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="589" y="151" width="300" height="50" as="geometry"/>
+                    <mxGeometry x="589" y="141" width="300" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="4" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="Tabla de fuerzas, momentos y apoyos&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="589" y="219" width="300" height="50" as="geometry"/>
+                    <mxGeometry x="589" y="209" width="300" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="4" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -58,13 +348,13 @@
                 <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="5" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="904" y="176"/>
-                            <mxPoint x="904" y="244"/>
+                            <mxPoint x="904" y="166"/>
+                            <mxPoint x="904" y="234"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="7" value="Tabla de factores de concentración de esfuerzos estáticos y dinámicos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="589" y="287" width="300" height="50" as="geometry"/>
+                    <mxGeometry x="589" y="277" width="300" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="4" target="7" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -72,13 +362,13 @@
                 <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="6" target="7" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="904" y="244"/>
-                            <mxPoint x="904" y="312"/>
+                            <mxPoint x="904" y="234"/>
+                            <mxPoint x="904" y="302"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="8" value="Tabla de factores que modifican el límite de la fatiga" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="589" y="355" width="300" height="50" as="geometry"/>
+                    <mxGeometry x="589" y="345" width="300" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="4" target="8" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -86,50 +376,50 @@
                 <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="7" target="8" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="904" y="312"/>
-                            <mxPoint x="904" y="380"/>
+                            <mxPoint x="904" y="302"/>
+                            <mxPoint x="904" y="370"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="9" value="Tabla de reacciones de fuerzas y momentos, de esfuerzos estáticos máximos y de factores de seguridad estáticos mínimos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="589" y="423" width="300" height="50" as="geometry"/>
+                    <mxGeometry x="589" y="413" width="300" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="4" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="Tabla de deformaciones lineales y angularess, de esfuerzos dinámicos máximos y de factores de seguridad dinámicos mínimos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="589" y="491" width="300" height="50" as="geometry"/>
+                    <mxGeometry x="589" y="481" width="300" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="4" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="28" value="Teoría de&lt;br&gt;análisis" style="rhombus;whiteSpace=wrap;html=1;rounded=1;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="945" y="165" width="116" height="100" as="geometry"/>
+                    <mxGeometry x="945" y="155" width="116" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="57" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.043;entryY=0.51;entryDx=0;entryDy=0;entryPerimeter=0;" parent="143" source="5" target="28" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="924" y="176"/>
-                            <mxPoint x="924" y="216"/>
+                            <mxPoint x="924" y="166"/>
+                            <mxPoint x="924" y="206"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="58" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.039;entryY=0.51;entryDx=0;entryDy=0;entryPerimeter=0;" parent="143" source="6" target="28" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="924" y="244"/>
-                            <mxPoint x="924" y="216"/>
+                            <mxPoint x="924" y="234"/>
+                            <mxPoint x="924" y="206"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="34" value="Bernoulli" style="rounded=0;whiteSpace=wrap;html=1;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="953" y="111" width="100" height="39" as="geometry"/>
+                    <mxGeometry x="953" y="101" width="100" height="39" as="geometry"/>
                 </mxCell>
                 <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="143" source="28" target="34" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="35" value="Timoshenko" style="rounded=0;whiteSpace=wrap;html=1;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="953" y="280" width="100" height="39" as="geometry"/>
+                    <mxGeometry x="953" y="270" width="100" height="39" as="geometry"/>
                 </mxCell>
                 <mxCell id="36" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="28" target="35" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -137,19 +427,19 @@
                 <mxCell id="82" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;jumpSize=20;" parent="143" source="54" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1334" y="141"/>
-                            <mxPoint x="1334" y="448"/>
+                            <mxPoint x="1334" y="131"/>
+                            <mxPoint x="1334" y="438"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="54" value="Cálculo de las fuerzas y deformaciones lineales en el eje X" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1104" y="111" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1104" y="101" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="60" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="28" target="54" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="55" value="Cálculo de los momentos y deformaciones angulares en el eje X" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1104" y="185" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1104" y="175" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="59" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="28" target="55" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -157,19 +447,19 @@
                 <mxCell id="83" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;jumpSize=20;" parent="143" source="56" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1334" y="289"/>
-                            <mxPoint x="1334" y="516"/>
+                            <mxPoint x="1334" y="279"/>
+                            <mxPoint x="1334" y="506"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="56" value="Cálculo de las fuerzas, momentos, deformaciones lineales y angulares en los eje Y y Z" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1104" y="259" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1104" y="249" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="61" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="28" target="56" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="68" value="Criterio de&lt;br&gt;análisis" style="rhombus;whiteSpace=wrap;html=1;rounded=1;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="1355" y="165" width="116" height="100" as="geometry"/>
+                    <mxGeometry x="1355" y="155" width="116" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="71" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="54" target="68" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -181,28 +471,28 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="69" value="- Von Misses&lt;br&gt;- Tresca&lt;br&gt;- Rankine" style="rounded=0;whiteSpace=wrap;html=1;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="1363" y="75" width="100" height="75" as="geometry"/>
+                    <mxGeometry x="1363" y="65" width="100" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="67" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="143" source="68" target="69" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="70" value="- ASME&lt;br&gt;- Soderberg&lt;br&gt;- Goodman" style="rounded=0;whiteSpace=wrap;html=1;comic=0;" parent="143" vertex="1">
-                    <mxGeometry x="1363" y="280" width="100" height="75" as="geometry"/>
+                    <mxGeometry x="1363" y="270" width="100" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="66" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;" parent="143" source="68" target="70" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="74" value="Esfuerzos estáticos y dinámicos" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="75" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1515" y="65" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="78" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="68" target="74" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="75" value="Límites inferior y superior de la velocidad crítica" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="295" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1515" y="285" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="76" value="Factores de seguridad estáticos y dinámicos" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="148" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1515" y="138" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="79" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="68" target="76" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -210,89 +500,89 @@
                 <mxCell id="98" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="77" target="75" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1494" y="252"/>
-                            <mxPoint x="1494" y="325"/>
+                            <mxPoint x="1494" y="242"/>
+                            <mxPoint x="1494" y="315"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="77" value="Deformaciones lineales y angulares resultantes" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="222" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1515" y="212" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="80" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="68" target="77" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="102" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="143" source="84" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1334" y="445" as="targetPoint"/>
+                        <mxPoint x="1334" y="435" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1414" y="471"/>
-                            <mxPoint x="1414" y="435"/>
+                            <mxPoint x="1414" y="461"/>
+                            <mxPoint x="1414" y="425"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="84" value="Factores de seguridad estáticos y dinámicos mínimos" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="441" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1515" y="431" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="89" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="8" target="84" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1084" y="380"/>
-                            <mxPoint x="1084" y="471"/>
+                            <mxPoint x="1084" y="370"/>
+                            <mxPoint x="1084" y="461"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="85" value="Número de ciclos de vida" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="515" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1515" y="505" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="90" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="8" target="85" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1084" y="380"/>
-                            <mxPoint x="1084" y="545"/>
+                            <mxPoint x="1084" y="370"/>
+                            <mxPoint x="1084" y="535"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="99" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="86" target="84" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1748" y="398"/>
-                            <mxPoint x="1748" y="471"/>
+                            <mxPoint x="1748" y="388"/>
+                            <mxPoint x="1748" y="461"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="101" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="143" source="86" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1334" y="445" as="targetPoint"/>
+                        <mxPoint x="1334" y="435" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1414" y="398"/>
-                            <mxPoint x="1414" y="435"/>
-                            <mxPoint x="1334" y="435"/>
+                            <mxPoint x="1414" y="388"/>
+                            <mxPoint x="1414" y="425"/>
+                            <mxPoint x="1334" y="425"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="86" value="Esfuerzos estáticos y dinámicos máximos" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="368" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1515" y="358" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="91" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="7" target="86" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="924" y="312"/>
-                            <mxPoint x="924" y="345"/>
-                            <mxPoint x="1104" y="345"/>
-                            <mxPoint x="1104" y="398"/>
+                            <mxPoint x="924" y="302"/>
+                            <mxPoint x="924" y="335"/>
+                            <mxPoint x="1104" y="335"/>
+                            <mxPoint x="1104" y="388"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="93" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="74" target="86" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1748" y="105"/>
-                            <mxPoint x="1748" y="398"/>
+                            <mxPoint x="1748" y="95"/>
+                            <mxPoint x="1748" y="388"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="103" value="Criterio de rigidez" style="swimlane;whiteSpace=wrap;html=1;container=0;" parent="143" vertex="1">
-                    <mxGeometry x="1784" y="75" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1784" y="65" width="222" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="106" value="Deformación linear y &lt;br&gt;angular máxima" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="103" vertex="1">
                     <mxGeometry x="40" y="22" width="130" height="40" as="geometry"/>
@@ -301,76 +591,178 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="118" value="Criterio estático" style="swimlane;whiteSpace=wrap;html=1;container=0;" parent="143" vertex="1">
-                    <mxGeometry x="1784" y="185" width="215" height="65" as="geometry"/>
+                    <mxGeometry x="1784" y="175" width="222" height="65" as="geometry"/>
                 </mxCell>
                 <mxCell id="130" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="84" target="118" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="122" value="Criterio dinámico" style="swimlane;whiteSpace=wrap;html=1;container=0;" parent="143" vertex="1">
-                    <mxGeometry x="1784" y="295" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1784" y="285" width="222" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="131" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="84" target="122" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="124" value="Criterio vibracional" style="swimlane;whiteSpace=wrap;html=1;container=0;" parent="143" vertex="1">
-                    <mxGeometry x="1784" y="405" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1784" y="395" width="222" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="132" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="75" target="124" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1754" y="325"/>
-                            <mxPoint x="1754" y="435"/>
+                            <mxPoint x="1754" y="315"/>
+                            <mxPoint x="1754" y="425"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="126" value="Criterio de vida" style="swimlane;whiteSpace=wrap;html=1;container=0;" parent="143" vertex="1">
-                    <mxGeometry x="1784" y="515" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1784" y="505" width="222" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="133" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="85" target="126" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="119" value="Factor de seguridad estático mínimo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="143" vertex="1">
-                    <mxGeometry x="1782" y="214" width="220" height="30" as="geometry"/>
+                    <mxGeometry x="1782" y="204" width="220" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="123" value="Factor de seguridad dinámico mínimo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="143" vertex="1">
-                    <mxGeometry x="1779" y="321" width="220" height="30" as="geometry"/>
+                    <mxGeometry x="1779" y="311" width="220" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="125" value="Velocidad crítica promedio" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="143" vertex="1">
-                    <mxGeometry x="1809" y="432" width="160" height="30" as="geometry"/>
+                    <mxGeometry x="1809" y="422" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="127" value="Número de horas de vida" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="143" vertex="1">
-                    <mxGeometry x="1809" y="542" width="160" height="30" as="geometry"/>
+                    <mxGeometry x="1809" y="532" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="141" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=0;exitY=0;exitDx=0;exitDy=30;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="143" source="134" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="134" value="Apartir de los resultados obtenidos en los 5 criterios de diseño establecidos y las representaciones gráficas respectivas, el usuario esta en la facultad de mejorar reiterativamente su diseño inicial hasta optimizarlo segun sus requerimientos, restricciones y condiciones de trabajo" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" parent="143" vertex="1">
-                    <mxGeometry x="564" y="665" width="1041" height="80" as="geometry"/>
+                    <mxGeometry x="564" y="655" width="1041" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="140" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.003;entryY=0.506;entryDx=0;entryDy=0;entryPerimeter=0;" parent="143" source="135" target="134" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="135" value="Representaciónes gráficas bidimensionales&lt;br&gt;o tridimensionales de los resultados" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;" parent="143" vertex="1">
-                    <mxGeometry x="1684" y="665" width="310" height="80" as="geometry"/>
+                    <mxGeometry x="1684" y="655" width="322" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="136" value="" style="triangle;html=1;whiteSpace=wrap;rotation=-180;" parent="135" vertex="1">
                     <mxGeometry x="280" y="25" width="20" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="139" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=0.1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="143" source="138" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1834" y="665" as="targetPoint"/>
+                        <mxPoint x="1834" y="655" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1279" y="635"/>
-                            <mxPoint x="1834" y="635"/>
-                            <mxPoint x="1834" y="665"/>
+                            <mxPoint x="1279" y="625"/>
+                            <mxPoint x="1834" y="625"/>
+                            <mxPoint x="1834" y="655"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="138" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=90;size=0.5;" parent="143" vertex="1">
-                    <mxGeometry x="1256.5" y="-101.5" width="45" height="1430" as="geometry"/>
+                    <mxGeometry x="1262.87" y="-117.87" width="46" height="1442.75" as="geometry"/>
                 </mxCell>
-                <mxCell id="149" value="MÓDULO DE ANÁLISIS DE ELEMENTOS PLANOS" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" vertex="1" parent="142">
-                    <mxGeometry y="4708.5" width="2098" height="820" as="geometry"/>
+                <mxCell id="149" value="MÓDULO DE ANÁLISIS DE ELEMENTOS PLANOS" style="swimlane;startSize=60;horizontal=0;html=1;fontSize=30;" parent="142" vertex="1">
+                    <mxGeometry y="3500" width="2098" height="770" as="geometry"/>
+                </mxCell>
+                <mxCell id="228" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="142" source="172" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="450" y="2930" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2060" y="428"/>
+                            <mxPoint x="2060" y="2730"/>
+                            <mxPoint x="430" y="2730"/>
+                            <mxPoint x="430" y="2934"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="229" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="142" source="173" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="490" y="2800" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2060" y="508"/>
+                            <mxPoint x="2060" y="2730"/>
+                            <mxPoint x="430" y="2730"/>
+                            <mxPoint x="430" y="2934"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="230" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="142" source="174" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="2860" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2060" y="588"/>
+                            <mxPoint x="2060" y="2730"/>
+                            <mxPoint x="430" y="2730"/>
+                            <mxPoint x="430" y="2934"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="277" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="142" source="256" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2060" y="1084"/>
+                            <mxPoint x="2060" y="2730"/>
+                            <mxPoint x="430" y="2730"/>
+                            <mxPoint x="430" y="2934"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="278" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="142" source="258" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2060" y="1164"/>
+                            <mxPoint x="2060" y="2730"/>
+                            <mxPoint x="430" y="2730"/>
+                            <mxPoint x="430" y="2934"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="279" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="142" source="260" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2060" y="1244"/>
+                            <mxPoint x="2060" y="2730"/>
+                            <mxPoint x="430" y="2730"/>
+                            <mxPoint x="430" y="2934"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="280" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="142" source="274" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2060" y="1324"/>
+                            <mxPoint x="2060" y="2730"/>
+                            <mxPoint x="430" y="2730"/>
+                            <mxPoint x="430" y="2934"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="194" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="155">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1210" y="150" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1210" y="229"/>
+                            <mxPoint x="1210" y="150"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="269" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="267">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1210" y="810" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="273" value="si" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="269">
+                    <mxGeometry x="0.0728" y="-2" relative="1" as="geometry">
+                        <mxPoint x="-2" y="-11" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="270" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="267">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="890" y="810" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="271" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="270">
+                    <mxGeometry x="-0.5402" y="-1" relative="1" as="geometry">
+                        <mxPoint x="10" as="offset"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
