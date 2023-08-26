@@ -246,6 +246,14 @@ def f4_loa(resources):
      content5 = file_5.read()
      gif5     = base64.b64encode(content5).decode("utf-8")
      file_5.close()
+     file_6   = open(r'ReadmeRSC/animation.gif', "rb")
+     content6 = file_6.read()
+     gif6     = base64.b64encode(content6).decode("utf-8")
+     file_6.close()
+     file_7   = open(r'ReadmeRSC/DeflectionAnsys.gif', "rb")
+     content7 = file_7.read()
+     gif7     = base64.b64encode(content7).decode("utf-8")
+     file_7.close()
 
      img1  = f0_mar(Image.open(r'Imagenes/forbo.png'), 5).resize((600, 870))
      img2  = f0_mar(Image.open(r'Imagenes/optibelt.png'), 5).resize((600, 870))
@@ -293,12 +301,19 @@ def f4_loa(resources):
      img41 = Image.open(r'Imagenes/pendienteshi.png').resize((1000, 550))
      img42 = Image.open(r'Imagenes/pendientesxy.png').resize((1000, 550))
      img43 = Image.open(r'Imagenes/esfuerzosvmb.png').resize((1000, 550))
+     img44 = Image.open(r'Imagenes/ansysdin.png').resize((1000, 550))
+     img45 = Image.open(r'Imagenes/dinamicospstc.png').resize((1000, 550))
+     img46 = Image.open(r'Imagenes/ansysvida.png').resize((1000, 550))
+     img47 = Image.open(r'Imagenes/vidapstc.png').resize((1000, 550))
+     img48 = Image.open(r'Imagenes/simcritica.png').resize((1000, 550))
+     img49 = Image.open(r'Imagenes/criticapstc.png').resize((1000, 550))
      imgn  = mpimg.imread(f'Imagenes/carta1.png')
 
-     return gif1, gif2, gif3, gif4, gif5, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
-            img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24,  \
+     return gif1, gif2, gif3, gif4, gif5, gif6, gif7, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
+            img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
             img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
-            img37, img38, img39, img40, img41, img42, img43, imgn
+            img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48, \
+            img49, imgn
 @st.cache_data
 def f5_cyt(resources):
      elements1 = [
@@ -493,10 +508,11 @@ def f5_cyt(resources):
      return elements1, layout1, stylesheet1, elements2, layout2, stylesheet2, elements3, layout3, stylesheet3, elements4, layout4, stylesheet4
 
 # Se cargan las imagenes y los datos para los diagramas
-gif1, gif2, gif3, gif4, gif5, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
+gif1, gif2, gif3, gif4, gif5, gif6, gif7, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
 img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
 img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
-img37, img38, img39, img40, img41, img42, img43, imgn = f4_loa('resources')
+img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48, \
+img49, imgn = f4_loa('resources')
 elements1, layout1, stylesheet1, elements2, layout2, stylesheet2, elements3, layout3, stylesheet3, elements4, layout4, stylesheet4 = f5_cyt('resoruces')
 
 # Titulo y encabezado
@@ -1738,7 +1754,7 @@ col71, col72 = st.columns([1, 1], gap = 'medium')
 with col71:
      url4 = 'https://drive.google.com/file/d/1otj0L-IovilNb5Z0eQEhArahWDnuFvac/preview'
      st.markdown(f'<iframe src={url4} height="650" width="100%"></iframe>', unsafe_allow_html = True)
-     selectbox_2 = st.selectbox('Resultado a validar', ('Diagrama xz', 'Diagrama xy', 'Esfuerzos estáticos', 'Esfuerzos dinámicos', 'Velocidad crítica', 'Ciclos de vida', 'Deformaciones'))
+     selectbox_2 = st.selectbox('Resultado a validar', ('Diagrama xz', 'Diagrama xy', 'Esfuerzos estáticos', 'Esfuerzos dinámicos', 'Ciclos de vida', 'Deformaciones', 'Velocidad crítica'))
      if selectbox_2 == 'Diagrama xz':
           st.image(img39)
           st.image(img40)
@@ -1749,6 +1765,19 @@ with col71:
           url7 = 'https://drive.google.com/file/d/1hig9McpA3y1S7cx_nxM-a3G1zS8Ehqqz/preview'
           st.markdown(f'<iframe src={url7} height="328" width="100%"></iframe>', unsafe_allow_html = True)
           st.image(img43)
+     elif selectbox_2 == 'Esfuerzos dinámicos':
+          st.image(img44)
+          st.image(img45)
+     elif selectbox_2 == 'Ciclos de vida':
+          st.image(img46)
+          st.image(img47)
+     elif selectbox_2 == 'Deformaciones':
+          st.markdown(f'<img src = "data:image/gif;base64,{gif6}" width = "100%" height = "320">', unsafe_allow_html = True)
+          st.markdown('#####')
+          st.markdown(f'<img src = "data:image/gif;base64,{gif7}" width = "100%" height = "320">', unsafe_allow_html = True)
+     elif selectbox_2 == 'Velocidad crítica':
+          st.image(img48)
+          st.image(img49)
 with col72:
      st.markdown('''<div style="text-align: justify;">
           Para la validación teórica del módulo de ejes, se ha visto por conveniente utilizar el caso de estudio abordado en el libro: "Diseño en
@@ -1763,12 +1792,12 @@ with col72:
      st.latex(r'''\large
           \begin{array}{|c | c |c | c|}\hline \\
           \text{Resultado} & \text{P.S.T.C.} & \text{Otros} & \text{\% de Error}\\ \\\hline \\
-          \text{Pendiente (rad)} & 0.0012 & 0 & 100\\ \\\hline \\
-          \text{Deflexiones (m)} & 0.00005319 & 0.00003039 & 42.865\\ \\\hline \\
-          \text{F.S. Von Misses} & 3.5868 & 3.6250 & 1.0650\\ \\\hline \\
-          \text{F.S. ASME} & 1.8356 & 1.8071 & 1.5526\\ \\\hline \\
-          \text{RPM crítico} & 4384.7 & 5164.8 & 17.7914\\ \\\hline \\
-          \text{Horas de vida} & 3.1769 & 3.1821 & 0.1636\\ \\\hline
+          \text{Pendiente (rad)} & 0.00056321 & 0.00000000 & 0.000\\ \\\hline \\
+          \text{Deflexiones (m)} & 0.00003079 & 0.00003039 & 1.310\\ \\\hline \\
+          \text{F.S. Von Misses} & 4.4933 & 4.4943 & 0.022\\ \\\hline \\
+          \text{F.S. ASME} & 1.9993 & 1.9882 & 0.550\\ \\\hline \\
+          \text{RPM crítico} & 5765.1 & 5164.8 & 11.62\\ \\\hline \\
+          \text{Horas de vida} & 5.4750 & 5.4307 & 0.815\\ \\\hline
           \end{array} 
      ''')
 st.subheader('Validación práctica')
