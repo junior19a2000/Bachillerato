@@ -1368,6 +1368,17 @@ with col39:
      </div>''', unsafe_allow_html = True)
 with col40:
      st.latex(r'\delta_R = \sqrt{\delta _x^2 + \delta _y^2 + \delta _z^2} \quad\quad \theta_R = \sqrt {\theta _x^2 + \theta _y^2 + \theta _z^2}')
+# Analisis de vida de ejes
+st.markdown('#### Análisis de vida')
+col98, col99 = st.columns([1, 1], gap = 'medium')
+with col98:
+     st.markdown('''<div style="text-align: justify;">
+          Para determinar si el eje de transmisión es de vida infinita o en su defecto, cálcular el número de ciclos a los cuales este fallara, 
+          se hace uso de la Curva de Wöhler. Para este último caso, el tiempo de vida se calcula con:
+     </div>''', unsafe_allow_html = True)
+     st.latex(r'\text{Horas de vida} = \frac{N}{\text{Revoluciones por minuto x 60}}')
+with col99:
+     st.latex(r'\Large \displaystyle N=\left\{\frac{\sigma _{dinamico_{max}}}{10^{\left[\log( 0.9S_{u}) -\frac{3}{3-\log( N_{2})}\log\left(\frac{0.9S_{u}}{S_{e}}\right)\right]}}\right\}^{\left[\frac{1}{\frac{1}{3-\log( N_{2})}\log\left(\frac{0.9S_{u}}{S_{e}}\right)}\right]}')
 # Analisis vibracional de ejes
 st.markdown('#### Análisis vibracional')
 col41, col42 = st.columns([1, 1], gap = 'medium')
