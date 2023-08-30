@@ -1750,58 +1750,100 @@ st.markdown(f'<a href="https://github.com/junior19a2000/Bachillerato/blob/main/R
 # Validación
 st.header('Validación')
 st.subheader('Validación teórica')
+st.markdown('''<div style="text-align: justify;">
+     Para la validación teórica del módulo de ejes, se ha visto por conveniente utilizar el caso de estudio abordado en el libro: "Diseño en
+     ingeniería mecánica de Shigley". El planteamiento del problema y el proceso de validación se muestran a continuación:
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
 col71, col72 = st.columns([1, 1], gap = 'medium')
 with col71:
      url4 = 'https://drive.google.com/file/d/1otj0L-IovilNb5Z0eQEhArahWDnuFvac/preview'
      st.markdown(f'<iframe src={url4} height="650" width="100%"></iframe>', unsafe_allow_html = True)
-     selectbox_2 = st.selectbox('Resultado a validar', ('Diagrama xz', 'Diagrama xy', 'Esfuerzos estáticos', 'Esfuerzos dinámicos', 'Ciclos de vida', 'Deformaciones', 'Velocidad crítica'))
-     if selectbox_2 == 'Diagrama xz':
-          st.image(img39)
-          st.image(img40)
-     elif selectbox_2 == 'Diagrama xy':
-          st.image(img41)
-          st.image(img42)
-     elif selectbox_2 == 'Esfuerzos estáticos':
-          url7 = 'https://drive.google.com/file/d/1hig9McpA3y1S7cx_nxM-a3G1zS8Ehqqz/preview'
-          st.markdown(f'<iframe src={url7} height="328" width="100%"></iframe>', unsafe_allow_html = True)
-          st.image(img43)
-     elif selectbox_2 == 'Esfuerzos dinámicos':
-          st.image(img44)
-          st.image(img45)
-     elif selectbox_2 == 'Ciclos de vida':
-          st.image(img46)
-          st.image(img47)
-     elif selectbox_2 == 'Deformaciones':
-          st.markdown(f'<img src = "data:image/gif;base64,{gif6}" width = "100%" height = "320">', unsafe_allow_html = True)
-          st.markdown('#####')
-          st.markdown(f'<img src = "data:image/gif;base64,{gif7}" width = "100%" height = "320">', unsafe_allow_html = True)
-     elif selectbox_2 == 'Velocidad crítica':
-          st.image(img48)
-          st.image(img49)
 with col72:
-     st.markdown('''<div style="text-align: justify;">
-          Para la validación teórica del módulo de ejes, se ha visto por conveniente utilizar el caso de estudio abordado en el libro: "Diseño en
-          ingeniería mecánica de Shigley". El planteamiento del problema y el proceso de validación se muestran a continuación:
-     </div>''', unsafe_allow_html = True)
-     st.markdown('#####')
      url5 = 'https://drive.google.com/file/d/1Jj_NNjUQ3voAgIAqA7DzZIhCRo-vSsA0/preview'
      st.markdown(f'<iframe src={url5} height="245" width="100%"></iframe>', unsafe_allow_html = True)
      st.markdown('#####')
      url6 = 'https://sketchfab.com/models/5a30f935158c43a08d28041942d2a98d/embed'
-     st.markdown(f'<iframe src={url6} height="290" width="100%"></iframe>', unsafe_allow_html = True)
-     st.latex(r'''\large
-          \begin{array}{|c | c |c | c|}\hline \\
-          \text{Resultado} & \text{P.S.T.C.} & \text{Otros} & \text{\% de Error}\\ \\\hline \\
-          \text{Pendiente (rad)} & 0.00056321 & 0.00000000 & 0.000\\ \\\hline \\
-          \text{Deflexiones (m)} & 0.00003079 & 0.00003039 & 1.310\\ \\\hline \\
-          \text{F.S. Von Misses} & 4.4933 & 4.4943 & 0.022\\ \\\hline \\
-          \text{F.S. ASME} & 1.9993 & 1.9882 & 0.550\\ \\\hline \\
-          \text{RPM crítico} & 5765.1 & 5164.8 & 11.62\\ \\\hline \\
-          \text{Horas de vida} & 5.4750 & 5.4307 & 0.815\\ \\\hline
+     st.markdown(f'<iframe src={url6} height="380" width="100%"></iframe>', unsafe_allow_html = True)
+st.markdown('''<div style="text-align: justify;">
+     En el caso de estudio, el autor cálcula los diametros en función a factores de seguridad establecidos y diversas iteraciones. No obstante, el proceso 
+     de cálculo del módulo de ejes de PSTC es similar a los software CAE actuales, es decir, primero se inicia con el dimensionamiento del eje y luego se modifica la geometria inicial hasta alcanzar el factor   
+     de seguridad buscado. En concecuencia, los resultados obtenidos por PSTC se compararan mejor con los obtenidos por programas CAE, los cuales en este caso son Ansys, Paraview y Simscale.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+selectbox_2 = st.selectbox('Resultado a validar', ('Diagrama xz', 'Diagrama xy', 'Esfuerzos estáticos', 'Esfuerzos dinámicos', 'Ciclos de vida', 'Deformaciones', 'Velocidad crítica'))
+col100, col101 = st.columns([1, 1], gap = 'medium')
+col100.markdown(
+     "<h3 style='text-align: center;'>Otros</h1>",
+unsafe_allow_html = True)
+col101.markdown(
+     "<h3 style='text-align: center;'>Power System Transmission Calculator</h1>",
+unsafe_allow_html = True)
+if selectbox_2 == 'Diagrama xz':
+     col100.image(img39)
+     col101.image(img40)
+elif selectbox_2 == 'Diagrama xy':
+     col100.image(img41)
+     col101.image(img42)
+elif selectbox_2 == 'Esfuerzos estáticos':
+     url7 = 'https://drive.google.com/file/d/1hig9McpA3y1S7cx_nxM-a3G1zS8Ehqqz/preview'
+     col100.markdown(f'<iframe src={url7} height="328" width="100%"></iframe>', unsafe_allow_html = True)
+     col101.image(img43)
+elif selectbox_2 == 'Esfuerzos dinámicos':
+     col100.image(img44)
+     col101.image(img45)
+elif selectbox_2 == 'Ciclos de vida':
+     col100.image(img46)
+     col101.image(img47)
+elif selectbox_2 == 'Deformaciones':
+     col100.markdown(f'<img src = "data:image/gif;base64,{gif6}" width = "100%" height = "320">', unsafe_allow_html = True)
+     st.markdown('#####')
+     col101.markdown(f'<img src = "data:image/gif;base64,{gif7}" width = "100%" height = "320">', unsafe_allow_html = True)
+     st.markdown('#####')
+elif selectbox_2 == 'Velocidad crítica':
+     col100.image(img48)
+     col101.image(img49)
+# st.latex(r'''\large
+#           \begin{array}{|c | c |c | c|}\hline \\
+#           \text{Resultado} & \text{P.S.T.C.} & \text{Otros} & \text{\% de Error}\\ \\\hline \\
+#           \text{Pendiente (rad)} & 0.00056321 & 0.00000000 & 0.000\\ \\\hline \\
+#           \text{Deflexiones (m)} & 0.00003079 & 0.00003039 & 1.310\\ \\\hline \\
+#           \text{F.S. Von Misses} & 4.4933 & 4.4943 & 0.022\\ \\\hline \\
+#           \text{F.S. ASME} & 1.9993 & 1.9882 & 0.550\\ \\\hline \\
+#           \text{RPM crítico} & 5765.1 & 5164.8 & 11.62\\ \\\hline \\
+#           \text{Horas de vida} & 5.4750 & 5.4307 & 0.815\\ \\\hline
+#           \end{array} 
+#      ''')
+col100.markdown('''<div style="text-align: justify;">
+     Todos los resultados obtenidos en el módulo de ejes se resumen en 6 valores: Pendiente máxima, deflexión máxima, factor de seguridad estático mínimo, 
+     factor de seguridad dinámico mínimo, velocidad crítica y horas de vida. A partir de estos, cualquier usuario sin importar su nivel de expertiz, deberia 
+     ser capaz de diseñar un eje de transmición de potencia eficiente. Se puede apreciar que, a partir de los resultados gráficos y númericos, los resultados obtenidos 
+     por PSTC se validan con los resultados obtenidos por el autor en el caso de estudio y los software CAE utilizados en el análisis. 
+</div>''', unsafe_allow_html = True)
+col101.latex(r'''
+          \begin{array}{| c | c | c |}\hline
+          \text{Resultado} & \text{P.S.T.C.} & \text{Otros} \\\hline
+          \text{Pendiente (rad)} & 0.00056321 & 0.00000000 \\\hline
+          \text{Deflexiones (m)} & 0.00003079 & 0.00003039 \\\hline
+          \text{F.S. Von Misses} & 4.4933 & 4.4943 \\\hline
+          \hspace{8.25mm} \text{F.S. ASME} \hspace{8.25mm} & \hspace{10mm} 1.9993 \hspace{10mm} & \hspace{10mm} 1.9882 \hspace{10mm} \\\hline
+          \text{RPM crítico} & 5765.1 & 5164.8 \\\hline
+          \text{Horas de vida} & 5.4750 & 5.4307 \\\hline
           \end{array} 
      ''')
-st.subheader('Validación práctica')
-
+st.subheader('Aplicación práctica')
+st.markdown('''<div style="text-align: justify;">
+     Durante el desarrollo del curso "Diseño de Maquinas" en la Universidad, se elaboró el proyecto denominado <a style="text-decoration:none; color: black" href="https://drive.google.com/file/d/1XbGtGwfPnpFTuzziI2uQhbUHs36x2oD7/preview" target="_blank">"ANALISIS DE INGENIERIA INVERSA DE UN MAQUINA TRITURADORA DE
+     PET DE LA EMPRESA HYC INDUSTRIAS DEL PERU"</a>, en el cual se analizo el proceso de diseño de una maquina de trituración PET, con la finalidad de optimizar el diseño de sus componentes. 
+     Los cálculos para la mencionada optimización, en el caso de las correas en V y el eje a utilizar en la transmisión de potencia, fueron realizados de manera manual y con ayuda del programa Inventor respectivamente, 
+     obteniendo como resultado el uso de 3 correas tipo B en lugar de 5 correas tipo C, y un diametro del eje equivalente a 70 mm en vez de los 110 mm con el que este fue fabricado. Ahora bien, con el uso de PSTC para el mismo 
+     objetivo, se obtuvo como resultados el uso de 3 correas tipo SPZ y un diametro de eje 50 mm. Estos resultados obtenidos no solo validan los obtenidos en el desarrollo del proyecto, sino que significan una mejora, 
+     ya que en el caso de las correas, se utilizo la metodología de cálculo de un fabricante y, en el caso del eje, el diametro propuesto es menor y cumple con las condiciones establecidas para su diseño. Ademas, cabe señalar que 
+     el tiempo utilizado con PSTC resulta mucho menor que el empleado en el proyecto, entre otras consideraciones que resaltan a PSTC como una mejor alternativa.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+url9 = 'https://drive.google.com/file/d/1W_iUF0AgRPj-XbYmv7lQm0qCxczGxnO8/preview'
+st.markdown(f'<iframe src={url9} height=675  width="100%"></iframe>', unsafe_allow_html = True)
 # Conclusiones
 st.header('Conclusiones')
 
