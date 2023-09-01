@@ -307,13 +307,18 @@ def f4_loa(resources):
      img47 = Image.open(r'Imagenes/vidapstc.png').resize((1000, 550))
      img48 = Image.open(r'Imagenes/simcritica.png').resize((1000, 550))
      img49 = Image.open(r'Imagenes/criticapstc.png').resize((1000, 550))
+
+     img50 = Image.open(r'Imagenes/ml.png').resize((290, 290))
+     img51 = Image.open(r'Imagenes/gh.png').resize((290, 290))
+     img52 = Image.open(r'Imagenes/st.png').resize((290, 290))
+
      imgn  = mpimg.imread(f'Imagenes/carta1.png')
 
      return gif1, gif2, gif3, gif4, gif5, gif6, gif7, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, \
             img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
             img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
             img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48, \
-            img49, imgn
+            img49, img50, img51, img52, imgn
 @st.cache_data
 def f5_cyt(resources):
      elements1 = [
@@ -512,7 +517,7 @@ gif1, gif2, gif3, gif4, gif5, gif6, gif7, img1, img2, img3, img4, img5, img6, im
 img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
 img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
 img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48, \
-img49, imgn = f4_loa('resources')
+img49, img50, img51, img52, imgn = f4_loa('resources')
 elements1, layout1, stylesheet1, elements2, layout2, stylesheet2, elements3, layout3, stylesheet3, elements4, layout4, stylesheet4 = f5_cyt('resoruces')
 
 # Titulo y encabezado
@@ -523,25 +528,40 @@ st.markdown("<h6 style='text-align: center; color: black;'>Arequipa - 2023</h1>"
 st.divider()
 
 # Resumen
+st.header('1. Resumen')
 col1, col2 = st.columns([1.8, 1], gap = 'large')
 with col1:
-     st.header('Resumen')
      st.markdown('''<div style="text-align: justify;">
           El presente proyecto de investigación se realizo con la finalidad de optimizar el proceso de diseño de un
           sistema de transmisión de potencia como el que se muestra en la imagen. Para ello se analizaron los
-          componentes generales de dichos sistemas, tales como las correas, cadenas, engranajes, ejes y chavetas,
-          en base a las distintas metodologias, criterios y normativas que existen en la actualidad.  \nUna vez establecido 
-          el proceso de calculo para cada uno de ellos, se desarrollo una interfaz gráfica para que el usuario pueda
-          mejorar su diseño mediante la variación de los parametros iniciales del sistema.  \nComo resultado final se
-          creó Power System Transmission Calculator, una aplicación informática que permite cálcular los componentes previamente
+          componentes principales de dichos sistemas, siendo estos: las correas planas, las correas trapezoidales, las cadenas, los engranajes y los ejes de tranmsión,
+          en base a las distintas metodologias, criterios y normativas que existen en la actualidad. Una vez establecido 
+          el proceso de cálculo para cada uno de ellos, se programaron los algoritmos respectivos y se desarrollo una interfaz gráfica para que el usuario pueda
+          mejorar su diseño mediante la variación de los parametros iniciales del sistema. Posteriormente, gracias a la integración entre Matlab y GitHub, 
+          se subió todo el codigo y la documentación a un repositorio virtual en la nube. Como resultado final se
+          creó Power System Transmission Calculator, una aplicación informática amigable, accesible, actualizable y gratuita, que permite cálcular y diseñar los componentes previamente
           mencionados, de manera rapida, precisa y optima, cumpliendo asi con el proposito establecido en el proyecto de investigación.
      </div>''', unsafe_allow_html = True)
 with col2:
      st.markdown(f'<img src = "data:image/gif;base64,{gif1}" width = "410">', unsafe_allow_html = True)
 
 # Introducción
-st.header('Introducción')
-st.subheader('Antecendentes')
+st.header('2. Introducción')
+st.subheader('2.1 Problemática')
+st.markdown('''<div style="text-align: justify;">
+     En general, los sistemas industrializados disponen de motores eléctricos o de combustión interna para alimentarlos con la potencia necesaria para su 
+     funcionamiento, lo cual significa que, el cálculo y diseño de un sistema de transmisión de potencia es un proceso frecuente a nivel industrial, y que, 
+     si se realiza adecuadamente, permite reducir costos y mejorar el rendimiento general del sistema. El cálculo y diseño óptimo de estos sistemas está en función 
+     a los requerimientos de las máquinas que lo conforman, y a las condiciones de trabajo de las mismas, por lo que esto será un proceso largo e iterativo 
+     que demandará una considerable cantidad de tiempo y esfuerzo humano. En la actualidad existen soluciones que abordan este problema, siendo este el 
+     caso de los programas de ingeniería asistida por computadora desarrollados por grandes empresas o de manera individual, sin embargo, en el primero 
+     de estos casos, la solución resulta muy compleja y costosa, mientras que, en el segundo, la solución suele ser muy específica y de difícil acceso.
+     En base a lo expuesto, desarrollar una aplicación computacional que permita el cálculo de los componentes principales de un sistema de transmisión de 
+     potencia, haciendo uso de distintas metodologías que permitan abarcar mayores casuísticas de diseño y que, además, sea gratuita, sencilla y de fácil 
+     acceso para cualquier tipo de usuario, supone una solución óptima para la problemática descrita, en comparación con las ya existentes.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.subheader('2.2 Antecendentes')
 tab8, tab9, tab10, tab11, tab12, tab13, tab14, tab15 = st.tabs(['Tesis I', 'Tesis II', 'Tesis III', 'Tesis IV', 'Tesis V', 'Tesis VI', 'Tesis VII', 'Tesis VIII'])
 with tab8:
      col47, col48, col49 = st.columns([1, 2, 1], gap = 'medium')
@@ -801,17 +821,29 @@ with tab15:
           </div>''', unsafe_allow_html = True)
      with col70:
           st.image(img28)
-# st.subheader('Objetivos')
-# st.markdown('''<div style="text-align: justify;">
-#      <br>1. Desarrollar el algoritmo de cálculo para el diseño de las transmisiones por correas planas, correas trapezoidales, cadenas y engranajes (cilíndricos rectos, cilíndricos helicoidales, cilíndricos bihelicoidales y cónicos rectos).
-#      <br>2. Desarrollar el algoritmo de cálculo para las reacciones y deformaciones presentes en los ejes de transmisión de potencia bajo cualquier configuración geométrica o mecánica, considerando a los efectos de las cargas axiales y cortantes .
-#      <br>3. Desarrollar el algoritmo de cálculo para el diseño de ejes bajo un análisis estático, dinámico, de rigidez y vibracional, considerando a los efectos de las cargas axiales y cortantes.
-#      <br>4. Desarrollar el algoritmo para el cálculo de los factores necesarios para el diseño de los componentes de transmisión, mediante el procesamiento de imagenes.
-#      <br>5. Desarrollar el algoritmo de cálculo para el analisis de los esfuerzos y deformaciones en elementos bidimiensionales, mediante el método de los elementos finitos.
-#      <br>6. Implementar los algoritmos desarrollados en una interfaz gráfica amigable con el usuario final.
-# </div>''', unsafe_allow_html = True)
+st.subheader('2.3 Objetivos')
+with st.expander('#### 2.3.1 General', expanded = True):
+     st.markdown('''<div style="text-align: justify;">
+          ✅ Desarrollar una aplicación computacional que permita el cálculo y diseño óptimo de los componentes principales de un sistema de transmisión de potencia, haciendo 
+          uso de distintas metodologías que permitan abarcar una gran cantidad de casuísticas y que, además, sea gratuita, sencilla y de fácil acceso 
+          para cualquier tipo de usuario
+     </div>''', unsafe_allow_html = True)
+with st.expander('#### 2.3.2 Específicos', expanded = False):
+     st.markdown('''<div style="text-align: justify;">
+          <br>✅ Desarrollar el algoritmo para el cálculo de los factores necesarios para el diseño de los componentes de transmisión de potencia, haciendo uso del procesamiento de imagenes.
+          <br>✅ Desarrollar el algoritmo de cálculo para el diseño de transmisiones de potencia por correas planas, correas trapezoidales, cadenas y engranajes (cilíndricos rectos, cilíndricos helicoidales, cilíndricos bihelicoidales y cónicos rectos).
+          <br>✅ Desarrollar el algoritmo de cálculo para las reacciones y deformaciones presentes en los ejes de transmisión bajo cualquier configuración geométrica o mecánica, considerando la teoría de Euler-Bernoulli y Timoshenko.
+          <br>✅ Desarrollar el algoritmo de cálculo para el diseño de ejes de transmisión bajo un enfoque estático, dinámico, vibracional, de vida y de rigidez, considerando a los efectos de las cargas axiales y cortantes.
+          <br>✅ Desarrollar el algoritmo de cálculo para el analisis de los esfuerzos y deformaciones en elementos de espesor constante, mediante el método de los elementos finitos.
+          <br>✅ Implementar los algoritmos desarrollados en una interfaz gráfica amigable con el usuario final.
+          <br>✅ Validar los resultados obtenidos a travez de la aplicación desarrollada.
+          <br>✅ Ejemplificar el uso de la aplicación desarrollada.
+          <br>✅ Hacer accesible la aplicación desarrollada para cualquier usuario.
+          <br>✅ Elaborar la documentación y tutoriales de uso de la aplicación desarrollada.
+     </div>''', unsafe_allow_html = True)
+
 # Marco Teorico
-st.header('Marco Teórico')
+st.header('3. Marco Teórico')
 tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['Correas planas', 'Correas trapezoidales', 'Cadenas', 'Engranajes', 'Ejes de transmisión', 'Chavetas y rodamientos', 'Elementos finitos'])
 # Correas planas
 with tab1:
@@ -892,7 +924,7 @@ with tab5:
                     + Timoshenko: Toma en cuenta los efectos de las fuerzas cortantes 
                     en la deformación del eje, por lo que resulta adecuada para ejes cortos ($L/D<10$). 
                ''')
-               st.latex(r'\small \begin{array}{cccc} \text{Análisis estático} & \text{Análisis dinámico} & \text{Análisis vibracional} & \text{Análisis de rigidez}\\ \hline \\ \text{Von Misses} & \text{Soderberg} & \text{Dunkerley} & \text{Pendientes} \\\\ \text{Tresca} & \text{Goodman} & \text{Rayleigh} & \text{Deflexiones} \\\\ \text{Rankine} & \text{ASME} & & \\ \end{array}')               
+               st.latex(r'\small \begin{array}{ccccc} \text{Análisis estático} & \text{Análisis dinámico} & \text{Análisis vibracional} & \text{Análisis de rigidez} & \text{Análisis de vida}\\ \hline \\ \text{Von Misses} & \text{Soderberg} & \text{Dunkerley} & \text{Pendientes} & \text{Wohler}\\\\ \text{Tresca} & \text{Goodman} & \text{Rayleigh} & \text{Deflexiones} \\\\ \text{Rankine} & \text{ASME} & & \\ \end{array}')               
           with st.expander('Diagrama'):
                cytoscape(elements = elements4, stylesheet = stylesheet4, layout = layout4, selection_type = "single", key = "cyto4", 
                user_panning_enabled = True, user_zooming_enabled = True, min_zoom = 0.5, max_zoom = 0.75, width = "100%", height = "275px")               
@@ -949,11 +981,43 @@ with tab7:
                • Es simétrica, para todos los elementos que comprende.</br>
                • Es singular, por lo que no posee inversa hasta que se le aplique las suficientes condiciones de frontera. </br>
           </div>''', unsafe_allow_html = True)
-
+st.markdown('#####')
+col102, col103, col104, col105, col106 = st.columns([2, 1, 2, 1, 2], gap = 'small')
+with col102:
+     st.markdown('''<div style="text-align: center;"><span style="font-size: 25px;">
+          Matlab - App Designer
+     </span></div>''', unsafe_allow_html = True)
+     st.image(img50, use_column_width = True)
+     st.markdown('''<div style="text-align: justify;">
+          Matlab es un entorno de programación y software de alto rendimiento utilizado en matemáticas y ciencias de la ingeniería. Ofrece una amplia 
+          gama de herramientas para análisis numérico, visualización de datos y desarrollo de algoritmos. Los usuarios pueden resolver 
+          ecuaciones, realizar análisis estadísticos, crear gráficos personalizados y desarrollar aplicaciones interactivas.
+     </div>''', unsafe_allow_html = True)
+with col104:
+     st.markdown('''<div style="text-align: center;"><span style="font-size: 25px;">
+          GitHub
+     </span></div>''', unsafe_allow_html = True)
+     st.image(img51, use_column_width = True)
+     st.markdown('''<div style="text-align: justify;">
+          GitHub es una plataforma de desarrollo colaborativo que ofrece control de versiones, seguimiento de problemas, entorno de programación y alojamiento de proyectos de 
+          software. Facilita la colaboración entre programadores y equipos de desarrollo, permitiendo el seguimiento de cambios, la gestión de 
+          problemas y el alojamiento de repositorios de código.
+     </div>''', unsafe_allow_html = True)
+with col106:
+     st.markdown('''<div style="text-align: center;"><span style="font-size: 25px;">
+          Python - Streamlit
+     </span></div>''', unsafe_allow_html = True)
+     st.image(img52, use_column_width = True)
+     st.markdown('''<div style="text-align: justify;">
+          Streamlit es una biblioteca de Python que simplifica la creación de aplicaciones web interactivas para visualización de datos y prototipado 
+          rápido. Permite a los desarrolladores convertir fácilmente scripts de datos en aplicaciones web dinámicas con widgets interactivos 
+          para gráficos, tablas y más. Es una herramienta valiosa para la creación rápida de aplicaciones basadas en datos.
+     </div>''', unsafe_allow_html = True)
+     
 # Marco Metodologico
-st.header('Marco Metodológico')
+st.header('4. Marco Metodológico')
 # Calculo de factores
-st.subheader('Correas planas, correas trapezoidales, cadenas y engranajes')
+st.subheader('4.1 Correas planas, correas trapezoidales, cadenas y engranajes')
 col3, col4 = st.columns([1, 1], gap = 'medium')
 with col3:
      with st.form('form1'):
@@ -1030,9 +1094,9 @@ with col25:
           st.markdown(f'$\quad F_x = F_-\cos β + F_+\cos α = ({Fmcos}) + ({FMcos}) = {fxpr} → {abs(fxpr)}$')
           st.markdown(f'$\quad F_y = F_-\sin β + F_+\sin α = ({Fmsin}) + ({FMsin}) = {fypr} → {abs(fypr)}$')
 # Calculo de ejes
-st.subheader('Ejes de transmisión')
+st.subheader('4.2 Ejes de transmisión')
 # Calculo de ejes - Analítico
-st.markdown('#### Cálculo general de las reacciones y desplazamientos mediante ecuaciones análiticas (Euler - Bernoulli)')
+st.markdown('#### 4.2.1 Cálculo general de las reacciones y desplazamientos mediante ecuaciones análiticas (Euler - Bernoulli)')
 st.markdown('''<div style="text-align: justify;">
      Mediante el uso del método de las integraciones concecutivas se pueden cálcular las reacciones y desplazamientos correspondientes a un eje 
      con propiedades geométricas y mecánicas no constantes, sometido a cualquier cantidad de fuerzas, momentos y apoyos. El procedimiento de
@@ -1141,7 +1205,7 @@ st.markdown('''<div style="text-align: justify;">
      siempre será posible calcular todas las reacciones y desplazamientos a los que se encuentre sometido un eje de transmisión de 
      potencia, lo cual valida la metodología de cálculo general de ejes, desarrollada para el modelo de Euler y Bernoully.
 </div>''', unsafe_allow_html = True)
-st.markdown('#### Cálculo general de las reacciones y desplazamientos mediante elementos finitos (Timoshenko)')
+st.markdown('#### 4.2.2 Cálculo general de las reacciones y desplazamientos mediante elementos finitos (Timoshenko)')
 # Calculo de ejes - Numerico
 st.markdown('''<div style="text-align: justify;">
      Mediante el uso de matrices se pueden cálcular las reacciones y desplazamientos correspondientes a un eje 
@@ -1178,10 +1242,10 @@ with col30:
      st.latex(r'K_s=\frac{6(1+\nu)(1+m^2)^2}{(7+6\nu)(1+m^2)^2+(20+12\nu)m^2}')
      st.write('Donde:')
      st.latex(r'm = \frac{r}{R} \quad v = \text{Coeficiente de Poisson (0.3)}')
-# url4 = 'https://junior19a2000.github.io/Jupywidgets/lab?path=ShaftDemo.ipynb'
-# st.markdown(f'<iframe src={url4} height="760" width="100%"></iframe>', unsafe_allow_html = True)
+# url10 = 'https://junior19a2000.github.io/Jupywidgets/lab?path=ShaftDemo.ipynb'
+# st.markdown(f'<iframe src={url10} height="760" width="100%"></iframe>', unsafe_allow_html = True)
 # Analisis estatico de ejes
-st.markdown('#### Análisis estático')
+st.markdown('#### 4.2.3 Análisis estático')
 col31, col32 = st.columns([1, 1], gap = 'medium')
 with col31:
      st.markdown('''<div style="text-align: justify;">
@@ -1265,7 +1329,7 @@ with col36:
      url1 = 'https://junior19.starboard.host/v1/embed/0.15.3/cbljq1i23akg00a8j9b0/nCzetdj/'
      st.markdown(f'<iframe src={url1} height="655" width="100%"></iframe>', unsafe_allow_html = True)
 # Analisis dinamico de ejes
-st.markdown('#### Análisis dinámico')
+st.markdown('#### 4.2.4 Análisis dinámico')
 col37, col38 = st.columns([1, 1], gap = 'medium')
 with col37:
      st.markdown('''<div style="text-align: justify;">
@@ -1375,7 +1439,7 @@ with col38:
      {\text{ASME}}:\quad {\left( {\frac{{{\sigma _a}}}{{{{\text{S}}_e}}}} \right)^2}{\text{ + }}{\left( {\frac{{{\sigma _m}}}{{{{\text{S}}_y}}}} \right)^2}{\text{ = }}\frac{{\text{1}}}{{{n^{\text{2}}}}}
      ''')
 # Analisis de rigidez de ejes
-st.markdown('#### Análisis de rigidez')
+st.markdown('#### 4.2.5 Análisis de rigidez')
 col39, col40 = st.columns([1, 1], gap = 'medium')
 with col39:
      st.markdown('''<div style="text-align: justify;">
@@ -1385,7 +1449,7 @@ with col39:
 with col40:
      st.latex(r'\delta_R = \sqrt{\delta _x^2 + \delta _y^2 + \delta _z^2} \quad\quad \theta_R = \sqrt {\theta _x^2 + \theta _y^2 + \theta _z^2}')
 # Analisis de vida de ejes
-st.markdown('#### Análisis de vida')
+st.markdown('#### 4.2.6 Análisis de vida')
 col98, col99 = st.columns([1, 1], gap = 'medium')
 with col98:
      st.markdown('''<div style="text-align: justify;">
@@ -1396,7 +1460,7 @@ with col98:
 with col99:
      st.latex(r'\Large \displaystyle N=\left\{\frac{\sigma _{dinamico_{max}}}{10^{\left[\log( 0.9S_{u}) -\frac{3}{3-\log( N_{2})}\log\left(\frac{0.9S_{u}}{S_{e}}\right)\right]}}\right\}^{\left[\frac{1}{\frac{1}{3-\log( N_{2})}\log\left(\frac{0.9S_{u}}{S_{e}}\right)}\right]}')
 # Analisis vibracional de ejes
-st.markdown('#### Análisis vibracional')
+st.markdown('#### 4.2.7 Análisis vibracional')
 col41, col42 = st.columns([1, 1], gap = 'medium')
 with col41:
      st.markdown('''<div style="text-align: justify;">
@@ -1453,7 +1517,7 @@ with col42:
           en el eje han sido calculadas mediante funciones analíticas y numéricas que se pueden integrar de manera rápida y precisa.
      </div>''', unsafe_allow_html = True)
 # Elementos finitos
-st.subheader('Elementos bidimensionales')
+st.subheader('4.3 Elementos bidimensionales')
 col45, col46 = st.columns([1, 1], gap = 'medium')
 with col45:
      st.markdown('''<div style="text-align: justify;">
@@ -1481,11 +1545,11 @@ with col46:
      st.markdown(f'<iframe src={url3} height="655" width="100%"></iframe>', unsafe_allow_html = True)
 
 # Resultados
-st.header('Resultados')
-st.subheader('Algoritmos desarrollados')
+st.header('5. Resultados')
+st.subheader('5.1 Algoritmos desarrollados')
 url8 = 'https://viewer.diagrams.net/?nav=1&title=#R7V1bl5u4sv41%2FZhegLj50el2snNW31Z3z%2BzJfqMxdjPB4AGcSfLrjyQQF0nY2AgEdmatSdviYih9Vaoq1eUK3Gx%2BfI6d7ft9tPSCK01Z%2FrgCt1eapuqKAv%2BgkZ%2F5yMxSs5F17C%2FzsXLgxf%2Fl5YP5heudv%2FSS2olpFAWpv60PulEYem5aG3PiOPq3ftoqCuq%2FunXW%2BS8q5cCL6wQec9p%2F%2FWX6no0aNijH%2F%2BP56%2Ff8l3U1P7BxyLn5fZN3Zxn9WxkCiytwE0dRmn3a%2FLjxAkQ8Qpbsuk8NR4vnir0wbXWBrmWXfHeCXf5yT4%2F%2FXTzDoZevL6%2BLe%2Fjh9Xn%2B8HL%2F5eXly%2BMD%2FHozv7v5427%2B%2Bvicv0P6k9Al%2BdffBE4Iv3103%2F1geef8jHboQZLUcb%2BRbx9jL4FT%2BkSeUqWG7h2EFAWOvkex%2FysKUyfIT4P3idMcD6pSP%2BUF%2FQa5MN2QS1bwYH6FgQ6xJMqp9t2LU%2B9HZSgn2Wcv2nhp%2FBOekh%2FV89nL4ftBs%2FOBf0swaMrMzgbfq0jQrPxUJ4fgurh7OU3wQz5TTbNmMbN2f3UDrmbg9o%2B7R3jgdoEm6vH5eTF%2FgZ%2Be7uYP%2BMOV8fHT4%2FPHxyvjdt%2FkVclsMhPRTGDQQOACZYdJTESC0pakpiGAopqtMhRlCLSOo92W93ZWw9sVAsh5C6rypBFYtlUDlgrUa81g6KDOVIOlA7Cta0MAtgyWEpAtHXSjKEEnhr7rQ0mYMPSB5AmX3jKHxb%2Fvfuq9bB0XHf0XLgR11LjRxndzMLE0LeejNVMaFksowqhVOllCiMSKzSvNDJBwW%2Frfa2Qx%2F9khaf6x9mmd%2F8VXJFsn5F7yBgXaGlP1gxsFUXwF5tkEpD5iRM4tPyBmj1IvhFOEFli88G6iFF6rmc4GzUH4lmzxFcpIh5jvQfaGnzI61WkHhzHB66PS5%2BD56X6q5P89lfWpvPXRyjpXsQDEkwr%2FCRB3baPAQ383Xih0gs%2BUSlD765kNpkk4qGzl4houf7FHSJaMgYHHORWIbp%2BdjYM1JU2JPXf3FvsbH9Kvjj03imMEvsan6%2FwYr%2F42yh8jgT%2FvL4sHWPs5I%2FSxBrR7IVrBf3e26CNUtJwg8IJoDdU6eOLWg8TzUi%2Bmjz2VBw6pcyv%2Fh0cMdfTdCfx1CD%2B7kCj4%2Bm46HlGItULHrdoFhs6qeYXu10nPs0yGit5y7b3kX8MIm0sVOiAW%2FvkX0mvhg%2BZfv%2BZqLv5y%2B6P27edhFTiJdrFLHA9EO4cG2tojr0q0UfRoe8kYe4GT%2Bt%2FrXoxuijBgFWG4ENhquN4FBS%2B4yHR0MXMSGRcgAVdIOsxANZZVttAWdfbYGMphUAqxK4AFakaZzYMgIA6dmmUqBIGzvQiM4vQ9WkehEyzK0Rogf%2FjpX5XPX0tswm8lGtGXn1Vo%2FlX98rWO6K4g1nggBvJArDMg%2FhOKQNdfOkvuepINpbETJhs%2FwarPRxCOEKyqOTBarWPl5WTgqcuDp8HA89POi385%2BBnDNbb2gwmhUtOHRSVxz56%2FDDWkgdS2JdJY7YnG%2BiA0xpfO49j5WTlhG%2FlhmlTu%2FIQGSp6yDErSzwhPfWp5hWZRV8AP2VOUM168TktJxe5L3ETeyneRaYY8xk0iKrNf3mJiuyTeeheSVXedmXrlMsyef0BrHNLyESIxbZWaXa7E1Hj%2B7WLnpBs771%2FIpykyAY%2BdLXnrus1wy10Urv1016B1jsUkUlWzDs%2BBl3PtDLFp8bBpy8PmjMHmPHTf%2Be618QJzYGPd1i8FmTNpyDRZZH5CHuByzxM9F6SQ447IBGKQObRlbu%2F3ZJ4PNE1p0ATafl8d6%2F1o%2B6IkaKj2opY8hxl5Hp5HgrM8eEiVx%2FsgULXGngo3CjM7wB01kw7uqDAuhEkJgGRgl41vOg67iT8J7IKhtXJwKdhV5WFXa8Zu7CW7IHXC1MNv8YZ32TBwvb%2B9q0bPSwXg2Xn%2FGwOYjZlBaUvmoGCenaHHmK9EaPLAzG4dCwfz1zGCWdMHBrPKUGH6YObFQcjUiNkt5Ht4mywgSRSa%2FxojmoE2MJrP0JDli2Z5O86zM%2FT%2B8yWGPBrrJisx9uXwvD7Pnxb%2Fe%2FxyO79b5Kk8j0%2BvXz4u7l5Hn81jkRydg9k8tiZARkDpw9B2%2BByWcobbC1fdvqZ0BdXkpgD1ldmiAU5A31hipX9ntsifg9%2BZLWc3lVe5z2vj%2FLPzQ064%2FCgofjnz8p8odqqxMm%2FO39EYaPt7Nn8n%2BJwyFYgKN1D9clMvhsTwXXYBF034MVCoB4iXAW%2FHw7thFmQL%2F%2F5Ss14GzMeSyH8Tyvg6wSKaqZRBBHRwbQ2ZAwZ%2Fca8zpM8csIJgVU9GYd1WPRmF3Ta8J0MDbH6CoBywQRIaTkClbuo0LBUuLHtzg2pg0m7QBmBzAnQLdMkANhvOPoa8MDGAtYcG7P4EkbGlhh2DUGkh5BrgBEPKSw0TAkzdHBiYREk4f0kqLTJS02VuQXfODmugMSc4qAca40uPzQ6zdYat1IKtmhLEOBfN6Is654hpZsdEwbbTQ3apatNjyhPVnEqLeE%2FDi1d%2BIaHr2gSU11vvVwTVjaB3i7t0LRxV9EhBR0lpH86N9ic09fOCnCGJdrGQZXKmsAaHzqyR3HxAMWvkpIM7G%2BS3wREQhEslCAiT3Xl1a8mznAm4c968oE5qxg%2BDUOa7TjDPD2z85RLPD665mpemRITLFxV4c%2BMjCingkbJAQvdilx%2BUa9XQcxQftxwyS5dKXRGtVgmcU5r8Ry5VOhvUxcqzpBBoSV2i7Y0uGEq%2FVjWDlhwQ%2BQMr2JPOajhCu9ClRRNpnGii6sYTRCcOI%2BQ63sYI0sH9afqkQ96OAakpD6RswvsDdkXMN15ccRRPSJgO7kbTJ10P7BicSkt%2B14wz9AjxCgcWiJRAY6urUiCDXvIKMmgHKlGOk17ywqs1Thn7zDOeYD0IKUE4FBhndZaliSaozw%2FuMCelx85JPHKXIIIhGfBlTc%2BnOFpBuFU3H9%2FR90rd40qa8hiRavBjN3pE6qVYnvKqU2oGa3mOPyf5FDybtinbSDXO0EjlK1ryjFROVbbxpyULwvPQxiy5SZ%2B0Fp40K4bWg2ttJhvM9OJlb%2BGvsmhgvDn3vRLh9JPd1MPnrJiCW6sACo1yEtjrDu3%2B0XP0Hm3edslA8zNTlTaMAAU%2BOzligkynmT8uhhWGVgtVsiFxIPV2frsouuY9Lx4e725Hn2irGiSV%2FGCmrSFEqtjspqWMTFujNaEaM23tYRNtgbp%2FS31fWHl3RYzYRVVFzOZUuwZqDkEJipjNisTRJHVNPRO5W0LXaKbhdzLyOc0mZy9wWSkcjyZ5m2k3KiofebkppQcIVVG0o5YZfVOkAi%2BxNtnGkfvNS8eaW9t7W7wxZnj2%2BXLnIfl%2FJ8FeUhLs0cYKkwSrqUMnwR6oTNxvEizXWuFluNjytkFmrE%2BBH%2FvuLD3xvRJOsYDZ%2FbnZwC7JaZfyK2hegyDBgeAEIE7EM2ACeyteS3KjjGfya6mpOTIaesY6kHkqWBZWgQRg5gFaloMV7WyM8FetofEvs2daX%2FgXnmE1GvyzubZ%2FOtxs8BGLeM0YFuNAO11xEAbQquIAFM5%2BM1Ck5QUWz8NN4c72dKAGn6XexVOAGAADQ0zRzk6MFqg4OzEKFE7Zd1QXJiYyFPV%2BjMsNaIh1COFJCVmdb571yAGT7jvWwAHCCxqNhgP29HMeccTc8ZzBbvVrhjYwZ5yHidlCg5FWJqlQniYWMScCzwAMjWfWCJlEnJAIYuvqwMQmUWHnLzykVQYC2unVFfshEIl4qRFI06QRiDxPLW4z8KrN51qoxV3CKY%2FmXUOjVn3F4m5XKBzGVQ0hXof99aaai82V7Pm1cuQQq%2FayxQFUm4NEeQFZxfNQFYxe%2FM02gMDgFxLaNR97jf3mgzc7ZxnnF1MzKbt6z9H8oJttQg2565iQUENt%2FzrWfvNOFYXs2ciQzWpVCIMowsZ3cWtzHkQXuzjaeqywnTw%2BdWVogE6tNigP1ERHqG%2BHSNSsWMXhyUnq1dyIuoAdbam%2FLY%2Fu3hD0e%2Btwe1IURD1Jo2Erg5ukISZtgJOjwaYNLB4%2BP88f5v9HmnTNP9%2FPcd7AoZp0Y8oj0FRCxcN5BJYIhY30Ie1qasnS34gVUxUIgKe%2FySvCWjyP5FwNwkWdcjUYcPaXqMGpsXxaLN6rt4EqgJPu4iIwM0IDFSE7tvDBZwhCxtBkPUjTjI288d2gDFH5jjdZ5cc0jmJIHJFfK0qFF0JtN3SQj1H%2BK46TXJzGGVtUp3MQVjszwr17ge%2BeHdaGFZFQdcmC%2B9A%2F5xE0Lo%2BA0%2Byy2B9xzjCLclD63WerwhLLPPkv%2BntI%2FBTvS%2FWT%2F56TIeM8dN%2FLxKeMgmN4w1EMCTQXUT62%2FBf6PTSaFcpB6Zp9d%2Ff4PTSW%2BX6NndQpClLCud%2F47iXoJv1R9HYXe78mZC1c6FCPa6qX%2BElhJzlL5HhFHVbg5yvSk8l3nSX2Kg%2F6s%2FWab1KJdOMEWYaAfCT8HpKlfd5E4cp33vzfUJjk9C2SrZecn%2FvnEoamWYfj6I1otg4HSS85VISjCJ3qFiQhKM1LuZ7Zs6tq5BRqf9RH7BS6SWUajwuf4AUJyuvPBzp34JAcs8ajMa%2BYPJDXIQpYEy9w3p7G8hLOrYlXnWhPY3kpcdbEu3S1p7G0ikvAVi6FxvJCBm2ZfdsHpbG0zl7AFhT6OnoaG8LlMb4060dfnpC3MS7vTCf8F3lnRbp%2FrcV9iwsUg5rh7BlOrghg768Ffj4QEN9wUBIEgCkYAkWMfhllfIN8q3M1cCsxbVnA6goXTMHlfrdxtPWjeuHf0h%2BsJDtoXq9wXPdVluVRnlb334rO7zjauqazkKBNej1kEhJJPK3FeVNUQVWKt8e87dFd0eksF5IYcSjDRddE0ICT4rJIVqiYA0JgVoCqRJdYyJQT0L7dhc7xv%2FSV%2FwM4bUMqxGmxRSKdXhYYklxsY7hD5BoDtIahDVsypRIMWSv9FheMNzIwkSVwIIpxkpcYilEEGwOcyGI2aynHxRCLTVlixPjI0KSRHOxBCGSwory5CB3alOhbQp2SFle0Ny3q1%2BptFSYxROR0%2FmxFxJEpngwhKxX9BiEkpw1iRbZtURRVdamsLg3jIx4AAxOPNZymUE3veEKbtiWV3c0zdFIQwtSdFDmiJPgCTdb%2BmkIpve5gHlrkGl03waQAU95mi8lRmCbQqbc7MIdezqbe4rs9mOXtzpqs4jqJIprd0ayrA6O56z64FGRKi39RdbY4Oq%2FEUFZcCH9%2BfZ4%2FvNx%2FefmSnfZAxp8eXxcPN1%2FmDP3HVWfIIvsqB%2BsM2YoAQLK2gowKOKA1mX5Q4M3JxvG89Vf%2FhiEZJyc1jJYRSzTZhfA607moqn2I0ELqiwmKGRqiBFYCGeabd5M167xdeitnF6T7Z6HWvY0jdWXJXNbiesGOFjfdOYH%2FC7csNfHDvgVOQhb61S6s1kXCu6thI1%2BgOnAPuAhcVmgPQr0c1hQU%2Fa7yest31hiO5gCgHuYArS91gdx3CrpvRw7gdC%2BUZtyxpt0rwvpVUX8o2vre0lnieAP0AzguYZaiApFJDumN52bRCmE2eEOudlEBFBye4EOS%2BW87f1lclGXjc9jGCzysjrNLCoRxWp%2F0%2BkTkpUJXfhBQQ0xKAGIK%2BLDBPD%2Bw8ZdLjCgen9U5UfgCb9izGtupusqwHeCVyxZRLZuw%2FAWwnc6ynTQzlDVCa2yHt%2BsIK20iwg%2BYcZxt9BN9oasSXyq7aKSBwSDssr%2Bj3ZmzizTbmCiNUsiuDkp2Tjss4WTHlx4bNzlT6tqhmrtKmsIm6fM1oFNT3i1qko2iqYvQMkwy00WiEPelZUuaenl0BNbvkzRTZaC4KyTu0g%2BzwU02eKFyluRnDSJnJ5RvJ17OSssPI6bJBchZcwCyC5GzlNw8eD5piSpKzrKxd01y9p%2Bdh9XVpb9CnTOwLQf%2FCbDwhLIsLbZQskggSMQ1G0x1IeK0iCgeRJxOKHxDvDiVlt6lydzPHVacWgOQXYg4pcTj4fPzFheixCkbnVsTp7HnuK4P5VmhuBa%2BgMzXVjgDCi%2FbXv0189epP%2FxNqc7y1ONquGbDTW7D7CaXKa91IkMHkdcTCgQRL6%2BlpTyT9Ksm5oQvF8Ubp%2BDPwA%2B9bMc488yhCvTwfZMm7qQNyZO4s%2BEmF86d9pA%2B8wkV0RDPnYRJJKhTHFPEg%2B%2BF4U%2BYlHaLOzm3BH7ic0I72vZGrceACMfzTKfSOQxO8AFxitRapoqIjJEbd3itQHrVQX2o1yT%2B1qa2VDsH61hUVe1IDyt1PqlIJkpV7Rwn3REWYDYgLDj%2BoJHC4qBDqGdYADZq5qMXh9EuCHxWwB4TxSJerBqgzlEKqyaoPDWB1J%2FrJFU1MexTj%2BlS2rJP5%2Ba9vNgtXldDeYkJnOAVpAS%2Fe%2BG3aORI1Cw29rU3JAJBuylTiC7kIVRamIfU8k5HOgD%2F3m225MGc2CUjWZStdoyCNYRJf9JKqgJAaVhA3buUMhfoeR9VYSoWu5ZyK%2F9g%2F1%2FdE7jHGTFAOsrx4dUqHT%2FAWYsL41J0dKk5oejSDpLOkLYWc4oqNJewoiLaaCQXfrTJQJnXirwvKHdOq5oIlOUt2hMKghC3aHPsX%2FGePjGrtpZX2G29ahuiHSNs%2BG6LVbsey3uzfwmv7ScQOZhJzyKTH5%2FUQ3mK7gJRI0WIBlnbJ16ntq1AlBZ9a7J%2B95vYR83dCNSn6XRXAV1EaVCvu3V%2BuOWZfqa08BtL5kLeE4F54eHyCCzTvdETgTl6kDwCm2y0EMoX%2FTNC2sC9nyQeJxEo68XoJa7DP%2FbshN%2BgotFNb%2BhBGJMaU7kw5uW58xykIvLcTUEboCNy1ZscFYLASYKkYCNrcGvml%2FsFH6Qv0dKL37x4zT%2F8OYqWG6djAcH%2BMdzayy8ExJfj5eeB25IWl2KxTtxFx5wiCTacodaVYV6F375MuKm3JWoLUWnuWYt1z96VaRlZ%2BZsVMujiHJ%2B4d4BflnPFQZDfvSBy8zBEN4%2B7QiGBY4Qv6eowDH6bquG2DLCehkRQ882vYUh6fm5urkiQ5tWZCZK5yngIbHGyUCzh%2BwinObH1Ge0i1aqzdfgCoIrtOmOxCdS37f3RZaXEUYoqTdWGE1VTb0bXVlRJS0tWlVMcTYf3xjpKs5a0tIVrfa2DVSirMpvN%2FLKS%2FMfLMqpQmG4eCKNhLtDEyjKbtcA661%2F782pGION0MGAAjX1%2B6hhHxPXEqkczmGJTa389CfXwBRRHdmcw1n7kVAJ1fTco29F9h9w2Rr4xeGUN%2B%2BKb2fnpBjy%2BGYmS3ZlvDCB2YZrJFJtHxhK1nX7ODtlY5KZFOoWR%2Bbft%2FfNPXyBabhZBrtPUXPupPDYizfUgQA5ori1eRbSq29xZsfVmA5V3Pr4lumjRMsgSfX5xOLxqLCOpIkglJx4sx0KfDw7wHx2KePwFttgUj9mEwonbwotXZGkc%2BGJW9NmB6T%2BgMgjQAIg4bIyeVGJ%2F7S%2B9XwxOKu06DoYyhKnjh22Sno8QyxalHfO2hDWtH6msKuxCV%2Finywqe2EUd5%2BscLxAVu6xrS16bknPti5%2FEXuL%2Fyht8I8rnAIX3NT6isv7wXrs0SspmFW3rr3CmUDl6Ckm%2FCuIW15gJVLkNxUVMoHaK7XOS6jumlZez9BbzJsFzru6N3a5pi6MXP9w0K678ERBNVfDFRcHX5qzsBYYkwJfMbsPiWbVrRg9fbkRKb8snGMzxMHb4EhLLgC8nvbuE73f%2FLcab7aiD0MjBC2aDgle7QPCS1a0O3rF4Vg0KD%2Bohu8ro1w%2Bmcnqo0HYVdwdqbJzF3Y7qj7NO8UZMnbNsLmfJ6%2FRJuv0x4QpXh4IVrmphCcxUTsWQPYlttLo2Rdx2h5rTASG2LOvEaZ4xSi292BkjIbzFksGJV%2BlvxtiIhT8bw9dRn7uNt%2FQvan5spT4%2FOll0qt4hs7f5YcNPOREl71Hs7A8ouaAJMsCQE6TL2blu1BMA%2BUYX%2BOw5kVIFHKNSnkOPU31zDt8h9YulKAvBygO0sxa00VvqhX72uVJJxMCCMNOZCy5b%2BomHGVHNPYSIQdz8YvROWVmT2NvCn4CkK8PF15lMVVd5b1B4fOu58PVJ9RNcx2mX7JzC%2B%2BgUD5R1hHHxM5NH2Xh%2FQ%2F6P8a3QUyJSOqiACl5xd8zD5i28ETc42b2jbepvII%2FHuCoLWqRDfGn2eP%2FsEJR8r6zIAh8ZtTYtXgm9LzQDln69J0MaO2%2FO3xyXU9702t29tbAv3rKN9ru3YsBxv63x9vvjLkU7G%2Fn40om%2FPcLb%2BCnG7rVi1Ac1PCpsO94w6W0fXio2kQ%2F1Pu0iBM9gjteTUlfUa0Wh61Ur5gFZ43WoTKwCnvkir%2Byqyqm7%2BlyRBvnmHFckvPlLSIIwwU4vXvGCCHMXfVaTYKNgUpliHutV7XlcXsZzd3ECSfPs5Wu8gs8KAmeb%2BKVaIGY1N5nNVE4DKJ7dL4SpAOstYVWp2HfCNR1%2FwO%2FukEJMRUiZ%2BgDVFD6NCpi0plHxqsTG43hG%2BlJ3SJ3dAaTO9VGuEY7G01pw9FPAnHX22aAB26Lj94owE%2FJDh8LxmCcT7YYE7AbrHrUgDn5%2BjOEqj8T4cdWvVoG%2F%2FU%2F%2BOXDevOAJGiY5D8YZLxSGzh11vDB4iGkUeKvq%2BaxhVPL3DAGOiEeMVTHiEM7EtW3V5uaDqlrFWIXndV4FLl3XrkVUzSji2U%2BOzxLouyTQqTIxKbLUf0dghnt0g5LHM1rUCuJrTTHrv6Rr%2B%2BNymQs0C%2BwP9ddB1wtmghsYaycFyIzI085FK5CH1hk1YTZdpa8vtBrKBaD1pHiYsaOVV69wGLQaGo1Wen%2BvN7QeyHk4C7RaXSu69Ys8fp3BXpDXGS9Fktx5A2bcamDRjGsKgFHNSwDM%2BWlvRYjJFECm6RcAss6lZXoGzHAKVHfAAO38AUOy3c5JKgGyDS5BS1cBPWMmnRvTl5quKXnH8fPGq6CitaPCKycHaCi8qrQTxBzKZafOwCXgVWqr5J7wymsqMAxebRoSg4lX1TYuAK7mxAsr8%2BBqavLEq6LQU2wNpQ6AA22fzwOv52dUAxJNJQOvGo3X4dRXUjnnrPFKuP%2Bs8CpPHVCLLg6Dq68aqbd83nideK0jLl4H20rhuAfoAhvD4dWwzh%2BvKukjWYmuukcRpTNw%2B8fdIzxwu4D%2FzHHmiK3efXn58kIGF3eL%2B8XD6yMaeLqbP6APFPQrqaAJnKc0D9wzceBeFPu%2FUMBokMOxwgUrOJ6fCw4gtUVEVE48YJC1uhbuSMr017oF0UrnKYFPwN5vyuapLJIaBPFISnTDKvPzMv6B%2BHKk7YnKpmc8ObGDbhRlbVZwisLeqvlNUbdHtK4ibNM%2BHk%2FXr%2Bs1%2BDiBeEVovujWVaTo1vFYlLUQcbHIUZyA%2BLpo7YnKCs9F4joBm0SHHg4HjV71lknHErGYdAalOOcm9Nw0v%2BNVHvbdiN4PyrVmUgUHcgHccYUnV9RvSq6PVqvES5lJOVIp4xTXJokRS%2F97babMf3ZRiqlZ%2BbTO%2F%2BIrkq0Tci8pk4s%2BuFm24jyTRylKmeLd8svGWePkrLIDFG4LtYIiDI3UkjkQVdD%2F8CPKtyKPA18%2Be6L6U8Jh%2FGpklF6Y84BpCBcnCLwgWkMRimBVCYSvHatEyB8SnSv%2Fh7d8KXM6GZALkae2RYlToINrXv0qgtpaxod2LUKoiqo8Oar1nqPsg5kmTcaSJj1iadycBSs64bU9jVV5NJ74HmF7GkvUW9n8sFd%2FW%2BThV%2BU%2Brbe27eYuRK7qlFELVJ7RxFFTVUOEzUS4oJp9%2FebDp%2B%2Bh08XRtDEU9VqrrzpFvlyto32xNokuL1RI4mpRJi%2BOnT46gYigT5EzUKOPXazUogmkn9QPYOSybMaze2bSikbqStc1WQq9pHVX05WuMWNS6DWTp4%2BM1F5DjdE5NXSCvPyUhzLwTWeDRGv4lmzxlQo7dJThNt7X3u6ysh5t3vgMKPDsrfzQyYqZEBJsoIHsXLolbmlUgX%2B%2BIV4Ezok3xPWT2ldyBWw%2FRvWME7AocQEvnqda%2Bt9%2F2%2F1dijTkaspvnUk3NED5o6Trm6oC6tDjaeOAZ6yIUTW7un%2F6Rh0no0nqss5Wcphv4wh1jKh2nJgyAAGv5kxvAFTHrldy8gp0Rdp%2Bja6eoZ%2BLT2Nptk7xPNWAAqQlLae%2BthgcR1iPawunCx0Sji729ChhtMzq7WGirlAlO0axbF2GWwy9mFomnLWY6zgUUX5LV3hrS%2FQzYgugfUKt%2FIqyiH8dOuErQ9iJFEQtIdTef0f5NtkJ5OnwYpYyQXH0I9pK03lpSrqqSVv%2BFFbrr8oUL%2FA2uXE7ZrlS7AgekiszIXKlIT7uI1jugtIVEvlJEoWsLOGcC6c1gcIhK5NNn79Itl6Cip6zB7IWpOQuK%2Fg4oetPtlxzCcbWSKBjIcu9hoMRVCKQoHX1MYxPeSyEUV1CCbcQ8aXHd0RR6xNuHGo0Sl9AViZRwbIFuWp1WRuLpcoWlPxw177YQ2UbONAy608kIZV7KCp5hWkb2z1MVMAVYGlfnZVSv0xWuhmc6RPRS1LXegmzkat%2FEUFWk25EqZXhfmB1CbSxQEJGW%2ByjTGiIv%2BVTsnvDptIKhXK321Q68UcLiX2VBVSWdfZjVoQPuDkjZhGw6PwunhXO05GEWOHkxyoIf%2FE3u6Dm393v6RmwxHh36vKiW3qjrioqFPIYDZRDN1bSqobwuLoGFU%2BjVDwm6ExYHWxal8xryTYqn01PJqxSVdfM7VYzqZnCPcct6WWr7WbyFNJZrG6a%2BFxqDp6jUUxr9xwN5Vqht%2BI%2F5Dpox8kityF3Vak7CMnS0ESleiuixdtgTGHPBuQJNtA2ZPvtyOEJggQheUtGER1SwFcIU9BzIyZVyZJQXq4VEwCScNv%2FyjCDkqzyX332UNuTa1D5r10jjFPcPZqg9B7hc6ET7PXfd4Qqog10WpMVpXBZtJvfyMsO7GmA3PBs4vx9rDnTl7%2BvQeDt8fbNaHoB1l%2FEdfeJ2a9jl49nz6n3dVt6yTZwfjlFAzjaHCc7sPjs6W60qk3LVfNGKyXSWsdLCvH1qcJKt3f223Fkm8JJ3OpB4DVQC36NIxT7W8oMyL7v99ES6UCL%2Fwc%3D'
 st.markdown(f'<iframe src={url8} height="600" width="100%" frameborder="0"></iframe>', unsafe_allow_html = True)
-st.subheader('Módulos desarrollados')
+st.subheader('5.2 Módulos desarrollados')
 tab16, tab17, tab18, tab19, tab20, tab21, tab22, tab23, tab24 = st.tabs(['Módulo de correas planas', 'Módulo de correas trapezoidales', 'Módulo de cadenas', 'Módulo de engranajes', 'Módulo de parametros del eje', 'Módulo de factores de concentración de esfuerzos', 'Módulo de resultados del eje', 'Módulo de simulación del eje', 'Módulo de elementos bidimensionales'])
 with tab16:
      col75, col76 = st.columns([3, 1], gap = 'medium')
@@ -1748,8 +1812,7 @@ st.markdown('#####')
 st.markdown(f'<a href="https://github.com/junior19a2000/Bachillerato/blob/main/README.md"><img src = "data:image/gif;base64,{gif4}" width = "100%">', unsafe_allow_html = True)
 
 # Validación
-st.header('Validación')
-st.subheader('Validación teórica')
+st.header('6. Validación')
 st.markdown('''<div style="text-align: justify;">
      Para la validación teórica del módulo de ejes, se ha visto por conveniente utilizar el caso de estudio abordado en el libro: "Diseño en
      ingeniería mecánica de Shigley". El planteamiento del problema y el proceso de validación se muestran a continuación:
@@ -1803,17 +1866,6 @@ elif selectbox_2 == 'Deformaciones':
 elif selectbox_2 == 'Velocidad crítica':
      col100.image(img48)
      col101.image(img49)
-# st.latex(r'''\large
-#           \begin{array}{|c | c |c | c|}\hline \\
-#           \text{Resultado} & \text{P.S.T.C.} & \text{Otros} & \text{\% de Error}\\ \\\hline \\
-#           \text{Pendiente (rad)} & 0.00056321 & 0.00000000 & 0.000\\ \\\hline \\
-#           \text{Deflexiones (m)} & 0.00003079 & 0.00003039 & 1.310\\ \\\hline \\
-#           \text{F.S. Von Misses} & 4.4933 & 4.4943 & 0.022\\ \\\hline \\
-#           \text{F.S. ASME} & 1.9993 & 1.9882 & 0.550\\ \\\hline \\
-#           \text{RPM crítico} & 5765.1 & 5164.8 & 11.62\\ \\\hline \\
-#           \text{Horas de vida} & 5.4750 & 5.4307 & 0.815\\ \\\hline
-#           \end{array} 
-#      ''')
 col100.markdown('''<div style="text-align: justify;">
      Todos los resultados obtenidos en el módulo de ejes se resumen en 6 valores: Pendiente máxima, deflexión máxima, factor de seguridad estático mínimo, 
      factor de seguridad dinámico mínimo, velocidad crítica y horas de vida. A partir de estos, cualquier usuario sin importar su nivel de expertiz, deberia 
@@ -1831,7 +1883,7 @@ col101.latex(r'''
           \text{Horas de vida} & 5.4750 & 5.4307 \\\hline
           \end{array} 
      ''')
-st.subheader('Aplicación práctica')
+st.header('7. Aplicación')
 st.markdown('''<div style="text-align: justify;">
      Durante el desarrollo del curso "Diseño de Maquinas" en la Universidad, se elaboró el proyecto denominado <a style="text-decoration:none; color: black" href="https://drive.google.com/file/d/1XbGtGwfPnpFTuzziI2uQhbUHs36x2oD7/preview" target="_blank">"ANALISIS DE INGENIERIA INVERSA DE UN MAQUINA TRITURADORA DE
      PET DE LA EMPRESA HYC INDUSTRIAS DEL PERU"</a>, en el cual se analizo el proceso de diseño de una maquina de trituración PET, con la finalidad de optimizar el diseño de sus componentes. 
@@ -1844,11 +1896,74 @@ st.markdown('''<div style="text-align: justify;">
 st.markdown('#####')
 url9 = 'https://drive.google.com/file/d/1W_iUF0AgRPj-XbYmv7lQm0qCxczGxnO8/preview'
 st.markdown(f'<iframe src={url9} height=675  width="100%"></iframe>', unsafe_allow_html = True)
+
 # Conclusiones
-st.header('Conclusiones')
+st.header('8. Conclusiones')
+st.markdown('''<div style="text-align: justify;">
+     📌 Debido a la digitalización de diagramas, los factores necesarios en el diseño, son determinados sin la necesidad de que el usuario 
+     intervenga en ello, lo cual se traduce en una reducción de tiempo considerable en el proceso de cálculo general.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.markdown('''<div style="text-align: justify;">
+     📌 A diferencia de otros programas, el haber considerado la configuración geométrica de la transmisión de potencia y el sentido de giro 
+     del motor, permite que la descomposición y la determinación de las fuerzas sea mas realista y por lo tanto, un analisis mas preciso del eje de transmisión.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.markdown('''<div style="text-align: justify;">
+     📌 Gracias al estudio e inclusión de diversas metodologías de cálculo, la aplicación esta en la capacidad de analizar, cálcular y diseñar cualquier tipo de eje 
+     de transmisión de manera óptima.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.markdown('''<div style="text-align: justify;">
+     📌 El no haber ignorado los efectos de las fuerzas cortantes en los analisis del eje de transmisión, no ha supuesto una diferencia significativa en los resultados, 
+     almenos cuando el eje es de proporciones genéricas.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.markdown('''<div style="text-align: justify;">
+     📌 Si bien, la aplicación desarrollada se centra en el diseño de ejes de transmisión, no se deja de lado a los componentes que por lo general, permiten dicha transmisión, siendo 
+     en este caso: las correas planas, las correas trapezoidales, las cadenas y los engranajes, los cuales se analizan bajo la metodología de fabricantes y normativas reconocidas mundialmente.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.markdown('''<div style="text-align: justify;">
+     📌 Se ha cumplido con los objetivos establecidos en el proyecto de investigación, ya que la aplicación desarrollada se caracteriza por su interfaz gráfica amigable, uso sencillo y acceso libre, lo cual sumado a que sus algoritmos poseen una lógica 
+     de programación eficiente, la convierte en una gran opción para el diseño de sistemas de transmisión de potencia de manera óptima.
+</div>''', unsafe_allow_html = True)
+
+# Oportunidades de mejora
+st.header('9. Oportunidades de mejora')
+st.markdown('''<div style="text-align: justify;">
+     👉 La precisión de las interpolaciones, en el proceso de la digitalización de los diagramas, podria incrementarse si se añade una mayor cantidad de datos.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.markdown('''<div style="text-align: justify;">
+     👉 Si bien se ha señalado que con la aplicación desarrollada se puede analizar cualquier tipo de eje de transmisión, es importante mencionar que, existen factores involucrados en el proceso, que dependen de ciertas propiedades, las cuales si son 
+     atipicas, podrian hacer que dichos factores difieran de los utilizados en la aplicación, por lo que, para estos casos, el usuario debe ser alguien con la 
+     capacidad de estimar la precisión de los resultados obtenidos con la aplicación. En concecuencia, los algoritmos desarrollados deben actualizarse para abarcar mayores casuisticas que aun no se han contemplado.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.markdown('''<div style="text-align: justify;">
+     👉 Se han analizado los componentes principales de un sistema de transmisión de potencia, no obstante, existen otros que tambien deberian ser incluidos, como los motores, volantes de inercia, 
+     anillos de retención, etc.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.markdown('''<div style="text-align: justify;">
+     👉 Asi mismo, los componentes abarcados en la aplicación, se cálculan segun el fabricante respectivo, sin embargo, existen otros fabricantes de igual relevancia, que podrian ser incluidos.
+</div>''', unsafe_allow_html = True)
+st.markdown('#####')
+st.markdown('''<div style="text-align: justify;">
+     👉 Este proyecto podría ser utilizado para el desarrollo de un laboratorio virtual para el análisis y diseño de sistemas de transmisión de potencia.
+</div>''', unsafe_allow_html = True)
 
 # Agradecimientos
-st.header('Agradecimientos')
+st.header('10. Agradecimientos')
+st.markdown('''<div style="text-align: justify; padding: 20px; border: 2.5px solid black; margin: 0px; border-radius: 15px;"><b>
+     Mi mayor agradecimiento esta dirigido a Dios, por haberme permitido estudiar una carrera profesional y el desarrollar este proyecto de tesis, 
+     sin embargo, si bien Dios me lo permitio, fue gracias a mi mamá que todo esto se hizo posible, ya que sin ella estoy seguro no lo hubiera logrado. 
+     Mi madre es la mujer que mas respeto y admiro, y aunque no siempre se lo digo, espero que estas palabras y este proyecto sean evidencia de ello, 
+     ya que me he esforzado en demostrarle que la confianza y el sacrificio depositado en mi, ha valido la pena, y espero seguir en ese camino. Agradezco 
+     tambien a mis hermanos y a mi papa, quienes me ayudaron desde pequeño y estimo mucho. Finalmente, me agradezco a mi, por no haberme rendido nunca y seguir 
+     siempre adelante, a pesar de las adversidades.
+</b></div>''', unsafe_allow_html = True)
 # --------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Sobre el autor
@@ -1871,3 +1986,15 @@ with st.sidebar:
 # url1 = 'https://junior19a2000.github.io/Jupywidgets/lab?path=Numesym.ipynb'
 # url1 = 'https://junior19.starboard.host/v1/embed/0.15.3/cbljq1i23akg00a8j9b0/n529MY4/'
 # st.markdown(f'<iframe src={url1} height="760" width="100%"></iframe>', unsafe_allow_html = True)
+
+# st.latex(r'''\large
+#           \begin{array}{|c | c |c | c|}\hline \\
+#           \text{Resultado} & \text{P.S.T.C.} & \text{Otros} & \text{\% de Error}\\ \\\hline \\
+#           \text{Pendiente (rad)} & 0.00056321 & 0.00000000 & 0.000\\ \\\hline \\
+#           \text{Deflexiones (m)} & 0.00003079 & 0.00003039 & 1.310\\ \\\hline \\
+#           \text{F.S. Von Misses} & 4.4933 & 4.4943 & 0.022\\ \\\hline \\
+#           \text{F.S. ASME} & 1.9993 & 1.9882 & 0.550\\ \\\hline \\
+#           \text{RPM crítico} & 5765.1 & 5164.8 & 11.62\\ \\\hline \\
+#           \text{Horas de vida} & 5.4750 & 5.4307 & 0.815\\ \\\hline
+#           \end{array} 
+#      ''')
