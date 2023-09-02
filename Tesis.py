@@ -1242,8 +1242,9 @@ with col30:
      st.latex(r'K_s=\frac{6(1+\nu)(1+m^2)^2}{(7+6\nu)(1+m^2)^2+(20+12\nu)m^2}')
      st.write('Donde:')
      st.latex(r'm = \frac{r}{R} \quad v = \text{Coeficiente de Poisson (0.3)}')
-# url10 = 'https://junior19a2000.github.io/Jupywidgets/lab?path=ShaftDemo.ipynb'
-# st.markdown(f'<iframe src={url10} height="760" width="100%"></iframe>', unsafe_allow_html = True)
+with st.expander('#### 🕹️ Demostración práctica: Euler-Bernoulli vs Timoshenko', expanded = False):
+     url10 = 'https://junior19a2000.github.io/Julite/lab?path=.%2FPstc.ipynb'
+     st.markdown(f'<iframe src={url10} height="760" width="100%" style="border:0px solid black"></iframe>', unsafe_allow_html = True)
 # Analisis estatico de ejes
 st.markdown('#### 4.2.3 Análisis estático')
 col31, col32 = st.columns([1, 1], gap = 'medium')
