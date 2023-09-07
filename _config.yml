@@ -5,8 +5,9 @@ incremental: false
 highlighter: rouge
 gist:
   noscript: false
-markdown: GFM
+markdown: kramdown
 kramdown:
+  input: GFM
   math_engine: mathjax
   syntax_highlighter: rouge
 remote_theme: pages-themes/hacker@v0.2.0
