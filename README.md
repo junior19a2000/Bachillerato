@@ -104,7 +104,7 @@ $$
 Fuerzas cortantes:
 
 $$
-\large {{V_k}(x) =  - \sum\limits_{i = 1}^k {{F_i}}  - {w_i}(x - {x_i}) - \sum\limits_{i = 1}^k {{w_{i - 1}}({x_i} - {x_{i - 1}})} }
+\large V_k(x) = - \sum_{i=1}^k F_i - w_i(x - x_i) - \sum_{i=1}^k w_{i-1}(x_i - x_{i-1})
 $$
 
 <br>
@@ -112,7 +112,7 @@ $$
 Momentos flectores:
 
 $$
-\large {{M_k}(x) =  - x\sum\limits_{i = 1}^k {{F_i}}  - \frac{1}{2}{w_i}{{(x - {x_i})}^2} - x\sum\limits_{i = 1}^k {{w_{i - 1}}({x_i} - {x_{i - 1}})}  + {C_{{1_i}}} + {M_i}}
+\large M_k(x) = -x\sum_{i=1}^k F_i - \frac{1}{2}w_i(x - x_i)^2 - x\sum_{i=1}^k w_{i-1}(x_i - x_{i-1}) + C_{1_i} + M_i
 $$
 
 <br>
@@ -120,7 +120,7 @@ $$
 Deformaciones angulares:
 
 $$
-\large {{\theta_k}(x) = \frac{{ - \frac{{{x^2}}}{2}\sum\limits_{i = 1}^k {{F_i}}  - \frac{1}{6}{w_i}{{(x - {x_i})}^3} - \frac{{{x^2}}}{2}\sum\limits_{i = 1}^k {{w_{i - 1}}({x_i} - {x_{i - 1}})}  + {C_{{1_i}}}x + {M_i}x + {C_{{2_i}}}}}{{{E_i}{I_i}}}}
+\large \theta_k(x) = \frac{- \frac{x^2}{2}\sum_{i=1}^k F_i - \frac{1}{6}w_i(x - x_i)^3 - \frac{x^2}{2}\sum_{i=1}^k w_{i-1}(x_i - x_{i-1}) + C_{1_i}x + M_ix + C_{2_i}}{E_iI_i}
 $$
 
 <br>
@@ -128,7 +128,7 @@ $$
 Deformaciones lineales:
 
 $$
-\large {{y_k}(x) = \frac{{ - \frac{{{x^3}}}{6}\sum\limits_{i = 1}^k {{F_i}}  - \frac{1}{{24}}{w_i}{{(x - {x_i})}^4} - \frac{{{x^3}}}{6}\sum\limits_{i = 1}^k {{w_{i - 1}}({x_i} - {x_{i - 1}})}  + \frac{{{C_{{1_i}}}{x^2}}}{2} + \frac{{{M_i}{x^2}}}{2} + {C_{{2_i}}}x + {C_{{3_i}}}}}{{{E_i}{I_i}}}\}
+\large y_k(x) = \frac{- \frac{x^3}{6}\sum_{i=1}^k F_i - \frac{1}{24}w_i(x - x_i)^4 - \frac{x^3}{6}\sum_{i=1}^k w_{i-1}(x_i - x_{i-1}) + \frac{C_{1_i}x^2}{2} + \frac{M_ix^2}{2} + C_{2_i}x + C_{3_i}}{E_iI_i}
 $$
 
 <br>
