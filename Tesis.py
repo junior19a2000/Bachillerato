@@ -268,6 +268,8 @@ def f4_loa(resources):
      img10 = Image.open(r'Imagenes/esfuerzoscf.jpg').resize((600, 300))
      img11 = Image.open(r'Imagenes/elem4.png').resize((600, 230))
      img12 = Image.open(r'Imagenes/FotografiaJR.png')
+     img60 = Image.open(r'Imagenes/tramos.png')
+     img61 = Image.open(r'Imagenes/coordenadas.png')
 
      img13 = f0_mar(Image.open(r'Imagenes/tesis1a.png'), 5).resize((600, 870))
      img14 = f0_mar(Image.open(r'Imagenes/tesis1b.png'), 5).resize((600, 870))
@@ -289,9 +291,9 @@ def f4_loa(resources):
      img54 = f0_mar(Image.open(r'Imagenes/tesis9b.png'), 5).resize((600, 870))
      img55 = f0_mar(Image.open(r'Imagenes/tesis10a.png'), 5).resize((600, 870))
      img56 = f0_mar(Image.open(r'Imagenes/tesis10b.png'), 5).resize((600, 870))
-     img57 = f0_mar(Image.open(r'Imagenes/articulo1.png'), 5).resize((1265, 870))
-     img58 = f0_mar(Image.open(r'Imagenes/articulo2.png'), 5).resize((1265, 870))
-     img59 = f0_mar(Image.open(r'Imagenes/articulo3.png'), 5).resize((1265, 870))
+     img57 = f0_mar(Image.open(r'Imagenes/articulo1.png'), 5).resize((1255, 870))
+     img58 = f0_mar(Image.open(r'Imagenes/articulo2.png'), 5).resize((1255, 870))
+     img59 = f0_mar(Image.open(r'Imagenes/articulo3.png'), 5).resize((1255, 870))
 
      img29 = f0_mar(Image.open(r'Imagenes/mod_planas.png'), 5).resize((1000, 550))
      img30 = f0_mar(Image.open(r'Imagenes/mod_trapezoidales.png'), 5).resize((1000, 550))
@@ -325,7 +327,8 @@ def f4_loa(resources):
             img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
             img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
             img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48, \
-            img49, img50, img51, img52, img53, img54, img55, img56, img57, img58, img59, imgn
+            img49, img50, img51, img52, img53, img54, img55, img56, img57, img58, img59, img60, \
+            img61, imgn
 @st.cache_data
 def f5_cyt(resources):
      elements1 = [
@@ -527,7 +530,8 @@ gif1, gif2, gif3, gif4, gif5, gif6, gif7, img1, img2, img3, img4, img5, img6, im
 img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
 img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
 img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48, \
-img49, img50, img51, img52, img53, img54, img55, img56, img57, img58, img59, imgn = f4_loa('resources')
+img49, img50, img51, img52, img53, img54, img55, img56, img57, img58, img59, img60, \
+img61, imgn = f4_loa('resources')
 elements1, layout1, stylesheet1, elements2, layout2, stylesheet2, elements3, layout3, stylesheet3, elements4, layout4, stylesheet4 = f5_cyt('resoruces')
 
 # Titulo y encabezado
@@ -824,7 +828,7 @@ with tab26:
           </div>''', unsafe_allow_html = True)
           st.markdown('''<div style="text-align: justify;">
                <b>Puntos en contra:</b>
-               <br>• No permite analizar el eje de transmisión en cuanto a las deformaciones y vibraciones.
+               <br>• No permite analizar el eje en cuanto a las deformaciones y vibraciones.
                <br>• Ignora a los esfuerzos generados por las fuerzas axiales y cortantes.
                <br>• No efectua el cálculo del número de ciclos de vida del eje de transmisión.
                <br>• Limitada a analizar unicamente configuraciones de ejes con dos apoyos.
@@ -942,8 +946,8 @@ with tab28:
                esto significa que tiene que empezar de nuevo desde cero. Afortunadamente, estos problemas pueden superarse si en el diseño de ejes se aprovechan 
                las diversas ventajas, utilidades y flexibilidades que ofrecen los microcomputadores modernos de alta velocidad. Este estudio se llevó a cabo 
                para diseñar un eje bajo diversas condiciones de carga utilizando el diseño asistido por computadora, y los resultados obtenidos demostraron 
-               que ahorra desperdicio de materiales y también ahorra tiempo. Se desarrolló un paquete de software utilizando las fórmulas 
-               inicialmente derivadas y un procedimiento numérico para calcular la deflexión.
+               que ahorra desperdicio de materiales y también ahorra tiempo. Finalmente, se desarrolló un paquete de software utilizando las fórmulas 
+               inicialmente derivadas.
           </div>''', unsafe_allow_html = True)
 with tab29:
      col117, col118 = st.columns([1, 1], gap = 'medium')
@@ -1241,7 +1245,22 @@ with col25:
           st.markdown(f'$\quad F_x = F_-\cos β + F_+\cos α = ({Fmcos}) + ({FMcos}) = {fxpr} → {abs(fxpr)}$')
           st.markdown(f'$\quad F_y = F_-\sin β + F_+\sin α = ({Fmsin}) + ({FMsin}) = {fypr} → {abs(fypr)}$')
 # Calculo de ejes
+st.markdown('#####')
 st.subheader('4.2 Ejes de transmisión')
+col119, col120 = st.columns([1, 1], gap = 'medium')
+with col119:
+     st.markdown('''<div style="text-align: justify;">
+          El sistema de coordenadas establecido para el analisis en general, presenta a sus ejes X, Y y Z positivos tal y como se muestra en la figura de la derecha, por lo que 
+          tanto las fuerzas y momentos que presenten dicha dirección se consideraran como positivos. En el caso de los momentos, el sentido de rotación del mismo, 
+          se obtiene aplicando la regla de la mano derecha. <br> <br> Ahora bien, para el analisis de ejes, es necesario definir el concepto de nodos y tramos. Los nodos se 
+          establecen bajo la presencia de un apoyo, una carga, un cambio en la sección geométrica del eje y un cambio en el material que lo compone. 
+          Por otra parte, los extremos inicial y final de un eje en su totalidad, se consideran también nodos. Así mismo, un tramo está delimitado por dos nodos, 
+          por lo que es posible definir el número de tramos a partir del número de nodos bajo la siguiente relación:
+     </div>''', unsafe_allow_html = True)
+     st.latex('T = N - 1')
+with col120:
+     st.image(img61, use_column_width = True)
+st.image(img60, use_column_width = True)
 # Calculo de ejes - Analítico
 st.markdown('#### 4.2.1 Cálculo general de las reacciones y desplazamientos mediante ecuaciones análiticas (Euler - Bernoulli)')
 st.markdown('''<div style="text-align: justify;">
@@ -1696,7 +1715,7 @@ with col46:
 st.header('5. Resultados')
 st.subheader('5.1 Algoritmos desarrollados')
 url8 = 'https://viewer.diagrams.net/?nav=1&title=#R7V1bl5u4sv41%2FZhegLj50el2snNW31Z3z%2BzJfqMxdjPB4AGcSfLrjyQQF0nY2AgEdmatSdviYih9Vaoq1eUK3Gx%2BfI6d7ft9tPSCK01Z%2FrgCt1eapuqKAv%2BgkZ%2F5yMxSs5F17C%2FzsXLgxf%2Fl5YP5heudv%2FSS2olpFAWpv60PulEYem5aG3PiOPq3ftoqCuq%2FunXW%2BS8q5cCL6wQec9p%2F%2FWX6no0aNijH%2F%2BP56%2Ff8l3U1P7BxyLn5fZN3Zxn9WxkCiytwE0dRmn3a%2FLjxAkQ8Qpbsuk8NR4vnir0wbXWBrmWXfHeCXf5yT4%2F%2FXTzDoZevL6%2BLe%2Fjh9Xn%2B8HL%2F5eXly%2BMD%2FHozv7v5427%2B%2Bvicv0P6k9Al%2BdffBE4Iv3103%2F1geef8jHboQZLUcb%2BRbx9jL4FT%2BkSeUqWG7h2EFAWOvkex%2FysKUyfIT4P3idMcD6pSP%2BUF%2FQa5MN2QS1bwYH6FgQ6xJMqp9t2LU%2B9HZSgn2Wcv2nhp%2FBOekh%2FV89nL4ftBs%2FOBf0swaMrMzgbfq0jQrPxUJ4fgurh7OU3wQz5TTbNmMbN2f3UDrmbg9o%2B7R3jgdoEm6vH5eTF%2FgZ%2Be7uYP%2BMOV8fHT4%2FPHxyvjdt%2FkVclsMhPRTGDQQOACZYdJTESC0pakpiGAopqtMhRlCLSOo92W93ZWw9sVAsh5C6rypBFYtlUDlgrUa81g6KDOVIOlA7Cta0MAtgyWEpAtHXSjKEEnhr7rQ0mYMPSB5AmX3jKHxb%2Fvfuq9bB0XHf0XLgR11LjRxndzMLE0LeejNVMaFksowqhVOllCiMSKzSvNDJBwW%2Frfa2Qx%2F9khaf6x9mmd%2F8VXJFsn5F7yBgXaGlP1gxsFUXwF5tkEpD5iRM4tPyBmj1IvhFOEFli88G6iFF6rmc4GzUH4lmzxFcpIh5jvQfaGnzI61WkHhzHB66PS5%2BD56X6q5P89lfWpvPXRyjpXsQDEkwr%2FCRB3baPAQ383Xih0gs%2BUSlD765kNpkk4qGzl4houf7FHSJaMgYHHORWIbp%2BdjYM1JU2JPXf3FvsbH9Kvjj03imMEvsan6%2FwYr%2F42yh8jgT%2FvL4sHWPs5I%2FSxBrR7IVrBf3e26CNUtJwg8IJoDdU6eOLWg8TzUi%2Bmjz2VBw6pcyv%2Fh0cMdfTdCfx1CD%2B7kCj4%2Bm46HlGItULHrdoFhs6qeYXu10nPs0yGit5y7b3kX8MIm0sVOiAW%2FvkX0mvhg%2BZfv%2BZqLv5y%2B6P27edhFTiJdrFLHA9EO4cG2tojr0q0UfRoe8kYe4GT%2Bt%2FrXoxuijBgFWG4ENhquN4FBS%2B4yHR0MXMSGRcgAVdIOsxANZZVttAWdfbYGMphUAqxK4AFakaZzYMgIA6dmmUqBIGzvQiM4vQ9WkehEyzK0Rogf%2FjpX5XPX0tswm8lGtGXn1Vo%2FlX98rWO6K4g1nggBvJArDMg%2FhOKQNdfOkvuepINpbETJhs%2FwarPRxCOEKyqOTBarWPl5WTgqcuDp8HA89POi385%2BBnDNbb2gwmhUtOHRSVxz56%2FDDWkgdS2JdJY7YnG%2BiA0xpfO49j5WTlhG%2FlhmlTu%2FIQGSp6yDErSzwhPfWp5hWZRV8AP2VOUM168TktJxe5L3ETeyneRaYY8xk0iKrNf3mJiuyTeeheSVXedmXrlMsyef0BrHNLyESIxbZWaXa7E1Hj%2B7WLnpBs771%2FIpykyAY%2BdLXnrus1wy10Urv1016B1jsUkUlWzDs%2BBl3PtDLFp8bBpy8PmjMHmPHTf%2Be618QJzYGPd1i8FmTNpyDRZZH5CHuByzxM9F6SQ447IBGKQObRlbu%2F3ZJ4PNE1p0ATafl8d6%2F1o%2B6IkaKj2opY8hxl5Hp5HgrM8eEiVx%2FsgULXGngo3CjM7wB01kw7uqDAuhEkJgGRgl41vOg67iT8J7IKhtXJwKdhV5WFXa8Zu7CW7IHXC1MNv8YZ32TBwvb%2B9q0bPSwXg2Xn%2FGwOYjZlBaUvmoGCenaHHmK9EaPLAzG4dCwfz1zGCWdMHBrPKUGH6YObFQcjUiNkt5Ht4mywgSRSa%2FxojmoE2MJrP0JDli2Z5O86zM%2FT%2B8yWGPBrrJisx9uXwvD7Pnxb%2Fe%2FxyO79b5Kk8j0%2BvXz4u7l5Hn81jkRydg9k8tiZARkDpw9B2%2BByWcobbC1fdvqZ0BdXkpgD1ldmiAU5A31hipX9ntsifg9%2BZLWc3lVe5z2vj%2FLPzQ064%2FCgofjnz8p8odqqxMm%2FO39EYaPt7Nn8n%2BJwyFYgKN1D9clMvhsTwXXYBF034MVCoB4iXAW%2FHw7thFmQL%2F%2F5Ss14GzMeSyH8Tyvg6wSKaqZRBBHRwbQ2ZAwZ%2Fca8zpM8csIJgVU9GYd1WPRmF3Ta8J0MDbH6CoBywQRIaTkClbuo0LBUuLHtzg2pg0m7QBmBzAnQLdMkANhvOPoa8MDGAtYcG7P4EkbGlhh2DUGkh5BrgBEPKSw0TAkzdHBiYREk4f0kqLTJS02VuQXfODmugMSc4qAca40uPzQ6zdYat1IKtmhLEOBfN6Is654hpZsdEwbbTQ3apatNjyhPVnEqLeE%2FDi1d%2BIaHr2gSU11vvVwTVjaB3i7t0LRxV9EhBR0lpH86N9ic09fOCnCGJdrGQZXKmsAaHzqyR3HxAMWvkpIM7G%2BS3wREQhEslCAiT3Xl1a8mznAm4c968oE5qxg%2BDUOa7TjDPD2z85RLPD665mpemRITLFxV4c%2BMjCingkbJAQvdilx%2BUa9XQcxQftxwyS5dKXRGtVgmcU5r8Ry5VOhvUxcqzpBBoSV2i7Y0uGEq%2FVjWDlhwQ%2BQMr2JPOajhCu9ClRRNpnGii6sYTRCcOI%2BQ63sYI0sH9afqkQ96OAakpD6RswvsDdkXMN15ccRRPSJgO7kbTJ10P7BicSkt%2B14wz9AjxCgcWiJRAY6urUiCDXvIKMmgHKlGOk17ywqs1Thn7zDOeYD0IKUE4FBhndZaliSaozw%2FuMCelx85JPHKXIIIhGfBlTc%2BnOFpBuFU3H9%2FR90rd40qa8hiRavBjN3pE6qVYnvKqU2oGa3mOPyf5FDybtinbSDXO0EjlK1ryjFROVbbxpyULwvPQxiy5SZ%2B0Fp40K4bWg2ttJhvM9OJlb%2BGvsmhgvDn3vRLh9JPd1MPnrJiCW6sACo1yEtjrDu3%2B0XP0Hm3edslA8zNTlTaMAAU%2BOzligkynmT8uhhWGVgtVsiFxIPV2frsouuY9Lx4e725Hn2irGiSV%2FGCmrSFEqtjspqWMTFujNaEaM23tYRNtgbp%2FS31fWHl3RYzYRVVFzOZUuwZqDkEJipjNisTRJHVNPRO5W0LXaKbhdzLyOc0mZy9wWSkcjyZ5m2k3KiofebkppQcIVVG0o5YZfVOkAi%2BxNtnGkfvNS8eaW9t7W7wxZnj2%2BXLnIfl%2FJ8FeUhLs0cYKkwSrqUMnwR6oTNxvEizXWuFluNjytkFmrE%2BBH%2FvuLD3xvRJOsYDZ%2FbnZwC7JaZfyK2hegyDBgeAEIE7EM2ACeyteS3KjjGfya6mpOTIaesY6kHkqWBZWgQRg5gFaloMV7WyM8FetofEvs2daX%2FgXnmE1GvyzubZ%2FOtxs8BGLeM0YFuNAO11xEAbQquIAFM5%2BM1Ck5QUWz8NN4c72dKAGn6XexVOAGAADQ0zRzk6MFqg4OzEKFE7Zd1QXJiYyFPV%2BjMsNaIh1COFJCVmdb571yAGT7jvWwAHCCxqNhgP29HMeccTc8ZzBbvVrhjYwZ5yHidlCg5FWJqlQniYWMScCzwAMjWfWCJlEnJAIYuvqwMQmUWHnLzykVQYC2unVFfshEIl4qRFI06QRiDxPLW4z8KrN51qoxV3CKY%2FmXUOjVn3F4m5XKBzGVQ0hXof99aaai82V7Pm1cuQQq%2FayxQFUm4NEeQFZxfNQFYxe%2FM02gMDgFxLaNR97jf3mgzc7ZxnnF1MzKbt6z9H8oJttQg2565iQUENt%2FzrWfvNOFYXs2ciQzWpVCIMowsZ3cWtzHkQXuzjaeqywnTw%2BdWVogE6tNigP1ERHqG%2BHSNSsWMXhyUnq1dyIuoAdbam%2FLY%2Fu3hD0e%2Btwe1IURD1Jo2Erg5ukISZtgJOjwaYNLB4%2BP88f5v9HmnTNP9%2FPcd7AoZp0Y8oj0FRCxcN5BJYIhY30Ie1qasnS34gVUxUIgKe%2FySvCWjyP5FwNwkWdcjUYcPaXqMGpsXxaLN6rt4EqgJPu4iIwM0IDFSE7tvDBZwhCxtBkPUjTjI288d2gDFH5jjdZ5cc0jmJIHJFfK0qFF0JtN3SQj1H%2BK46TXJzGGVtUp3MQVjszwr17ge%2BeHdaGFZFQdcmC%2B9A%2F5xE0Lo%2BA0%2Byy2B9xzjCLclD63WerwhLLPPkv%2BntI%2FBTvS%2FWT%2F56TIeM8dN%2FLxKeMgmN4w1EMCTQXUT62%2FBf6PTSaFcpB6Zp9d%2Ff4PTSW%2BX6NndQpClLCud%2F47iXoJv1R9HYXe78mZC1c6FCPa6qX%2BElhJzlL5HhFHVbg5yvSk8l3nSX2Kg%2F6s%2FWab1KJdOMEWYaAfCT8HpKlfd5E4cp33vzfUJjk9C2SrZecn%2FvnEoamWYfj6I1otg4HSS85VISjCJ3qFiQhKM1LuZ7Zs6tq5BRqf9RH7BS6SWUajwuf4AUJyuvPBzp34JAcs8ajMa%2BYPJDXIQpYEy9w3p7G8hLOrYlXnWhPY3kpcdbEu3S1p7G0ikvAVi6FxvJCBm2ZfdsHpbG0zl7AFhT6OnoaG8LlMb4060dfnpC3MS7vTCf8F3lnRbp%2FrcV9iwsUg5rh7BlOrghg768Ffj4QEN9wUBIEgCkYAkWMfhllfIN8q3M1cCsxbVnA6goXTMHlfrdxtPWjeuHf0h%2BsJDtoXq9wXPdVluVRnlb334rO7zjauqazkKBNej1kEhJJPK3FeVNUQVWKt8e87dFd0eksF5IYcSjDRddE0ICT4rJIVqiYA0JgVoCqRJdYyJQT0L7dhc7xv%2FSV%2FwM4bUMqxGmxRSKdXhYYklxsY7hD5BoDtIahDVsypRIMWSv9FheMNzIwkSVwIIpxkpcYilEEGwOcyGI2aynHxRCLTVlixPjI0KSRHOxBCGSwory5CB3alOhbQp2SFle0Ny3q1%2BptFSYxROR0%2FmxFxJEpngwhKxX9BiEkpw1iRbZtURRVdamsLg3jIx4AAxOPNZymUE3veEKbtiWV3c0zdFIQwtSdFDmiJPgCTdb%2BmkIpve5gHlrkGl03waQAU95mi8lRmCbQqbc7MIdezqbe4rs9mOXtzpqs4jqJIprd0ayrA6O56z64FGRKi39RdbY4Oq%2FEUFZcCH9%2BfZ4%2FvNx%2FefmSnfZAxp8eXxcPN1%2FmDP3HVWfIIvsqB%2BsM2YoAQLK2gowKOKA1mX5Q4M3JxvG89Vf%2FhiEZJyc1jJYRSzTZhfA607moqn2I0ELqiwmKGRqiBFYCGeabd5M167xdeitnF6T7Z6HWvY0jdWXJXNbiesGOFjfdOYH%2FC7csNfHDvgVOQhb61S6s1kXCu6thI1%2BgOnAPuAhcVmgPQr0c1hQU%2Fa7yest31hiO5gCgHuYArS91gdx3CrpvRw7gdC%2BUZtyxpt0rwvpVUX8o2vre0lnieAP0AzguYZaiApFJDumN52bRCmE2eEOudlEBFBye4EOS%2BW87f1lclGXjc9jGCzysjrNLCoRxWp%2F0%2BkTkpUJXfhBQQ0xKAGIK%2BLDBPD%2Bw8ZdLjCgen9U5UfgCb9izGtupusqwHeCVyxZRLZuw%2FAWwnc6ynTQzlDVCa2yHt%2BsIK20iwg%2BYcZxt9BN9oasSXyq7aKSBwSDssr%2Bj3ZmzizTbmCiNUsiuDkp2Tjss4WTHlx4bNzlT6tqhmrtKmsIm6fM1oFNT3i1qko2iqYvQMkwy00WiEPelZUuaenl0BNbvkzRTZaC4KyTu0g%2BzwU02eKFyluRnDSJnJ5RvJ17OSssPI6bJBchZcwCyC5GzlNw8eD5piSpKzrKxd01y9p%2Bdh9XVpb9CnTOwLQf%2FCbDwhLIsLbZQskggSMQ1G0x1IeK0iCgeRJxOKHxDvDiVlt6lydzPHVacWgOQXYg4pcTj4fPzFheixCkbnVsTp7HnuK4P5VmhuBa%2BgMzXVjgDCi%2FbXv0189epP%2FxNqc7y1ONquGbDTW7D7CaXKa91IkMHkdcTCgQRL6%2BlpTyT9Ksm5oQvF8Ubp%2BDPwA%2B9bMc488yhCvTwfZMm7qQNyZO4s%2BEmF86d9pA%2B8wkV0RDPnYRJJKhTHFPEg%2B%2BF4U%2BYlHaLOzm3BH7ic0I72vZGrceACMfzTKfSOQxO8AFxitRapoqIjJEbd3itQHrVQX2o1yT%2B1qa2VDsH61hUVe1IDyt1PqlIJkpV7Rwn3REWYDYgLDj%2BoJHC4qBDqGdYADZq5qMXh9EuCHxWwB4TxSJerBqgzlEKqyaoPDWB1J%2FrJFU1MexTj%2BlS2rJP5%2Ba9vNgtXldDeYkJnOAVpAS%2Fe%2BG3aORI1Cw29rU3JAJBuylTiC7kIVRamIfU8k5HOgD%2F3m225MGc2CUjWZStdoyCNYRJf9JKqgJAaVhA3buUMhfoeR9VYSoWu5ZyK%2F9g%2F1%2FdE7jHGTFAOsrx4dUqHT%2FAWYsL41J0dKk5oejSDpLOkLYWc4oqNJewoiLaaCQXfrTJQJnXirwvKHdOq5oIlOUt2hMKghC3aHPsX%2FGePjGrtpZX2G29ahuiHSNs%2BG6LVbsey3uzfwmv7ScQOZhJzyKTH5%2FUQ3mK7gJRI0WIBlnbJ16ntq1AlBZ9a7J%2B95vYR83dCNSn6XRXAV1EaVCvu3V%2BuOWZfqa08BtL5kLeE4F54eHyCCzTvdETgTl6kDwCm2y0EMoX%2FTNC2sC9nyQeJxEo68XoJa7DP%2FbshN%2BgotFNb%2BhBGJMaU7kw5uW58xykIvLcTUEboCNy1ZscFYLASYKkYCNrcGvml%2FsFH6Qv0dKL37x4zT%2F8OYqWG6djAcH%2BMdzayy8ExJfj5eeB25IWl2KxTtxFx5wiCTacodaVYV6F375MuKm3JWoLUWnuWYt1z96VaRlZ%2BZsVMujiHJ%2B4d4BflnPFQZDfvSBy8zBEN4%2B7QiGBY4Qv6eowDH6bquG2DLCehkRQ882vYUh6fm5urkiQ5tWZCZK5yngIbHGyUCzh%2BwinObH1Ge0i1aqzdfgCoIrtOmOxCdS37f3RZaXEUYoqTdWGE1VTb0bXVlRJS0tWlVMcTYf3xjpKs5a0tIVrfa2DVSirMpvN%2FLKS%2FMfLMqpQmG4eCKNhLtDEyjKbtcA661%2F782pGION0MGAAjX1%2B6hhHxPXEqkczmGJTa389CfXwBRRHdmcw1n7kVAJ1fTco29F9h9w2Rr4xeGUN%2B%2BKb2fnpBjy%2BGYmS3ZlvDCB2YZrJFJtHxhK1nX7ODtlY5KZFOoWR%2Bbft%2FfNPXyBabhZBrtPUXPupPDYizfUgQA5ori1eRbSq29xZsfVmA5V3Pr4lumjRMsgSfX5xOLxqLCOpIkglJx4sx0KfDw7wHx2KePwFttgUj9mEwonbwotXZGkc%2BGJW9NmB6T%2BgMgjQAIg4bIyeVGJ%2F7S%2B9XwxOKu06DoYyhKnjh22Sno8QyxalHfO2hDWtH6msKuxCV%2Finywqe2EUd5%2BscLxAVu6xrS16bknPti5%2FEXuL%2Fyht8I8rnAIX3NT6isv7wXrs0SspmFW3rr3CmUDl6Ckm%2FCuIW15gJVLkNxUVMoHaK7XOS6jumlZez9BbzJsFzru6N3a5pi6MXP9w0K678ERBNVfDFRcHX5qzsBYYkwJfMbsPiWbVrRg9fbkRKb8snGMzxMHb4EhLLgC8nvbuE73f%2FLcab7aiD0MjBC2aDgle7QPCS1a0O3rF4Vg0KD%2Bohu8ro1w%2Bmcnqo0HYVdwdqbJzF3Y7qj7NO8UZMnbNsLmfJ6%2FRJuv0x4QpXh4IVrmphCcxUTsWQPYlttLo2Rdx2h5rTASG2LOvEaZ4xSi292BkjIbzFksGJV%2BlvxtiIhT8bw9dRn7uNt%2FQvan5spT4%2FOll0qt4hs7f5YcNPOREl71Hs7A8ouaAJMsCQE6TL2blu1BMA%2BUYX%2BOw5kVIFHKNSnkOPU31zDt8h9YulKAvBygO0sxa00VvqhX72uVJJxMCCMNOZCy5b%2BomHGVHNPYSIQdz8YvROWVmT2NvCn4CkK8PF15lMVVd5b1B4fOu58PVJ9RNcx2mX7JzC%2B%2BgUD5R1hHHxM5NH2Xh%2FQ%2F6P8a3QUyJSOqiACl5xd8zD5i28ETc42b2jbepvII%2FHuCoLWqRDfGn2eP%2FsEJR8r6zIAh8ZtTYtXgm9LzQDln69J0MaO2%2FO3xyXU9702t29tbAv3rKN9ru3YsBxv63x9vvjLkU7G%2Fn40om%2FPcLb%2BCnG7rVi1Ac1PCpsO94w6W0fXio2kQ%2F1Pu0iBM9gjteTUlfUa0Wh61Ur5gFZ43WoTKwCnvkir%2Byqyqm7%2BlyRBvnmHFckvPlLSIIwwU4vXvGCCHMXfVaTYKNgUpliHutV7XlcXsZzd3ECSfPs5Wu8gs8KAmeb%2BKVaIGY1N5nNVE4DKJ7dL4SpAOstYVWp2HfCNR1%2FwO%2FukEJMRUiZ%2BgDVFD6NCpi0plHxqsTG43hG%2BlJ3SJ3dAaTO9VGuEY7G01pw9FPAnHX22aAB26Lj94owE%2FJDh8LxmCcT7YYE7AbrHrUgDn5%2BjOEqj8T4cdWvVoG%2F%2FU%2F%2BOXDevOAJGiY5D8YZLxSGzh11vDB4iGkUeKvq%2BaxhVPL3DAGOiEeMVTHiEM7EtW3V5uaDqlrFWIXndV4FLl3XrkVUzSji2U%2BOzxLouyTQqTIxKbLUf0dghnt0g5LHM1rUCuJrTTHrv6Rr%2B%2BNymQs0C%2BwP9ddB1wtmghsYaycFyIzI085FK5CH1hk1YTZdpa8vtBrKBaD1pHiYsaOVV69wGLQaGo1Wen%2BvN7QeyHk4C7RaXSu69Ys8fp3BXpDXGS9Fktx5A2bcamDRjGsKgFHNSwDM%2BWlvRYjJFECm6RcAss6lZXoGzHAKVHfAAO38AUOy3c5JKgGyDS5BS1cBPWMmnRvTl5quKXnH8fPGq6CitaPCKycHaCi8qrQTxBzKZafOwCXgVWqr5J7wymsqMAxebRoSg4lX1TYuAK7mxAsr8%2BBqavLEq6LQU2wNpQ6AA22fzwOv52dUAxJNJQOvGo3X4dRXUjnnrPFKuP%2Bs8CpPHVCLLg6Dq68aqbd83nideK0jLl4H20rhuAfoAhvD4dWwzh%2BvKukjWYmuukcRpTNw%2B8fdIzxwu4D%2FzHHmiK3efXn58kIGF3eL%2B8XD6yMaeLqbP6APFPQrqaAJnKc0D9wzceBeFPu%2FUMBokMOxwgUrOJ6fCw4gtUVEVE48YJC1uhbuSMr017oF0UrnKYFPwN5vyuapLJIaBPFISnTDKvPzMv6B%2BHKk7YnKpmc8ObGDbhRlbVZwisLeqvlNUbdHtK4ibNM%2BHk%2FXr%2Bs1%2BDiBeEVovujWVaTo1vFYlLUQcbHIUZyA%2BLpo7YnKCs9F4joBm0SHHg4HjV71lknHErGYdAalOOcm9Nw0v%2BNVHvbdiN4PyrVmUgUHcgHccYUnV9RvSq6PVqvES5lJOVIp4xTXJokRS%2F97babMf3ZRiqlZ%2BbTO%2F%2BIrkq0Tci8pk4s%2BuFm24jyTRylKmeLd8svGWePkrLIDFG4LtYIiDI3UkjkQVdD%2F8CPKtyKPA18%2Be6L6U8Jh%2FGpklF6Y84BpCBcnCLwgWkMRimBVCYSvHatEyB8SnSv%2Fh7d8KXM6GZALkae2RYlToINrXv0qgtpaxod2LUKoiqo8Oar1nqPsg5kmTcaSJj1iadycBSs64bU9jVV5NJ74HmF7GkvUW9n8sFd%2FW%2BThV%2BU%2Brbe27eYuRK7qlFELVJ7RxFFTVUOEzUS4oJp9%2FebDp%2B%2Bh08XRtDEU9VqrrzpFvlyto32xNokuL1RI4mpRJi%2BOnT46gYigT5EzUKOPXazUogmkn9QPYOSybMaze2bSikbqStc1WQq9pHVX05WuMWNS6DWTp4%2BM1F5DjdE5NXSCvPyUhzLwTWeDRGv4lmzxlQo7dJThNt7X3u6ysh5t3vgMKPDsrfzQyYqZEBJsoIHsXLolbmlUgX%2B%2BIV4Ezok3xPWT2ldyBWw%2FRvWME7AocQEvnqda%2Bt9%2F2%2F1dijTkaspvnUk3NED5o6Trm6oC6tDjaeOAZ6yIUTW7un%2F6Rh0no0nqss5Wcphv4wh1jKh2nJgyAAGv5kxvAFTHrldy8gp0Rdp%2Bja6eoZ%2BLT2Nptk7xPNWAAqQlLae%2BthgcR1iPawunCx0Sji729ChhtMzq7WGirlAlO0axbF2GWwy9mFomnLWY6zgUUX5LV3hrS%2FQzYgugfUKt%2FIqyiH8dOuErQ9iJFEQtIdTef0f5NtkJ5OnwYpYyQXH0I9pK03lpSrqqSVv%2BFFbrr8oUL%2FA2uXE7ZrlS7AgekiszIXKlIT7uI1jugtIVEvlJEoWsLOGcC6c1gcIhK5NNn79Itl6Cip6zB7IWpOQuK%2Fg4oetPtlxzCcbWSKBjIcu9hoMRVCKQoHX1MYxPeSyEUV1CCbcQ8aXHd0RR6xNuHGo0Sl9AViZRwbIFuWp1WRuLpcoWlPxw177YQ2UbONAy608kIZV7KCp5hWkb2z1MVMAVYGlfnZVSv0xWuhmc6RPRS1LXegmzkat%2FEUFWk25EqZXhfmB1CbSxQEJGW%2ByjTGiIv%2BVTsnvDptIKhXK321Q68UcLiX2VBVSWdfZjVoQPuDkjZhGw6PwunhXO05GEWOHkxyoIf%2FE3u6Dm393v6RmwxHh36vKiW3qjrioqFPIYDZRDN1bSqobwuLoGFU%2BjVDwm6ExYHWxal8xryTYqn01PJqxSVdfM7VYzqZnCPcct6WWr7WbyFNJZrG6a%2BFxqDp6jUUxr9xwN5Vqht%2BI%2F5Dpox8kityF3Vak7CMnS0ESleiuixdtgTGHPBuQJNtA2ZPvtyOEJggQheUtGER1SwFcIU9BzIyZVyZJQXq4VEwCScNv%2FyjCDkqzyX332UNuTa1D5r10jjFPcPZqg9B7hc6ET7PXfd4Qqog10WpMVpXBZtJvfyMsO7GmA3PBs4vx9rDnTl7%2BvQeDt8fbNaHoB1l%2FEdfeJ2a9jl49nz6n3dVt6yTZwfjlFAzjaHCc7sPjs6W60qk3LVfNGKyXSWsdLCvH1qcJKt3f223Fkm8JJ3OpB4DVQC36NIxT7W8oMyL7v99ES6UCL%2Fwc%3D'
-st.markdown(f'<iframe src={url8} height="600" width="100%" frameborder="0"></iframe>', unsafe_allow_html = True)
+st.markdown(f'<iframe src={url8} height="600" width="100%" style="border:3px solid black"></iframe>', unsafe_allow_html = True)
 st.subheader('5.2 Módulos desarrollados')
 tab16, tab17, tab18, tab19, tab20, tab21, tab22, tab23, tab24 = st.tabs(['Módulo de correas planas', 'Módulo de correas trapezoidales', 'Módulo de cadenas', 'Módulo de engranajes', 'Módulo de parametros del eje', 'Módulo de factores de concentración de esfuerzos', 'Módulo de resultados del eje', 'Módulo de simulación del eje', 'Módulo de elementos bidimensionales'])
 with tab16:
@@ -1958,6 +1977,9 @@ st.markdown('''<div style="text-align: justify;">
 </div>''', unsafe_allow_html = True)
 st.markdown('#####')
 st.markdown(f'<a href="https://github.com/junior19a2000/Bachillerato/blob/main/README.md"><img src = "data:image/gif;base64,{gif4}" width = "100%">', unsafe_allow_html = True)
+with st.expander('#### 🤖 Sitio web del proyecto: https://junior19a2000.github.io/Bachillerato', expanded = False):
+     url11 = 'https://junior19a2000.github.io/Bachillerato/'
+     st.markdown(f'<iframe src={url11} height="760" width="100%" style="border:0px solid black"></iframe>', unsafe_allow_html = True)
 
 # Validación
 st.header('6. Validación')
@@ -2043,7 +2065,7 @@ st.markdown('''<div style="text-align: justify;">
 </div>''', unsafe_allow_html = True)
 st.markdown('#####')
 url9 = 'https://drive.google.com/file/d/1W_iUF0AgRPj-XbYmv7lQm0qCxczGxnO8/preview'
-st.markdown(f'<iframe src={url9} height=675  width="100%"></iframe>', unsafe_allow_html = True)
+st.markdown(f'<iframe src={url9} height=675  width="100%" style="border:3px solid black"></iframe>', unsafe_allow_html = True)
 
 # Conclusiones
 st.header('8. Conclusiones')
