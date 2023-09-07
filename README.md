@@ -442,6 +442,8 @@ Se analizan bajo dos teorías:
 
 <div align="justify"> Si el aplicativo no funcionara correctamente, porfavor registrar el error mediante un video y enviarlo junto a una breve descripción al siguiente correo: junior19a2000@gmail.com. Estare gustoso de corregir cualquier problema que pudiese existir (se corregira para todos los usuarios, como una actualización y sin descargar o instalar nada nuevo !). El correo tambien sirve para críticas y comentarios :). </div>
 
+<br>
+
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
  // Make responsive
