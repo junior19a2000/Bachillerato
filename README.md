@@ -414,7 +414,10 @@ Se analizan bajo dos teorías:
 ### **6.1 ¿Cómo acceder al aplicativo?**
 
 + La primero es ingresar al link del [repositorio de mi tesis](https://github.com/junior19a2000/Bachillerato/blob/main/README.md) (compartelo !).
-+ <br> <div align="justify"> Luego de revisarlo, buscar el módulo que se desea utilizar y hacer click en el logo de matlab online (esto te redireccionara a la pagina de inicio de matlab). Previamente a los pasos siguientes, es necesario contar con una cuenta de matlab online, la cual se crea muy facilmente a partir de cualquier correo electrónico (existen muchos tutoriales sobre esto). esto te permitira utilizar los servicios de matlab de manera gratuita y sin tener que instalar nada en tu equipo !. </div> <br>
+
+<br>
+  
++ <div align="justify"> Luego de revisarlo, buscar el módulo que se desea utilizar y hacer click en el logo de matlab online (esto te redireccionara a la pagina de inicio de matlab). Previamente a los pasos siguientes, es necesario contar con una cuenta de matlab online, la cual se crea muy facilmente a partir de cualquier correo electrónico (existen muchos tutoriales sobre esto). esto te permitira utilizar los servicios de matlab de manera gratuita y sin tener que instalar nada en tu equipo !. </div> <br>
 + <div align="justify"> Si es la primera vez ... en la pagina que te aparecera, debereas logearte con tus credenciales y posterior a ello, se te redireccionara a la version online de matalb. En ella visualizaras un cuadro que indica "Open file from repository". En este deberas hacer click en el cuadrito sobre riesgos (no existe ninguno en este caso) y luego seleccionar "Save and Open" (con este paso se creara una copia del proyecto en tu cuenta de matlab online). Luego, el módulo elegido aparecera en tu pantalla, listo para ser utilizado =).</div>
   <details> <summary>Muestrame !</summary> <br> <div align="center"> <img src="ReadmeRSC/caso1.gif" width="100%"/> </div> </details> <br>
 + <div align="justify"> Si no es la primera vez ... en la pagina que te aparecera, unicamente tendras que dar click al boton que indica "Open Existing Copy" para poder utilizar el módulo seleccionado =). </div>
