@@ -44,7 +44,7 @@ $$
 
 ### **2.2 Configuración geométrica de la transmisión**
 
-<img src="ReadmeRSC/layout1.png" align="right" width="50%"/>
+<img src="ReadmeRSC/layout2.png" align="right" width="50%"/>
 
 <div align="justify"> La desalineación horizontal o vertical entre el eje del motor y el eje de transmisión del sistema resulta relevante al momento de determinar la magnitud, orientación y sentido de las fuerzas que se transmiten al último de los mencionados ejes. Los ángulos de descomposición de las fuerzas de transmisión se calculan con las siguientes expresiones: </div>
 
