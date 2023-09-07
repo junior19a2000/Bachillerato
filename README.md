@@ -146,12 +146,12 @@ $$
 <br>
 
 $$
-\large  k={\frac{{EI}}{{{L^3}(1 + \varphi )}}\left[ {\begin{array}{}
-{12}&{6L}&{ - 12}&{6L}\\
-{6L}&{(4 + \varphi ){L^2}}&{ - 6L}&{(2 - \varphi ){L^2}}\\
-{ - 12}&{ - 6L}&{12}&{ - 6L}\\
-{6L}&{(2 - \varphi ){L^2}}&{ - 6L}&{(4 + \varphi ){L^2}}
-\end{array}} \right]}
+\large k = \frac{EI}{{L^3(1 + \varphi)}} \left[ \begin{array}{cccc}
+12 & 6L & -12 & 6L \\
+6L & (4 + \varphi)L^2 & -6L & (2 - \varphi)L^2 \\
+-12 & -6L & 12 & -6L \\
+6L & (2 - \varphi)L^2 & -6L & (4 + \varphi)L^2
+\end{array} \right]
 $$
 
 <br>
@@ -161,7 +161,7 @@ $$
 <br>
 
 $$
-\large  \varphi  = \frac{{12EI}}{{{K_s}AG{L^2}}}
+\large \varphi = \frac{12EI}{{K_sAGL^2}}
 $$
 
 <br>
@@ -171,7 +171,7 @@ $$
 <br>
 
 $$
-\large  {K_S} = \frac{{6(1 + \nu ){{(1 + {m^2})}^2}}}{{(7 + 6\nu ){{(1 + {m^2})}^2} + (20 + 12\nu ){m^2}}}{\rm{     }} \to {\rm{    }}m = \frac{r}{R}\quad y\quad v = 0.3
+\large K_S = \frac{6(1 + \nu)(1 + m^2)^2}{(7 + 6\nu)(1 + m^2)^2 + (20 + 12\nu)m^2} \to m = \frac{r}{R} \quad \text{y} \quad \nu = 0.3
 $$
 
 <br>
@@ -183,7 +183,7 @@ $$
 <br>
 
 $$
-\large {{\tau _{\rm{cortante}}} = \frac{{{F}Q}}{{It}}}
+\large \tau_{\text{cortante}} = \frac{FQ}{It}
 $$
 
 <br>
@@ -193,11 +193,11 @@ $$
 <br>
 
 $$
-\large {\tau _{{\text{medio cortante}}}} = \frac{{2({R^2} + Rr + {r^2})({F_y} + {F_z})}}{{3\pi ({R^4} - {r^4})}}
+\large \tau_{\text{medio cortante}} = \frac{2(R^2 + Rr + r^2)(F_y + F_z)}{3\pi(R^4 - r^4)}
 $$
 
 $$
-\large {\tau _{{\text{alternante cortante}}}} = \frac{{2({R^2} + Rr + {r^2})\left| {{F_y} - {F_z}} \right|}}{{3\pi ({R^4} - {r^4})}}
+\large \tau_{\text{alternante cortante}} = \frac{2(R^2 + Rr + r^2)|F_y - F_z|}{3\pi(R^4 - r^4)}
 $$
 
 <br>
@@ -209,7 +209,7 @@ $$
 <br>
 
 $$
-\large {\sigma _{yz}} = \frac{{4R({M_y}\sin \beta  + {M_z}\cos \beta )}}{{\pi ({R^4} - {r^4})}}
+\large \sigma_{yz} = \frac{4R(M_y\sin \beta + M_z\cos \beta)}{\pi(R^4 - r^4)}
 $$
 
 <br>
@@ -219,7 +219,7 @@ $$
 <br>
 
 $$
-\large \beta  = \arctan \frac{{{M_y}}}{{{M_z}}}
+\large \beta = \arctan\frac{M_y}{M_z}
 $$
 
 <br>
@@ -235,11 +235,11 @@ $$
 <br>
 
 $$
-\large {\text{Límite inferior:}}\quad \quad \quad \quad \quad {\rm{RPM}} = \frac{{30}}{\pi }\sqrt {\frac{g}{{\max \left( {{\delta _R}} \right)}}}
+\large \text{Límite inferior:}\quad \quad \quad \quad \quad \text{RPM} = \frac{30}{\pi}\sqrt{\frac{g}{\max(\delta_R)}}
 $$
 
 $$
-\large {\text{Límite superior:}}\quad {\rm{RPM = }}\frac{{30}}{\pi }\sqrt {g\frac{{\sum\nolimits_{i = 1}^T {{\rho_i}{A_i}\int {{y_i}dx} } }}{{\sum\nolimits_{i = 1}^T {{\rho _i}{A_i}\int {y_i^2dx} } }}}
+\large \text{Límite superior:}\quad \text{RPM} = \frac{30}{\pi}\sqrt{g\frac{\sum_{i=1}^T \rho_i A_i \int y_i dx}{\sum_{i=1}^T \rho_i A_i \int y_i^2 dx}}}
 $$
 
 <br>
