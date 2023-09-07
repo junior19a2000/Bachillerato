@@ -89,7 +89,7 @@ $$
 
 | Área | Momento polar de inercia | Primer momento de área | Segundo momento de área | Espesor |
 |:---:|:---:|:---:|:---:|:---:|
-| $$\large A = \pi ({R^2} - {r^2})$$ | $$\large J = \frac{{\pi ({R^4} - {r^4})}}{2}$$ | $$\large I = \frac{{\pi ({R^4} - {r^4})}}{4}$$ | $$\large Q = \frac{{2({R^3} - {r^3}){{\sin }^3}\alpha }}{3}$$ | $$\large t = 2(R - r)\sin \alpha$$ |
+| $$\large A = \pi (R^2 - r^2)$$ | $$\large J = \frac{\pi (R^4 - r^4)}{2}$$ | $$\large I = \frac{\pi (R^4 - r^4)}{4}$$ | $$\large Q = \frac{2(R^3 - r^3) \sin ^3\alpha}{3}$$ | $$\large t = 2(R - r)\sin \alpha$$ |
 
 </div>
 
