@@ -55,10 +55,10 @@ $$\large \phi = \arccos\left(\frac{R - r}{a}\right) \quad \varphi = \arccos\left
 $$\large \beta  = 90 + \varphi  - \phi \quad \quad \alpha  = 2\varphi  - \beta$$
 
 <br>
+<br>
 
 Dependiendo del sentido de giro del motor, las fuerzas en los ejes X y Y se cálculan con las siguientes igualdades:
 
-<br>
 <br>
 
 $$
@@ -85,13 +85,9 @@ $$
 
 <br>
 
-<div align="center">
-
 | Área | Momento polar de inercia | Primer momento de área | Segundo momento de área | Espesor |
 |:---:|:---:|:---:|:---:|:---:|
 | $$\large A = \pi (R^2 - r^2)$$ | $$\large J = \frac{\pi (R^4 - r^4)}{2}$$ | $$\large I = \frac{\pi (R^4 - r^4)}{4}$$ | $$\large Q = \frac{2(R^3 - r^3) \sin ^3\alpha}{3}$$ | $$\large t = 2(R - r)\sin \alpha$$ |
-
-</div>
 
 <br>
 
@@ -264,41 +260,41 @@ $$\large [F]=[K][d] → [\sigma_x, \sigma_y, \tau_{xy}]$$
 
 <div align="justify"> Se analizan bajo la metodología desarrollada por la empresa Forbo, la cual, mediante datos de entrada conocidos como la potencia y revoluciones del motor, los diámetros de las poleas y la distancia entre las mismas, permite calcular las dimensiones del tipo de correa elegida junto con las fuerzas que se transmitirán al eje de transmisión de potencia. </div>
 
-<br>
-
 <a href="https://drive.google.com/file/d/1SnSMEkxFXbvKZW_C6FvJPJWuIM5gDJ5w/view?usp=sharing" target="_blank">
   <img src="ReadmeRSC/Modulo 1.png" width="100%">
 </a>
+
+<br>
 
 ### **3.2 Módulo de correas trapezoidales** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo2.mlapp)
 
 <div align="justify"> Se analizan bajo la metodología desarrollada por la empresa Optibelt, la cual, mediante datos de entrada conocidos como la potencia y revoluciones del motor, los diámetros de las poleas y la distancia entre las mismas, permite calcular el número de correas a emplear, las dimensiones del tipo de correa elegida junto con las fuerzas que se transmitirán al eje de transmisión de potencia. </div>
 
-<br>
-
 <a href="https://drive.google.com/file/d/1mcWUUkjNiuwjSKB81GX9IC-3T2jdCST7/view?usp=drive_link" target="_blank">
   <img src="ReadmeRSC/Modulo 2.png" width="100%">
 </a>
+
+<br>
 
 ### **3.3 Módulo de cadenas** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo3.mlapp)
 
 <div align="justify"> Se analizan bajo la metodología desarrollada por la empresa Renold, la cual, mediante datos de entrada conocidos como la potencia y revoluciones del motor, el número de dientes de los sprokets y la distancia entre los mismos, permite calcular el número de cadenas a emplear, las dimensiones del tipo de cadena elegida junto con las fuerzas que se transmitirán al eje de transmisión de potencia. </div>
 
-<br>
-
 <a href="https://drive.google.com/file/d/14oJ6Zq-iL6zhmpZN5OiqtFfjUGRdqwWf/view?usp=drive_link" target="_blank">
   <img src="ReadmeRSC/Modulo 3.png" width="100%">
 </a>
+
+<br>
 
 ### **3.4 Módulo de engranajes** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo4.mlapp)
 
 <div align="justify"> Se analizan bajo la norma ANSI / AGMA 2101-D04, en la cual se definen cuatro tipos de fallas, de las cuales, la aplicación permite el cálculo de la falla por picadura y la falla por flexión. </div>
 
-<br>
-
 <a href="https://drive.google.com/file/d/1Vjnv0B2kcEIhDYwia5qtBz-ql60Qezqy/view?usp=drive_link" target="_blank">
   <img src="ReadmeRSC/Modulo 4.png" width="100%">
 </a>
+
+<br>
 
 ### **3.5 Módulo de ejes de transmisión** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo5.mlapp)
 
@@ -324,23 +320,20 @@ Se analizan bajo dos teorías:
 
 <div align="justify"> Adicionalmente, tambien es posible determinar el numero de ciclos de vida del eje de transmisión. </div>
 
-<br>
-
 <a href="https://drive.google.com/file/d/1pcYZZwgaDm0xWz7tPflK0d0cBODa5N0m/view?usp=drive_link" target="_blank">
   <img src="ReadmeRSC/Modulo 5.png" width="100%">
 </a>
+
+<br>
 
 ### **3.6 Módulo de análisis bidimensional** → [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=junior19a2000/Bachillerato&file=Modulo6.mlapp)
 
 <div align="justify"> Se analizan esfuerzos y deformaciones en elementos bidimensionales mediante el método de los elementos finitos. </div>
 
-<br>
-
 <a href="https://drive.google.com/file/d/1eqKUvTv0myVStJNFlCy5GDt9OuheHLNz/view?usp=drive_link" target="_blank">
   <img src="ReadmeRSC/Modulo 6.png" width="100%">
 </a>
 
-<br>
 <br>
 
 ## **4. Resultados y conclusiones**
@@ -420,20 +413,22 @@ Se analizan bajo dos teorías:
 
 <div align="justify"> Este proyecto me todo mas tiempo del que pensaba, pero valio la pena terminarlo, dado que representa la union de mis dos grandes pasiones en el ambito intelectual: la ingeniería mecánica y la informática. Tengo entendido que es la primera tesis de este tipo en mi facultad, y espero que, dada la coyuntura actual, en el futuro mas estudiantes se animen a integrar a sus conocimientos como ingenieros, los relacionados al mundo de la programación. </div>
 
+<br>
+
 ### **6.1 ¿Cómo acceder al aplicativo?**
 
 + La primero es ingresar al link del [repositorio de mi tesis](https://github.com/junior19a2000/Bachillerato/blob/main/README.md) (compartelo !).
 + <div align="justify"> Luego de revisarlo, buscar el módulo que se desea utilizar y hacer click en el logo de matlab online (esto te redireccionara a la pagina de inicio de matlab). Previamente a los pasos siguientes, es necesario contar con una cuenta de matlab online, la cual se crea muy facilmente a partir de cualquier correo electrónico (existen muchos tutoriales sobre esto). esto te permitira utilizar los servicios de matlab de manera gratuita y sin tener que instalar nada en tu equipo !. </div> 
 + <div align="justify"> Si es la primera vez ... en la pagina que te aparecera, debereas logearte con tus credenciales y posterior a ello, se te redireccionara a la version online de matalb. En ella visualizaras un cuadro que indica "Open file from repository". En este deberas hacer click en el cuadrito sobre riesgos (no existe ninguno en este caso) y luego seleccionar "Save and Open" (con este paso se creara una copia del proyecto en tu cuenta de matlab online). Luego, el módulo elegido aparecera en tu pantalla, listo para ser utilizado =).</div>
-  <br> <details> <summary>Muestrame !</summary> <br> <div align="center"> <img src="ReadmeRSC/caso1.gif" width="100%"/> </div> </details>
+  <details> <summary>Muestrame !</summary> <br> <div align="center"> <img src="ReadmeRSC/caso1.gif" width="100%"/> </div> </details> <br>
 + <div align="justify"> Si no es la primera vez ... en la pagina que te aparecera, unicamente tendras que dar click al boton que indica "Open Existing Copy" para poder utilizar el módulo seleccionado =). </div>
-  <br> <details> <summary>Muestrame !</summary> <br> <div align="center"> <img src="ReadmeRSC/caso2.gif" width="100%"/> </div> </details>
+  <details> <summary>Muestrame !</summary> <br> <div align="center"> <img src="ReadmeRSC/caso2.gif" width="100%"/> </div> </details>
+
+<br>
 
 ### **6.2 ¿Cómo utilizarlo?**
 
 <div align="justify"> Si se requiere saber como utilizar cada módulo, simplemente haga click a la imagen respectiva del módulo a utilizar. Esta acción lo redireccionara a un video tutorial donde se muestra como se utiliza dicho módulo con un caso practico. </div>
-
-<br>
 
 <details>
   <summary>Muestrame !</summary>
@@ -442,6 +437,8 @@ Se analizan bajo dos teorías:
   <img src="ReadmeRSC/caso3.gif" width="100%"/>
   </div>
 </details>
+
+<br>
 
 ### **6.3 ¿Algo anda mal?**
 
