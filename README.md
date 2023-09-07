@@ -87,7 +87,7 @@ $$
 
 | Área | Momento polar de inercia | Primer momento de área | Segundo momento de área | Espesor |
 |:---:|:---:|:---:|:---:|:---:|
-| $$\large A = \pi (R^2 - r^2)$$ | $$\large J = \frac{\pi (R^4 - r^4)}{2}$$ | $$\large I = \frac{\pi (R^4 - r^4)}{4}$$ | $$\large Q = \frac{2(R^3 - r^3) \sin ^3\alpha}{3}$$ | $$\large t = 2(R - r)\sin \alpha$$ |
+| $$A = \pi (R^2 - r^2)$$ | $$\large J = \frac{\pi (R^4 - r^4)}{2}$$ | $$\large I = \frac{\pi (R^4 - r^4)}{4}$$ | $$\large Q = \frac{2(R^3 - r^3) \sin ^3\alpha}{3}$$ | $$t = 2(R - r)\sin \alpha$$ |
 
 <br>
 
@@ -231,7 +231,7 @@ $$
 <br>
 
 $$
-\large \text{Límite inferior:}\quad \quad \quad \quad \quad \text{RPM} = \frac{30}{\pi}\sqrt{\frac{g}{\max(\delta_R)}}
+\large \text{Límite inferior:}\quad \text{RPM} = \frac{30}{\pi}\sqrt{\frac{g}{\max(\delta_R)}}
 $$
 
 $$
@@ -303,8 +303,6 @@ Se analizan bajo dos teorías:
 <div align="justify"> • Euler-Bernoulli: No toma en cuenta los efectos de las fuerzas cortantes en la deformación del eje, por lo que resulta adecuada para ejes largos (L/D>10). </div>
 
 <div align="justify"> • Timoshenko: Toma en cuenta los efectos de las fuerzas cortantes en la deformación del eje, por lo que resulta adecuada para ejes cortos (L/D<10). </div>
-
-<br>
 
 <div align="justify"> Independientemente de la teoría que se eliga para el cálculo, la aplicación permite los siguientes analisis: </div>
 
@@ -407,8 +405,6 @@ Se analizan bajo dos teorías:
 |<img src="ReadmeRSC/maquinareal.png" width="100%"/> | <img src="ReadmeRSC/maquinavirtual.png" width="100%"/> |
 | <img width="1000"> | <img width="1000"> |
 
-<br>
-
 ## **6. Comentarios finales**
 
 <div align="justify"> Este proyecto me todo mas tiempo del que pensaba, pero valio la pena terminarlo, dado que representa la union de mis dos grandes pasiones en el ambito intelectual: la ingeniería mecánica y la informática. Tengo entendido que es la primera tesis de este tipo en mi facultad, y espero que, dada la coyuntura actual, en el futuro mas estudiantes se animen a integrar a sus conocimientos como ingenieros, los relacionados al mundo de la programación. </div>
@@ -417,8 +413,8 @@ Se analizan bajo dos teorías:
 
 ### **6.1 ¿Cómo acceder al aplicativo?**
 
-+ La primero es ingresar al link del [repositorio de mi tesis](https://github.com/junior19a2000/Bachillerato/blob/main/README.md) (compartelo !).
-+ <div align="justify"> Luego de revisarlo, buscar el módulo que se desea utilizar y hacer click en el logo de matlab online (esto te redireccionara a la pagina de inicio de matlab). Previamente a los pasos siguientes, es necesario contar con una cuenta de matlab online, la cual se crea muy facilmente a partir de cualquier correo electrónico (existen muchos tutoriales sobre esto). esto te permitira utilizar los servicios de matlab de manera gratuita y sin tener que instalar nada en tu equipo !. </div> 
++ La primero es ingresar al link del [repositorio de mi tesis](https://github.com/junior19a2000/Bachillerato/blob/main/README.md) (compartelo !). <br>
++ <div align="justify"> Luego de revisarlo, buscar el módulo que se desea utilizar y hacer click en el logo de matlab online (esto te redireccionara a la pagina de inicio de matlab). Previamente a los pasos siguientes, es necesario contar con una cuenta de matlab online, la cual se crea muy facilmente a partir de cualquier correo electrónico (existen muchos tutoriales sobre esto). esto te permitira utilizar los servicios de matlab de manera gratuita y sin tener que instalar nada en tu equipo !. </div> <br>
 + <div align="justify"> Si es la primera vez ... en la pagina que te aparecera, debereas logearte con tus credenciales y posterior a ello, se te redireccionara a la version online de matalb. En ella visualizaras un cuadro que indica "Open file from repository". En este deberas hacer click en el cuadrito sobre riesgos (no existe ninguno en este caso) y luego seleccionar "Save and Open" (con este paso se creara una copia del proyecto en tu cuenta de matlab online). Luego, el módulo elegido aparecera en tu pantalla, listo para ser utilizado =).</div>
   <details> <summary>Muestrame !</summary> <br> <div align="center"> <img src="ReadmeRSC/caso1.gif" width="100%"/> </div> </details> <br>
 + <div align="justify"> Si no es la primera vez ... en la pagina que te aparecera, unicamente tendras que dar click al boton que indica "Open Existing Copy" para poder utilizar el módulo seleccionado =). </div>
