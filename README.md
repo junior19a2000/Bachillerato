@@ -1,7 +1,7 @@
 <br>
 <br>
 
-<img src="ReadmeRSC/pstc.gif" width="100%"></img>
+<img src="ReadmeRSC/pstc.gif" width="100%">
 
 <br>
 
@@ -13,7 +13,7 @@
 <br>
 <br>
 
-<img src="ReadmeRSC/Logo.gif" width="100%"></img>
+<img src="ReadmeRSC/Logo.gif" width="100%">
 
 <br>
 
@@ -26,11 +26,11 @@
 <br>
 
 $$
-\large {x_{{n_{a,b}}}} = \frac{{{x_{{n_{b,a}}}} - {x_{{1_{b,a}}}}}}{{{x_{{2_{b,a}}}} - {x_{{1_{b,a}}}}}}\left( {{x_{{2_{a,b}}}} - {x_{{1_{a,b}}}}} \right) + {x_{{1_{a,b}}}}
+\large x_{n_{a,b}} = \frac{x_{n_{b,a}} - x_{1_{b,a}}}{x_{2_{b,a}} - x_{1_{b,a}}}(x_{2_{a,b}} - x_{1_{a,b}}) + x_{1_{a,b}}
 $$
 
 $$
-\large {y_{{n_{a,b}}}} = \frac{{{y_{{n_{b,a}}}} - {y_{{1_{b,a}}}}}}{{{y_{{2_{b,a}}}} - {y_{{1_{b,a}}}}}}\left( {{y_{{2_{a,b}}}} - {y_{{1_{a,b}}}}} \right) + {y_{{1_{a,b}}}}
+\large y_{n_{a,b}} = \frac{y_{n_{b,a}} - y_{1_{b,a}}}{y_{2_{b,a}} - y_{1_{b,a}}}(y_{2_{a,b}} - y_{1_{a,b}}) + y_{1_{a,b}}
 $$
 
 <details>
@@ -50,7 +50,7 @@ $$
 
 <br>
 
-$$\large \phi  = {\cos ^{ - 1}}\left( {\frac{{R - r}}{a}} \right) \quad \quad \varphi  = {\cos ^{ - 1}}\left( {\frac{B}{a}} \right)$$
+$$\large \phi = \arccos\left(\frac{R - r}{a}\right) \quad \varphi = \arccos\left(\frac{B}{a}\right)$$
 
 $$\large \beta  = 90 + \varphi  - \phi \quad \quad \alpha  = 2\varphi  - \beta$$
 
@@ -63,8 +63,8 @@ Dependiendo del sentido de giro del motor, las fuerzas en los ejes X y Y se cál
 
 $$
 \large \text{Giro del motor en sentido antihorario:} \quad \begin{array}{l}
-{F_{x'}} = {F_{\max }}\cos (\beta ) + {F_{\min }}\cos (\alpha )\\
-{F_{y'}} = {F_{\max }}\sin (\beta ) + {F_{\min }}\sin (\alpha )
+F_{x'} = F_{\max}\cos(\beta) + F_{\min}\cos(\alpha) \\
+F_{y'} = F_{\max}\sin(\beta) + F_{\min}\sin(\alpha)
 \end{array}
 $$
 
@@ -72,8 +72,8 @@ $$
 
 $$
 \large \text{Giro del motor en sentido horario:} \quad \quad \quad \begin{array}{l}
-{F_{x'}} = {F_{\min }}\cos (\beta ) + {F_{\max }}\cos (\alpha )\\
-{F_{y'}} = {F_{\min }}\sin (\beta ) + {F_{\max }}\sin (\alpha )
+F_{x'} = F_{\min}\cos(\beta) + F_{\max}\cos(\alpha) \\
+F_{y'} = F_{\min}\sin(\beta) + F_{\max}\sin(\alpha)
 \end{array}
 $$
 
@@ -146,7 +146,7 @@ $$
 <br>
 
 $$
-\large k = \frac{EI}{{L^3(1 + \varphi)}} \left[ \begin{array}{cccc}
+\large k = \frac{EI}{L^3(1 + \varphi)} \left[ \begin{array}{cccc}
 12 & 6L & -12 & 6L \\
 6L & (4 + \varphi)L^2 & -6L & (2 - \varphi)L^2 \\
 -12 & -6L & 12 & -6L \\
@@ -161,7 +161,7 @@ $$
 <br>
 
 $$
-\large \varphi = \frac{12EI}{{K_sAGL^2}}
+\large \varphi = \frac{12EI}{K_sAGL^2}
 $$
 
 <br>
@@ -239,7 +239,7 @@ $$
 $$
 
 $$
-\large \text{Límite superior:}\quad \text{RPM} = \frac{30}{\pi}\sqrt{g\frac{\sum_{i=1}^T \rho_i A_i \int y_i dx}{\sum_{i=1}^T \rho_i A_i \int y_i^2 dx}}}
+\large \text{Límite superior:}\quad \text{RPM} = \frac{30}{\pi}\sqrt{g\frac{\sum_{i=1}^T \rho_i A_i \int y_i dx}{\sum_{i=1}^T \rho_i A_i \int y_i^2 dx}}
 $$
 
 <br>
@@ -416,7 +416,7 @@ Se analizan bajo dos teorías:
 | Validación práctica | Rediseño de un sistema de potencia |
 |:----:|:----:|
 |<img src="ReadmeRSC/maquinareal.png" width="100%"/> | <img src="ReadmeRSC/maquinavirtual.png" width="100%"/> |
-| <img width="1000"></img> | <img width="1000"></img> |
+| <img width="1000"> | <img width="1000"> |
 
 <br>
 
@@ -450,12 +450,3 @@ Se analizan bajo dos teorías:
 ### **6.3 ¿Algo anda mal?**
 
 <div align="justify"> Si el aplicativo no funcionara correctamente, porfavor registrar el error mediante un video y enviarlo junto a una breve descripción al siguiente correo: junior19a2000@gmail.com. Estare gustoso de corregir cualquier problema que pudiese existir (se corregira para todos los usuarios, como una actualización y sin descargar o instalar nada nuevo !). El correo tambien sirve para críticas y comentarios :). </div>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">
- // Make responsive
- MathJax.Hub.Config({
- "HTML-CSS": { linebreaks: { automatic: true } },
- "SVG": { linebreaks: { automatic: true } },
- });
-</script>
