@@ -285,6 +285,13 @@ def f4_loa(resources):
      img26 = f0_mar(Image.open(r'Imagenes/tesis7b.png'), 5).resize((600, 870))
      img27 = f0_mar(Image.open(r'Imagenes/tesis8a.png'), 5).resize((600, 870))
      img28 = f0_mar(Image.open(r'Imagenes/tesis8b.png'), 5).resize((600, 870))
+     img53 = f0_mar(Image.open(r'Imagenes/tesis9a.png'), 5).resize((600, 870))
+     img54 = f0_mar(Image.open(r'Imagenes/tesis9b.png'), 5).resize((600, 870))
+     img55 = f0_mar(Image.open(r'Imagenes/tesis10a.png'), 5).resize((600, 870))
+     img56 = f0_mar(Image.open(r'Imagenes/tesis10b.png'), 5).resize((600, 870))
+     img57 = f0_mar(Image.open(r'Imagenes/articulo1.png'), 5).resize((1265, 870))
+     img58 = f0_mar(Image.open(r'Imagenes/articulo2.png'), 5).resize((1265, 870))
+     img59 = f0_mar(Image.open(r'Imagenes/articulo3.png'), 5).resize((1265, 870))
 
      img29 = f0_mar(Image.open(r'Imagenes/mod_planas.png'), 5).resize((1000, 550))
      img30 = f0_mar(Image.open(r'Imagenes/mod_trapezoidales.png'), 5).resize((1000, 550))
@@ -318,7 +325,7 @@ def f4_loa(resources):
             img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
             img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
             img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48, \
-            img49, img50, img51, img52, imgn
+            img49, img50, img51, img52, img53, img54, img55, img56, img57, img58, img59, imgn
 @st.cache_data
 def f5_cyt(resources):
      elements1 = [
@@ -424,6 +431,7 @@ def f5_cyt(resources):
      {"data": {"id": "n28", "label": "F.S. dinámicos"}, "selectable": False},
      {"data": {"id": "n29", "label": "F.S. estáticos mínimos"}, "selectable": False},
      {"data": {"id": "n30", "label": "F.S. estáticos"}, "selectable": False},
+     {"data": {"id": "n31", "label": "Ciclos de vida"}, "selectable": False},
      {"data": {"source": "n6", "target": "n24"}},
      {"data": {"source": "n7", "target": "n24"}},
      {"data": {"source": "n10", "target": "n24"}},
@@ -470,6 +478,7 @@ def f5_cyt(resources):
      {"data": {"source": "n18", "target": "n23"}},
      {"data": {"source": "n19", "target": "n21"}},
      {"data": {"source": "n19", "target": "n23"}},
+     {"data": {"source": "n20", "target": "n31"}},
      ]
      layout4 = {
      "name": "preset",
@@ -499,11 +508,12 @@ def f5_cyt(resources):
           "n23": {"x": 700, "y": 240},
           "n24": {"x": 700, "y": 320},
           "n25": {"x": 700, "y": 400},
-          "n26": {"x": 1000, "y": 40},
-          "n27": {"x": 1000, "y": 120},
-          "n28": {"x": 1000, "y": 200},
-          "n29": {"x": 1000, "y": 280},
-          "n30": {"x": 1000, "y": 360},
+          "n26": {"x": 1000, "y": 80},
+          "n27": {"x": 1000, "y": 160},
+          "n28": {"x": 1000, "y": 240},
+          "n29": {"x": 1000, "y": 320},
+          "n30": {"x": 1000, "y": 400},
+          "n31": {"x": 1000, "y": 0},
      }
      }
      stylesheet4 = [
@@ -517,7 +527,7 @@ gif1, gif2, gif3, gif4, gif5, gif6, gif7, img1, img2, img3, img4, img5, img6, im
 img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, \
 img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, \
 img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48, \
-img49, img50, img51, img52, imgn = f4_loa('resources')
+img49, img50, img51, img52, img53, img54, img55, img56, img57, img58, img59, imgn = f4_loa('resources')
 elements1, layout1, stylesheet1, elements2, layout2, stylesheet2, elements3, layout3, stylesheet3, elements4, layout4, stylesheet4 = f5_cyt('resoruces')
 
 # Titulo y encabezado
@@ -562,7 +572,39 @@ st.markdown('''<div style="text-align: justify;">
 </div>''', unsafe_allow_html = True)
 st.markdown('#####')
 st.subheader('2.2 Antecendentes')
-tab8, tab9, tab10, tab11, tab12, tab13, tab14, tab15 = st.tabs(['Tesis I', 'Tesis II', 'Tesis III', 'Tesis IV', 'Tesis V', 'Tesis VI', 'Tesis VII', 'Tesis VIII'])
+tab25, tab8, tab9, tab10, tab11, tab12, tab13, tab26, tab14, tab15, tab27, tab28, tab29 = st.tabs(['Tesis I', 'Tesis II', 'Tesis III', 'Tesis IV', 'Tesis V', 'Tesis VI', 'Tesis VII', 'Tesis VIII', 'Tesis IX', 'Tesis X', 'Artículo I', 'Artículo II', 'Artículo III'])
+with tab25:
+     col107, col108, col109 = st.columns([1, 2, 1], gap = 'medium')
+     with col107:
+          st.image(img53)
+     with col108:
+          st.markdown('''<div style="text-align: justify;">
+               <b>Título:</b> Programa de cálculo de ejes
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Autor(es):</b> Jose Ruben Sanchez Sanchez
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Universidad y año:</b> Universidad de Salamanca - 2003
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Objetivo:</b> Desarrollar un software que permita calcular y diseñar ejes sometidos a diversos tipos de cargas. El tesista 
+               logró el objetivo planteado mediante el desarrollo del programa CALCULO DE EJES.
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Puntos a favor:</b>
+               <br>• Cuenta con una libreria de materiales para el eje de transmisión.
+               <br>• Permite efectuar iteraciones hasta encontrar el diametro que satisfaga el factor de seguridad requerido.
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Puntos en contra:</b>
+               <br>• No permite analizar el eje de transmisión en cuanto a las deformaciones y vibraciones.
+               <br>• Ignora a los esfuerzos generados por las fuerzas axiales y cortantes.
+               <br>• No considera el modelo de Timoshenko para el diseño de ejes cortos.
+               <br>• Limitada a analizar unicamente configuraciones de ejes con dos y tres apoyos.
+          </div>''', unsafe_allow_html = True)
+     with col109:
+          st.image(img54)
 with tab8:
      col47, col48, col49 = st.columns([1, 2, 1], gap = 'medium')
      with col47:
@@ -756,6 +798,39 @@ with tab13:
           </div>''', unsafe_allow_html = True)
      with col64:
           st.image(img24)
+with tab26:
+     col110, col111, col112 = st.columns([1, 2, 1], gap = 'medium')
+     with col110:
+          st.image(img55)
+     with col111:
+          st.markdown('''<div style="text-align: justify;">
+               <b>Título:</b> Herramienta para el diseño y cálculo de sistemas de transmisión por engranajes cilíndricos de dientes rectos y ejes paralelos
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Autor(es):</b> Alejandra Gonzalez Garcia
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Universidad y año:</b> Universidad de Sevilla - 2019
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Objetivo:</b> Desarrollar una herramienta que permita calcular, diseñar y seleccionar los elementos mecánicos que constituyen 
+               un sistema de transmisión para cajas reductoras. El tesista 
+               logró el objetivo planteado mediante el desarrollo de un programa de cálculo.
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Puntos a favor:</b>
+               <br>• Cuenta con librerias de materiales para los componentes del sistema.
+               <br>• Presenta una metodología de cálculo mas desarrollada para chavetas y rodamientos.
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Puntos en contra:</b>
+               <br>• No permite analizar el eje de transmisión en cuanto a las deformaciones y vibraciones.
+               <br>• Ignora a los esfuerzos generados por las fuerzas axiales y cortantes.
+               <br>• No efectua el cálculo del número de ciclos de vida del eje de transmisión.
+               <br>• Limitada a analizar unicamente configuraciones de ejes con dos apoyos.
+          </div>''', unsafe_allow_html = True)
+     with col112:
+          st.image(img56)
 with tab14:
      col65, col66, col67 = st.columns([1, 2, 1], gap = 'medium')
      with col65:
@@ -821,6 +896,78 @@ with tab15:
           </div>''', unsafe_allow_html = True)
      with col70:
           st.image(img28)
+with tab27:
+     col113, col114 = st.columns([1, 1], gap = 'medium')
+     with col113:
+          st.image(img57)
+     with col114:
+          st.markdown('''<div style="text-align: justify;">
+               <b>Título:</b> Desarrollo de un software asistido por ordenador para el diseño de ejes de transmisión de potencia con criterios múltiples
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Autor(es):</b> D.A. Fadare y O.Y. Akanbi
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Universidad y año:</b> Universidad de Ibadan - 2010
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Resumen:</b> Se sabe que el procedimiento manual de diseño de ejes es tedioso y complejo debido al gran número de fórmulas, los 
+               numerosos cálculos y los procedimientos de iteración implicados en el diseño. Sin embargo, el uso de software asistido 
+               por ordenador (CAS) ofrece una mayor precisión, alta velocidad de cálculo, reducción de la rigurosidad y la pesadez que 
+               implica el procedimiento de diseño manual. Este artículo analiza el desarrollo de un diseño y dibujo asistido por ordenador 
+               (CADD) de ejes de transmisión de potencia con múltiples criterios de diseño (resistencia, rigidez torsional, velocidad crítica, 
+               Soderberg y rigidez lateral). El CADD desarrollado se denomina "UI-CADSHAFT". El software se 
+               aplicó a un caso de estudio típico y se validó con el diseño manual. Se obtuvieron resultados precisos con una productividad 
+               veinte veces mayor que el diseño manual. El software es totalmente interactivo, fácil de usar y se ejecuta de forma independiente en Microsoft.
+          </div>''', unsafe_allow_html = True)
+with tab28:
+     col115, col116 = st.columns([1, 1], gap = 'medium')
+     with col115:
+          st.image(img58)
+     with col116:
+          st.markdown('''<div style="text-align: justify;">
+               <b>Título:</b> Desarrollo de software CAD para ejes sometidos a diversas condiciones de carga
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Autor(es):</b> A.A. Adukenle, S.B. Adejuyigbe y O.T. Arulogun 
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Universidad y año:</b> Universidad de Tecnología Ladoke Akintola - 2012
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Resumen:</b> A pesar de todos los avances actuales, 
+               los diseñadores todavía enfrentan los problemas de trabajar con un gran número de fórmulas, cálculos y procedimientos de iteración involucrados 
+               en el diseño de ejes. Esto ha hecho que los procedimientos de diseño de ejes sean engorrosos y rigurosos, y por lo tanto consumen mucho tiempo. 
+               Este problema se vuelve más pronunciado si el diseñador está interesado en ver los efectos de la variación de uno o más parámetros de diseño, 
+               esto significa que tiene que empezar de nuevo desde cero. Afortunadamente, estos problemas pueden superarse si en el diseño de ejes se aprovechan 
+               las diversas ventajas, utilidades y flexibilidades que ofrecen los microcomputadores modernos de alta velocidad. Este estudio se llevó a cabo 
+               para diseñar un eje bajo diversas condiciones de carga utilizando el diseño asistido por computadora, y los resultados obtenidos demostraron 
+               que ahorra desperdicio de materiales y también ahorra tiempo. Se desarrolló un paquete de software utilizando las fórmulas 
+               inicialmente derivadas y un procedimiento numérico para calcular la deflexión.
+          </div>''', unsafe_allow_html = True)
+with tab29:
+     col117, col118 = st.columns([1, 1], gap = 'medium')
+     with col117:
+          st.image(img59)
+     with col118:
+          st.markdown('''<div style="text-align: justify;">
+               <b>Título:</b> Aplicación de sistemas de software para el análisis de resistencia de ejes en ingeniería mecánica
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Autor(es):</b> N.F. Timerbaev, A.R. Sadrtdinov y R.G. Safin
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Universidad y año:</b> Universidad Nacional de Investigación Tecnológica de Kazan - 2017
+          </div>''', unsafe_allow_html = True)
+          st.markdown('''<div style="text-align: justify;">
+               <b>Resumen:</b> En este artículo se revisa la aplicación de sistemas de software basados en sistemas CAD/CAE en construcciones mecánicas durante el 
+               desarrollo de sistemas de ingeniería complejos, en particular en el análisis de la resistencia de ejes y la evaluación de sus características. Se 
+               describe un método de cálculo y análisis de ejes mediante sistemas software y se presenta su diferencia con los métodos clásicos de cálculo. Como resultado del análisis del eje, se calcularon su resistencia estática, resistencia a la fatiga y rigidez a la flexión en forma de 
+               valores numéricos y se calcularon las gráficas de distribución de la tensión equivalente, las deformaciones del eje y los 
+               diagramas de momentos de flexión del eje. Como muestra la experiencia, el análisis de ejes mediante sistemas de software permite evitar errores 
+               en los cálculos y brinda la posibilidad de optimizar el diseño del eje. Cabe señalar que el software se desarrollo con una interfaz gráfica fácil de usar y comprensible.
+          </div>''', unsafe_allow_html = True)
+
 st.subheader('2.3 Objetivos')
 with st.expander('#### 2.3.1 General', expanded = True):
      st.markdown('''<div style="text-align: justify;">
@@ -844,7 +991,7 @@ with st.expander('#### 2.3.2 Específicos', expanded = False):
 
 # Marco Teorico
 st.header('3. Marco Teórico')
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['Correas planas', 'Correas trapezoidales', 'Cadenas', 'Engranajes', 'Ejes de transmisión', 'Chavetas y rodamientos', 'Elementos finitos'])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['Correas planas', 'Correas trapezoidales', 'Cadenas', 'Engranajes', 'Ejes de transmisión', 'Elementos finitos', 'Chavetas y rodamientos'])
 # Correas planas
 with tab1:
      col7, col8 = st.columns([1, 3], gap = 'medium')
@@ -928,8 +1075,34 @@ with tab5:
           with st.expander('Diagrama'):
                cytoscape(elements = elements4, stylesheet = stylesheet4, layout = layout4, selection_type = "single", key = "cyto4", 
                user_panning_enabled = True, user_zooming_enabled = True, min_zoom = 0.5, max_zoom = 0.75, width = "100%", height = "275px")               
-# Chavetas y rodamientos
+# Elementos finitos
 with tab6:
+     col19, col20 = st.columns([1, 3], gap = 'medium')
+     with col19:
+          st.image(img7)
+     with col20:
+          st.markdown('''<div style="text-align: justify;">
+               La idea básica del método de los elementos finitos consiste en discretizar el dominio del problema en sub-regiones, en las cuales, 
+               las ecuaciones en derivadas parciales siguen siendo totalmente válidas y calculables, empleando para ello una aproximación polinomial.
+               La discretizacion consiste en convertir las ecuaciones de derivadas parciales complejas en sistemas de ecuaciones lineales que 
+               pueden ser resueltas por medios computacionales. Una parte de esos sistemas de ecuaciones se denomina matriz de rigidez, la cual 
+               contiene las propiedades físicas de los elementos que conforman el fenómeno físico. La forma de la matriz de rigidez 
+               depende del tipo de elemento a analizar y pueden ser del tipo local y global. De manera general, la matriz de rigidez local se puede 
+               escribir como:
+          </div>''', unsafe_allow_html = True)
+          st.latex(r'[f]=[k][d]')
+          st.markdown('''<div style="text-align: justify;">
+               La matriz de rigidez global, la cual representa el conjunto ensamblado de todas las matrices de rigidez local, se define como:
+          </div>''', unsafe_allow_html = True)
+          st.latex(r'[F]=[K][d]')
+          st.markdown('''<div style="text-align: justify;">
+               Esta última, sin importar el tipo de elemento a analizar, presenta las siguientes propiedades:</br>
+               • Es cuadrada, ya que relaciona un número equivalente tanto de fuerzas como de desplazamientos.</br>
+               • Es simétrica, para todos los elementos que comprende.</br>
+               • Es singular, por lo que no posee inversa hasta que se le aplique las suficientes condiciones de frontera. </br>
+          </div>''', unsafe_allow_html = True)
+# Chavetas y rodamientos
+with tab7:
      col17, col18, col74 = st.columns([1, 2, 1], gap = 'medium')
      with col17:
           st.image(img6)
@@ -955,32 +1128,6 @@ with tab6:
           ''')
      with col74:
           st.image(img38)
-# Elementos finitos
-with tab7:
-     col19, col20 = st.columns([1, 3], gap = 'medium')
-     with col19:
-          st.image(img7)
-     with col20:
-          st.markdown('''<div style="text-align: justify;">
-               La idea básica del método de los elementos finitos consiste en discretizar el dominio del problema en sub-regiones, en las cuales, 
-               las ecuaciones en derivadas parciales siguen siendo totalmente válidas y calculables, empleando para ello una aproximación polinomial.
-               La discretizacion consiste en convertir las ecuaciones de derivadas parciales complejas en sistemas de ecuaciones lineales que 
-               pueden ser resueltas por medios computacionales. Una parte de esos sistemas de ecuaciones se denomina matriz de rigidez, la cual 
-               contiene las propiedades físicas de los elementos que conforman el fenómeno físico. La forma de la matriz de rigidez 
-               depende del tipo de elemento a analizar y pueden ser del tipo local y global. De manera general, la matriz de rigidez local se puede 
-               escribir como:
-          </div>''', unsafe_allow_html = True)
-          st.latex(r'[f]=[k][d]')
-          st.markdown('''<div style="text-align: justify;">
-               La matriz de rigidez global, la cual representa el conjunto ensamblado de todas las matrices de rigidez local, se define como:
-          </div>''', unsafe_allow_html = True)
-          st.latex(r'[F]=[K][d]')
-          st.markdown('''<div style="text-align: justify;">
-               Esta última, sin importar el tipo de elemento a analizar, presenta las siguientes propiedades:</br>
-               • Es cuadrada, ya que relaciona un número equivalente tanto de fuerzas como de desplazamientos.</br>
-               • Es simétrica, para todos los elementos que comprende.</br>
-               • Es singular, por lo que no posee inversa hasta que se le aplique las suficientes condiciones de frontera. </br>
-          </div>''', unsafe_allow_html = True)
 st.markdown('#####')
 col102, col103, col104, col105, col106 = st.columns([2, 1, 2, 1, 2], gap = 'small')
 with col102:
