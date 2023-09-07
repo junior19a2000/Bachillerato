@@ -314,15 +314,11 @@ Se analizan bajo dos teorías:
 
 <br>
 
-<div align="center">
-
 | **Análisis estático** | **Análisis dinámico** | **Análisis vibracional** | **Análisis de rigidez** |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 | Según el criterio de Von Misses | Según el criterio de Soderberg | Según el criterio de Dunkerley | Deformaciones lineales |
 | Según el criterio de Tresca | Según el criterio de Goodman | Según el criterio de Rayleigh | Deformaciones angulares |
 | Según el criterio de Rankine | Según el criterio de la ASME | | |
-
-</div>
 
 <br>
 
