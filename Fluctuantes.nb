@@ -1,0 +1,86 @@
+# %%--- [python]
+# properties:
+#   run_on_load: true
+#   bottom_hidden: true
+#   top_hidden: true
+# ---%%
+import numpy as np
+import matplotlib.pyplot as plt
+
+def diagramas(n):
+  
+  fx = np.random.randint(-100, 100, 1)
+  fy = np.random.randint(-100, 100, 1)
+  fz = np.random.randint(-100, 100, 1)
+  mx = np.random.randint(-100, 100, 1)
+  my = np.random.randint(-100, 100, 1)
+  mz = np.random.randint(-100, 100, 1)
+  an = np.linspace(0, n * 2 * np.pi, 100)
+
+  ef1 = fy * np.sin(an) ** 2
+  ef2 = fz * np.cos(an) ** 2
+  ef3 = fy * np.sin(an) ** 2 + fz * np.cos(an) ** 2
+  em1 = my * np.sin(an)
+  em2 = mz * np.cos(an)
+  em3 = my * np.sin(an) + mz * np.cos(an)
+
+  fmax = max([fy, fz])
+  fmin = min([fy, fz])
+  em = (fmax + fmin) / 2
+  ea = abs(fmax - fmin) / 2
+  #print('Esfuerzo medio: ' + str(em))
+  #print('Esfuerzo alternante: ' + str(ea))
+  #print('---------------------------')
+  em = (fy + fz) / 2
+  ea = abs(fy - fz) / 2
+  #print('Esfuerzo medio: ' + str(em))
+  #print('Esfuerzo alternante: ' + str(ea))
+  #print('---------------------------')
+  #print('Esfuerzo minimo + Esfuerzo alternante: ' + str(fmin + ea))
+
+  plt.close('all')
+  fig, axs = plt.subplots(ncols = 1, nrows = 4, figsize = (5.5, 8), constrained_layout = True)
+  
+  axs[0].plot(an, np.repeat(fx, len(an)), color = 'blue', linestyle = 'solid', linewidth = 2)
+  axs[0].set_ylabel('Esfuerzo axial (Pa)')
+  axs[0].axes.xaxis.set_ticklabels([])
+  axs[0].yaxis.tick_right()
+  axs[0].tick_params(axis="y",direction="in", pad=-25)
+  axs[0].grid()
+  
+  axs[1].plot(an, np.repeat(mx, len(an)), color = 'blue', linestyle = 'solid', linewidth = 2)
+  axs[1].set_ylabel('Esfuerzo torsional (Pa)')
+  axs[1].axes.xaxis.set_ticklabels([])
+  axs[1].yaxis.tick_right()
+  axs[1].tick_params(axis="y",direction="in", pad=-25)
+  axs[1].grid()
+  
+  axs[2].plot(an, em1, color = 'blue', linestyle = 'dotted', linewidth = 2)
+  axs[2].plot(an, em2, color = 'blue', linestyle = 'dotted', linewidth = 2)
+  axs[2].plot(an, em3, color = 'blue', linestyle = 'solid', linewidth = 2)
+  #axs[2].set_xlabel('Tiempo (s)')
+  axs[2].set_ylabel('Esfuerzo flexionante (Pa)')
+  axs[2].axes.xaxis.set_ticklabels([])
+  axs[2].yaxis.tick_right()
+  axs[2].tick_params(axis="y",direction="in", pad=-25)
+  axs[2].grid()
+  
+  axs[3].plot(an, ef1, color = 'blue', linestyle = 'dotted', linewidth = 2)
+  axs[3].plot(an, ef2, color = 'blue', linestyle = 'dotted', linewidth = 2)
+  axs[3].plot(an, ef3, color = 'blue', linestyle = 'solid', linewidth = 2)
+  #axs[1, 1].plot(an, np.repeat(max([fy, fz]), len(an)), 'red', linestyle = 'dashed')
+  #axs[1, 1].plot(an, np.repeat(min([fy, fz]), len(an)), 'red', linestyle = 'dashed')
+  #axs[1, 1].plot(an, np.repeat(em, len(an)), 'green', linestyle = 'dashed')
+  #axs[1, 1].plot(an, np.repeat(ea, len(an)), 'green', linestyle = 'dashed')
+  axs[3].set_xlabel('Tiempo (s)')
+  axs[3].set_ylabel('Esfuerzo cortante (Pa)')
+  axs[3].yaxis.tick_right()
+  axs[3].tick_params(axis="y",direction="in", pad=-25)
+  axs[3].grid()
+  
+  plt.show()
+# %%--- [python]
+# properties:
+#   run_on_load: true
+# ---%%
+diagramas(1)

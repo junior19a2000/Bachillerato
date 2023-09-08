@@ -55,15 +55,25 @@ def error():
   plt.close('all') 
   fig, axs = plt.subplots(ncols = 1, nrows = 2, figsize = (5.5, 5), constrained_layout = True)
   axs[0].plot(x, abs((VR - VA) / VR) * 100, color = 'green', linestyle = 'solid', linewidth = 1)
-  axs[0].plot(np.array([1, 100]), np.repeat(np.mean(abs((VR - VA) / VR) * 100), 2), color = 'green', linestyle = 'dotted', linewidth = 1, label = r'$\epsilon = {}$'.format(np.mean(abs((VR - VA) / VR) * 100)))
+  axs[0].plot(np.array([1, 100]), np.repeat(np.mean(abs((VR - VA) / VR) * 100), 2), color = 'green', linestyle = 'dotted', linewidth = 1, label = r'$\epsilon [+ \tau] = {}$'.format(np.round(np.mean(abs((VR - VA) / VR) * 100), 3)))
   axs[0].plot(x, abs((VR - VU) / VR) * 100, color = 'blue', linestyle = 'solid', linewidth = 1)
-  axs[0].plot(np.array([1, 100]), np.repeat(np.mean(abs((VR - VU) / VR) * 100), 2), color = 'blue', linestyle = 'dotted', linewidth = 1, label = r'$\epsilon = {}$'.format(np.mean(abs((VR - VU) / VR) * 100)))
+  axs[0].plot(np.array([1, 100]), np.repeat(np.mean(abs((VR - VU) / VR) * 100), 2), color = 'blue', linestyle = 'dotted', linewidth = 1, label = r'$\epsilon [- \tau] = {}$'.format(np.round(np.mean(abs((VR - VU) / VR) * 100), 3)))
   axs[0].set_xlabel('Dominio del eje')
   axs[0].set_ylabel('Von Misses')
   axs[0].legend(loc = "upper right")
+  
+  legend = axs[0].legend(loc="upper right")
+  texts  = legend.get_texts()
+  for i, text in enumerate(texts):
+    if i == 0:
+        text.set_color('green')
+    elif i == 1:
+        text.set_color('blue')
+      
   axs[0].grid()
   axs[1].plot(x, abs((VRR - VAR) / VRR) * 100, color = 'green', linestyle = 'solid', linewidth = 1)
   axs[1].plot(x, abs((VRR - VUR) / VRR) * 100, color = 'blue', linestyle = 'solid', linewidth = 1)
+  axs[1].plot([0, 100], [10, 10], color = 'black', linestyle = 'dotted', linewidth = 1)
   axs[1].set_xlabel('Esfuerzo torsional / Esfuerzo cortante')
   axs[1].set_ylabel('Porcentaje de error')
   axs[1].grid()
