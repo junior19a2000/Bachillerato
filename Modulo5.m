@@ -540,6 +540,50 @@ classdef Modulo5 < matlab.apps.AppBase
             end
             app.UITable4.Data(:,16:18) = num2cell(Kt_ft);
             
+            % Se actualizan los factores si el tramo es hueco
+            dfac = app.UITable4.Data(:,7:18);
+            dint = app.UITable1.Data(:,3);
+            nax = [1, 4, 7, 10];
+            nfl = [2, 5, 8, 11];
+            for i = 1:size(dfac, 1)
+                for j = 1:size(dfac, 2)
+                    if dfac{i, j} ~= 1
+                        if i == 1
+                            if dint(i) ~= 0
+                                if ismember(j, nax)
+                                    dfac{i, j} = dfac{i, j} * randi([110 130], 1, 1) / 100;
+                                elseif ismember(j, nfl)
+                                    dfac{i, j} = dfac{i, j} * randi([120 150], 1, 1) / 100;
+                                else
+                                    dfac{i, j} = dfac{i, j} * randi([130 170], 1, 1) / 100;
+                                end
+                            end
+                        elseif i == size(dfac, 1)
+                            if dint(i - 1) ~= 0
+                                if ismember(j, nax)
+                                    dfac{i, j} = dfac{i, j} * randi([110 130], 1, 1) / 100;
+                                elseif ismember(j, nfl)
+                                    dfac{i, j} = dfac{i, j} * randi([120 150], 1, 1) / 100;
+                                else
+                                    dfac{i, j} = dfac{i, j} * randi([130 170], 1, 1) / 100;
+                                end
+                            end
+                        else
+                            if dint(i) ~= 0 || dint(i - 1) ~= 0
+                                if ismember(j, nax)
+                                    dfac{i, j} = dfac{i, j} * randi([110 130], 1, 1) / 100;
+                                elseif ismember(j, nfl)
+                                    dfac{i, j} = dfac{i, j} * randi([120 150], 1, 1) / 100;
+                                else
+                                    dfac{i, j} = dfac{i, j} * randi([130 170], 1, 1) / 100;
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+            app.UITable4.Data(:,7:18) = dfac;
+
             bar_pro.Message = 'Calculando factores que modifican el limite de fatiga';pause(2)
             app.UITable5.Data(strcmp(app.UITable5.Data(:,1),'Definir')) = {'Ninguno'};
             k1 = zeros(app.EditField1.Value - 1,1);
