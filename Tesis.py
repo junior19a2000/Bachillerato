@@ -552,7 +552,7 @@ with col1:
           en base a las distintas metodologias, criterios y normativas que existen en la actualidad. Una vez establecido 
           el proceso de cálculo para cada uno de ellos, se programaron los algoritmos respectivos y se desarrollo una interfaz gráfica para que el usuario pueda
           mejorar su diseño mediante la variación de los parametros iniciales del sistema. Posteriormente, gracias a la integración entre Matlab y GitHub, 
-          se subió todo el codigo y la documentación a un repositorio virtual en la nube. Como resultado final se
+          se cargó el código y la documentación a un repositorio virtual en la nube. Como resultado de todo este proceso, se
           creó Power System Transmission Calculator, una aplicación informática amigable, accesible, actualizable y gratuita, que permite cálcular y diseñar los componentes previamente
           mencionados, de manera rapida, precisa y optima, cumpliendo asi con el proposito establecido en el proyecto de investigación.
      </div>''', unsafe_allow_html = True)
@@ -566,7 +566,7 @@ st.markdown('''<div style="text-align: justify;">
      En general, los sistemas industrializados disponen de motores eléctricos o de combustión interna para alimentarlos con la potencia necesaria para su 
      funcionamiento, lo cual significa que, el cálculo y diseño de un sistema de transmisión de potencia es un proceso frecuente a nivel industrial, y que, 
      si se realiza adecuadamente, permite reducir costos y mejorar el rendimiento general del sistema. El cálculo y diseño óptimo de estos sistemas está en función 
-     a los requerimientos de las máquinas que lo conforman, y a las condiciones de trabajo de las mismas, por lo que esto será un proceso largo e iterativo 
+     a los requerimientos de las máquinas que lo conforman, y a las condiciones de trabajo de las mismas, lo cual se traduce en un proceso largo e iterativo 
      que demandará una considerable cantidad de tiempo y esfuerzo humano. En la actualidad existen soluciones que abordan este problema, siendo este el 
      caso de los programas de ingeniería asistida por computadora desarrollados por grandes empresas o de manera individual, sin embargo, en el primero 
      de estos casos, la solución resulta muy compleja y costosa, mientras que, en el segundo, la solución suele ser muy específica y de difícil acceso.
@@ -982,10 +982,10 @@ with st.expander('#### 2.3.1 General', expanded = True):
 with st.expander('#### 2.3.2 Específicos', expanded = False):
      st.markdown('''<div style="text-align: justify;">
           <br>✅ Desarrollar el algoritmo para el cálculo de los factores necesarios para el diseño de los componentes de transmisión de potencia, haciendo uso del procesamiento de imagenes.
-          <br>✅ Desarrollar el algoritmo de cálculo para el diseño de transmisiones de potencia por correas planas, correas trapezoidales, cadenas y engranajes (cilíndricos rectos, cilíndricos helicoidales, cilíndricos bihelicoidales y cónicos rectos).
-          <br>✅ Desarrollar el algoritmo de cálculo para las reacciones y deformaciones presentes en los ejes de transmisión bajo cualquier configuración geométrica o mecánica, considerando la teoría de Euler-Bernoulli y Timoshenko.
-          <br>✅ Desarrollar el algoritmo de cálculo para el diseño de ejes de transmisión bajo un enfoque estático, dinámico, vibracional, de vida y de rigidez, considerando a los efectos de las cargas axiales y cortantes.
-          <br>✅ Desarrollar el algoritmo de cálculo para el analisis de los esfuerzos y deformaciones en elementos de espesor constante, mediante el método de los elementos finitos.
+          <br>✅ Desarrollar los algoritmos para el cálculo y diseño de transmisiones de potencia por medio de correas planas, correas trapezoidales, cadenas y engranajes (cilíndricos rectos, cilíndricos helicoidales, cilíndricos bihelicoidales y cónicos rectos).
+          <br>✅ Desarrollar el algoritmo para el cálculo de las reacciones y deformaciones presentes en los ejes de transmisión bajo cualquier configuración geométrica o mecánica, considerando las teorías de Euler-Bernoulli y Timoshenko.
+          <br>✅ Desarrollar el algoritmo para el cálculo y diseño de ejes de transmisión bajo un enfoque estático, dinámico, vibracional, de vida y de rigidez, considerando a los efectos de las cargas axiales y cortantes.
+          <br>✅ Desarrollar el algoritmo para cálculo de los esfuerzos y deformaciones en elementos de espesor constante, mediante el método de los elementos finitos.
           <br>✅ Implementar los algoritmos desarrollados en una interfaz gráfica amigable con el usuario final.
           <br>✅ Validar los resultados obtenidos a travez de la aplicación desarrollada.
           <br>✅ Ejemplificar el uso de la aplicación desarrollada.
@@ -1175,7 +1175,7 @@ with col3:
           st.markdown('''<div style="text-align: justify;">
                En el proceso de cálculo de estos componentes resulta 
                indispensable hacer uso de parámetros numéricos exclusivos de cada uno de estos, los cuales por lo general, se representan y determinan 
-               mediante el uso de gráficos y tablas. En línea con lo anterior, resulta pertinente señalar que, mediante el procesamiento de imágenes se han extraido los datos de las gráficas 
+               mediante el uso de gráficos y tablas. En línea con lo anterior, cabe señalar que, mediante el procesamiento de imágenes se han extraido los datos de las gráficas 
                correspondientes a cada uno de estos parametros numéricos, para poder representarlos mediante tablas y, posteriormente, mediante 
                interpolaciones (unidimensionales o bidimensionales), poder calcular el parámetro numérico deseado de manera rapida y precisa. Para el citado procesamiento, se hacen uso de las siguientes ecuaciones
           </div>''', unsafe_allow_html = True)
@@ -1203,7 +1203,7 @@ with col26:
                por medio de corras o cadenas, las cuales podrian ubicarse en distintas configuraciones geométricas.
                En concecuencia, para efectos de un análisis más realista, las fuerzas que actúan en el eje producto de la transmisión de 
                potencia, deben de descomponerse en ejes alineados en las direcciones paralela y perpendicular a la gravedad. Los ángulos 
-               de descomposición son:
+               de descomposición de las fuerzas de transmisión son:
           </div>''', unsafe_allow_html = True)
           st.latex(r'\beta = 90 + \varphi  - \phi \hspace{3mm} \text{y} \hspace{3mm} \alpha = 2\varphi - \beta')
           st.latex(r'\text{donde} \hspace{10mm} \phi = \cos^{-1} \left( \frac{R - r}{a} \right)')
@@ -1976,7 +1976,7 @@ st.markdown('''<div style="text-align: justify;">
      la señalada integración, se puede ejecutar actualizaciones de la aplicación de manera global, en caso fuese necesario una.
 </div>''', unsafe_allow_html = True)
 st.markdown('#####')
-st.markdown(f'<a href="https://github.com/junior19a2000/Bachillerato/blob/main/README.md"><img src = "data:image/gif;base64,{gif4}" width = "100%">', unsafe_allow_html = True)
+# st.markdown(f'<a href="https://github.com/junior19a2000/Bachillerato/blob/main/README.md"><img src = "data:image/gif;base64,{gif4}" width = "100%">', unsafe_allow_html = True)
 with st.expander('#### 🤖 Sitio web del proyecto: https://junior19a2000.github.io/Bachillerato', expanded = False):
      url11 = 'https://junior19a2000.github.io/Bachillerato/'
      st.markdown(f'<iframe src={url11} height="760" width="100%" style="border:0px solid black"></iframe>', unsafe_allow_html = True)
@@ -1998,6 +1998,7 @@ with col72:
      st.markdown('#####')
      url6 = 'https://sketchfab.com/models/5a30f935158c43a08d28041942d2a98d/embed'
      st.markdown(f'<iframe src={url6} height="380" width="100%"></iframe>', unsafe_allow_html = True)
+st.markdown('#####')
 st.markdown('''<div style="text-align: justify;">
      En el caso de estudio, el autor cálcula los diametros en función a factores de seguridad establecidos y diversas iteraciones. No obstante, el proceso 
      de cálculo del módulo de ejes de PSTC es similar a los software CAE actuales, es decir, primero se inicia con el dimensionamiento del eje y luego se modifica la geometria inicial hasta alcanzar el factor   
@@ -2061,7 +2062,7 @@ st.markdown('''<div style="text-align: justify;">
      obteniendo como resultado el uso de 3 correas tipo B en lugar de 5 correas tipo C, y un diametro del eje equivalente a 70 mm en vez de los 110 mm con el que este fue fabricado. Ahora bien, con el uso de PSTC para el mismo 
      objetivo, se obtuvo como resultados el uso de 3 correas tipo SPZ y un diametro de eje 50 mm. Estos resultados obtenidos no solo validan los obtenidos en el desarrollo del proyecto, sino que significan una mejora, 
      ya que en el caso de las correas, se utilizo la metodología de cálculo de un fabricante y, en el caso del eje, el diametro propuesto es menor y cumple con las condiciones establecidas para su diseño. Ademas, cabe señalar que 
-     el tiempo utilizado con PSTC resulta mucho menor que el empleado en el proyecto, entre otras consideraciones que resaltan a PSTC como una mejor alternativa.
+     el tiempo utilizado con PSTC resulta mucho menor que el empleado en el proyecto, entre otras consideraciones que resaltan a PSTC como una gran alternativa.
 </div>''', unsafe_allow_html = True)
 st.markdown('#####')
 url9 = 'https://drive.google.com/file/d/1W_iUF0AgRPj-XbYmv7lQm0qCxczGxnO8/preview'
@@ -2125,32 +2126,32 @@ st.markdown('''<div style="text-align: justify;">
 </div>''', unsafe_allow_html = True)
 
 # Agradecimientos
-st.header('10. Agradecimientos')
-st.markdown('''<div style="text-align: justify; padding: 20px; border: 2.5px solid black; margin: 0px; border-radius: 15px;"><b>
-     Mi mayor agradecimiento esta dirigido a Dios, por haberme permitido estudiar una carrera profesional y el desarrollar este proyecto de tesis, 
-     sin embargo, si bien Dios me lo permitio, fue gracias a mi mamá que todo esto se hizo posible, ya que sin ella estoy seguro no lo hubiera logrado. 
-     Mi madre es la mujer que mas respeto y admiro, y aunque no siempre se lo digo, espero que estas palabras y este proyecto sean evidencia de ello, 
-     ya que me he esforzado en demostrarle que la confianza y el sacrificio depositado en mi, ha valido la pena, y espero seguir en ese camino. Agradezco 
-     tambien a mis hermanos y a mi papa, quienes me ayudaron desde pequeño y estimo mucho. Finalmente, me agradezco a mi, por no haberme rendido nunca y seguir 
-     siempre adelante, a pesar de las adversidades.
-</b></div>''', unsafe_allow_html = True)
+# st.header('10. Agradecimientos')
+# st.markdown('''<div style="text-align: justify; padding: 20px; border: 2.5px solid black; margin: 0px; border-radius: 15px;"><b>
+#      Mi mayor agradecimiento esta dirigido a Dios, por haberme permitido estudiar una carrera profesional y el desarrollar este proyecto de tesis, 
+#      sin embargo, si bien Dios me lo permitio, fue gracias a mi mamá que todo esto se hizo posible, ya que sin ella estoy seguro no lo hubiera logrado. 
+#      Mi madre es la mujer que mas respeto y admiro, y aunque no siempre se lo digo, espero que estas palabras y este proyecto sean evidencia de ello, 
+#      ya que me he esforzado en demostrarle que la confianza y el sacrificio depositado en mi, ha valido la pena, y espero seguir en ese camino. Agradezco 
+#      tambien a mis hermanos y a mi papa, quienes me ayudaron desde pequeño y estimo mucho. Finalmente, me agradezco a mi, por no haberme rendido nunca y seguir 
+#      siempre adelante, a pesar de las adversidades.
+# </b></div>''', unsafe_allow_html = True)
 # --------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Sobre el autor
-with st.sidebar:
-     st.markdown('# Sobre el autor ...')
-     st.markdown('''<div style="text-align: justify;">
-          Cuando elegí la carrera de Ingeniería Mecánica no estaba seguro si en verdad era lo que queria estudiar,\
-          pero a medida que avanzaba me di cuenta que me encontraba en el lugar correcto, dado que me considero una persona a la cual le\
-          gusta aprender de todo, y esta carrera es tan amplia que me permite involucrarme en distintas ramas tales\
-          como el diseño mecánico, energías renovables y automatización (mis preferidas, obviamente hay mas). Por otra parte, otra de mis pasiones \
-          es la programación, sobre todo el desarrollo de aplicaciones web, lo cual cabe decir, me ha ayudado bastante, tanto en la\
-          universidad como en el mundo laboral. Este proyecto es un claro ejemplo de lo que menciono, ya que para su desarrollo han sido\
-          necesarios mis conocimientos en ingeniería mecánica y programación, y del cual me siento muy orgulloso, ya que en comparación con otros\
-          proyectos similares, humildemente considero que el mío es mucho mejor.
-     </div>''', unsafe_allow_html = True)
-     st.markdown('#')
-     st.image(img12, caption = 'Junior Joel Aguilar Hancco')
+# with st.sidebar:
+#      st.markdown('# Sobre el autor ...')
+#      st.markdown('''<div style="text-align: justify;">
+#           Cuando elegí la carrera de Ingeniería Mecánica no estaba seguro si en verdad era lo que queria estudiar,\
+#           pero a medida que avanzaba me di cuenta que me encontraba en el lugar correcto, dado que me considero una persona a la cual le\
+#           gusta aprender de todo, y esta carrera es tan amplia que me permite involucrarme en distintas ramas tales\
+#           como el diseño mecánico, energías renovables y automatización (mis preferidas, obviamente hay mas). Por otra parte, otra de mis pasiones \
+#           es la programación, sobre todo el desarrollo de aplicaciones web, lo cual cabe decir, me ha ayudado bastante, tanto en la\
+#           universidad como en el mundo laboral. Este proyecto es un claro ejemplo de lo que menciono, ya que para su desarrollo han sido\
+#           necesarios mis conocimientos en ingeniería mecánica y programación, y del cual me siento muy orgulloso, ya que en comparación con otros\
+#           proyectos similares, humildemente considero que el mío es mucho mejor.
+#      </div>''', unsafe_allow_html = True)
+#      st.markdown('#')
+#      st.image(img12, caption = 'Junior Joel Aguilar Hancco')
 
 # st.components.v1.html(f'<iframe src={i}> </iframe>')
 # url1 = 'https://junior19a2000.github.io/Jupywidgets/lab?path=Numesym.ipynb'
