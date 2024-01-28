@@ -2065,7 +2065,7 @@ st.markdown('''<div style="text-align: justify;">
      el tiempo utilizado con PSTC resulta mucho menor que el empleado en el proyecto, entre otras consideraciones que resaltan a PSTC como una gran alternativa.
 </div>''', unsafe_allow_html = True)
 st.markdown('#####')
-url9 = 'https://drive.google.com/file/d/1W_iUF0AgRPj-XbYmv7lQm0qCxczGxnO8/preview'
+url9 = 'https://drive.google.com/file/d/1AMEhQi7MTz84s4BTk7BHRvNPyh6V8YCz/preview'
 st.markdown(f'<iframe src={url9} height=675  width="100%" style="border:3px solid black"></iframe>', unsafe_allow_html = True)
 
 # Conclusiones
