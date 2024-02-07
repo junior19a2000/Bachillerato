@@ -1,4 +1,4 @@
-classdef Modulo5 < matlab.apps.AppBase
+classdef Modulo5_exported < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
@@ -243,11 +243,14 @@ classdef Modulo5 < matlab.apps.AppBase
             
             global L1 L2 indices1
             
-            indices1 = event.Indices;
-            x4 = [0 cumsum(app.UITable1.DisplayData(:,1))'];
-            L1.XData = [x4(indices1(1)) x4(indices1(1) + 1)];
-            L2.XData = [0 0];
-            L2.YData = [0 0];
+            try
+                indices1 = event.Indices;
+                x4 = [0 cumsum(app.UITable1.DisplayData(:,1))'];
+                L1.XData = [x4(indices1(1)) x4(indices1(1) + 1)];
+                L2.XData = [0 0];
+                L2.YData = [0 0];
+            catch
+            end
             
         end
 
@@ -321,13 +324,16 @@ classdef Modulo5 < matlab.apps.AppBase
 
             global L1 L2
             
-            indices  = event.Indices;
-            y1       = app.UITable1.DisplayData(:,2) ./ 2;
-            x4       = [0 cumsum(app.UITable1.DisplayData(:,1))'];
-            L1.XData = [0 0];
-            L1.XData = [0 0];
-            L2.XData = [x4(indices(1)) x4(indices(1))];
-            L2.YData = [-max(abs(y1)) max(abs(y1))];
+            try
+                indices  = event.Indices;
+                y1       = app.UITable1.DisplayData(:,2) ./ 2;
+                x4       = [0 cumsum(app.UITable1.DisplayData(:,1))'];
+                L1.XData = [0 0];
+                L1.XData = [0 0];
+                L2.XData = [x4(indices(1)) x4(indices(1))];
+                L2.YData = [-max(abs(y1)) max(abs(y1))];
+            catch
+            end
             
         end
 
@@ -363,12 +369,15 @@ classdef Modulo5 < matlab.apps.AppBase
             
             global L3 L4
             
-            indices  = event.Indices;
-            y1       = app.UITable1.DisplayData(:,2) ./ 2;
-            x4       = [0 cumsum(app.UITable1.DisplayData(:,1))'];
-            L3.XData = [x4(indices(1)) x4(indices(1))];
-            L3.YData = [-max(abs(y1)) max(abs(y1))];
-            L4.XData = [0 0];
+            try
+                indices  = event.Indices;
+                y1       = app.UITable1.DisplayData(:,2) ./ 2;
+                x4       = [0 cumsum(app.UITable1.DisplayData(:,1))'];
+                L3.XData = [x4(indices(1)) x4(indices(1))];
+                L3.YData = [-max(abs(y1)) max(abs(y1))];
+                L4.XData = [0 0];
+            catch
+            end
             
         end
 
@@ -434,11 +443,14 @@ classdef Modulo5 < matlab.apps.AppBase
             
             global L3 L4
             
-            indices = event.Indices;
-            x4 = [0 cumsum(app.UITable1.DisplayData(:,1))'];
-            L4.XData = [x4(indices(1)) x4(indices(1) + 1)];
-            L3.XData = [0 0];
-            L3.YData = [0 0];
+            try
+                indices = event.Indices;
+                x4 = [0 cumsum(app.UITable1.DisplayData(:,1))'];
+                L4.XData = [x4(indices(1)) x4(indices(1) + 1)];
+                L3.XData = [0 0];
+                L3.YData = [0 0];
+            catch
+            end
             
         end
 
@@ -1183,8 +1195,9 @@ classdef Modulo5 < matlab.apps.AppBase
             ylim(app.UIAxes11, [se/2 max([sr*1.5, vem])])
             
             bar_pro.Message = 'Calculando velocidades criticas';pause(2)
-            sm1 = 0;
-            sm2 = 0;
+            global sm1 sm2
+            sm1 = sym(0);
+            sm2 = sym(0);
             for i = 1:app.EditField1.Value - 1
                 sm1 = app.UITable1.Data(i,10) * Are_Sec(i) * int(Def_Rea(i), Nod_Tot(i), Nod_Tot(i + 1)) + sm1;
                 sm2 = app.UITable1.Data(i,10) * Are_Sec(i) * int(Def_Rea(i)^2, Nod_Tot(i), Nod_Tot(i + 1)) + sm2;
@@ -3837,7 +3850,7 @@ classdef Modulo5 < matlab.apps.AppBase
     methods (Access = public)
 
         % Construct app
-        function app = Modulo5
+        function app = Modulo5_exported
 
             % Create UIFigure and components
             createComponents(app)
