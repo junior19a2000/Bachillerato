@@ -7,13 +7,15 @@
 
 ## **1. Presentación de mi tesis**
 
-<div align="justify"> La presente tesis trata sobre el desarrollo de una aplicación informática para el cálculo de los principales componentes que constituyen a un sistema de transmisión de potencia mecánico. Especificamente, la aplicación permite calcular transmisiones por correas planas, correas trapezoidales, cadenas y engranajes, considerando a los ejes de transmisión como el componente principal del sistema. En base a lo último antes mencionado, esque se ha puesto mayor enfasis en el desarrollo de la metodología de cálculo de los ejes de transmisión de potencia, considerando para ello, diversas teorías y modelos matemáticos existentes para dicho fin. No obstante, cabe señalar que, para el caso de los demas componentes, se ha optimizado el procedimiento de cálculo mediante el uso, principalmente, del procesamiento de imagenes. Gracias a la mejora constante en los algoritmos de cálculo, al desarrollo de una interfaz grafica amigable al usuario y que la aplicación desarrollada es facil de compartir, se ha logrado cumplir con los objetivos planteados, los cuales eran optimizar en terminos de tiempo, precisión y eficiencia, el diseño de un sistema de transmisión de potencia mecánico y, el promover y facilitar el uso de las herramientas informáticas actuales, en las actividades cotidianas de un estudiante o profesional de la carrera de ingeniería mecánica. </div>
+<img src="ReadmeRSC/Logo.gif" align="right" width="50%"/>
+
+<div align="justify"> La presente tesis trata sobre el desarrollo de una aplicación computacional para el cálculo de componentes de transmisión de potencia mecánica. Especificamente, la aplicación permite calcular correas planas, correas en V, cadenas de rodillos, engranajes y ejes de transmisión de potencia, mediante métodos analíticos y de elementos finitos. Como producto del proyecto de investigación, se creó Power System Transmission Calculator, una aplicación informática amigable, accesible, actualizable y gratuita, que permite cálcular y diseñar los componentes previamente mencionados, de manera rapida, precisa y optima. </div>
 
 <br>
 <br>
 <br>
 
-<img src="ReadmeRSC/Logo.gif" width="100%">
+<iframe src="https://junior19a2000.github.io/Visor/PDF1.html" height="550" width="100%"></iframe>
 
 <br>
 
