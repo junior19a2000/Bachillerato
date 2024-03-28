@@ -7,7 +7,7 @@
 
 ## **1. Presentación de mi tesis**
 
-<img src="ReadmeRSC/Logo.gif" align="right" width="50%"/>
+<img src="ReadmeRSC/Logo.gif" align="right" width="40%"/>
 
 <div align="justify"> La presente tesis trata sobre el desarrollo de una aplicación computacional para el cálculo de componentes de transmisión de potencia mecánica. Especificamente, la aplicación permite calcular correas planas, correas en V, cadenas de rodillos, engranajes y ejes de transmisión de potencia, mediante métodos analíticos y de elementos finitos. Como producto del proyecto de investigación, se creó Power System Transmission Calculator, una aplicación informática amigable, accesible, actualizable y gratuita, que permite cálcular y diseñar los componentes previamente mencionados, de manera rapida, precisa y optima. </div>
 
