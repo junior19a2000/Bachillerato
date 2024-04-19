@@ -413,9 +413,9 @@ classdef Modulo5_exported < matlab.apps.AppBase
             app.UITable4.Data(find(rel_dia ~= 1) + 1,2:4) = {0};
 %             app.UITable4.Data(dif_dia < cell2mat(app.UITable4.Data(:,1))',1) = num2cell(dif_dia(dif_dia < cell2mat(app.UITable4.Data(:,1))'));
             app.UITable4.Data(find(rel_dia ~= 1) + 1,5:6) = {'Ninguno'};
-            exi_apo = ~(strcmp(app.UITable2.Data(1:app.EditField1.Value,1),'Ninguno')) & ~(strcmp(app.UITable2.Data(1:app.EditField1.Value,1),'Definir'));
-            app.UITable4.Data(exi_apo,1:4) = {0};
-            app.UITable4.Data(exi_apo,5:6) = {'Ninguno'};
+            % exi_apo = ~(strcmp(app.UITable2.Data(1:app.EditField1.Value,1),'Ninguno')) & ~(strcmp(app.UITable2.Data(1:app.EditField1.Value,1),'Definir'));
+            % app.UITable4.Data(exi_apo,1:4) = {0};
+            % app.UITable4.Data(exi_apo,5:6) = {'Ninguno'};
             
             if (indices(2) == 5 || indices(2) == 6)
                 j = zeros(1,app.EditField1.Value);
@@ -1195,20 +1195,26 @@ classdef Modulo5_exported < matlab.apps.AppBase
             ylim(app.UIAxes11, [se/2 max([sr*1.5, vem])])
             
             bar_pro.Message = 'Calculando velocidades criticas';pause(2)
-            global sm1 sm2
-            sm1 = sym(0);
-            sm2 = sym(0);
+            % global sm1 sm2
+            % sm1 = sym(0);
+            % sm2 = sym(0);
+            % for i = 1:app.EditField1.Value - 1
+            %     sm1 = app.UITable1.Data(i,10) * Are_Sec(i) * int(Def_Rea(i), Nod_Tot(i), Nod_Tot(i + 1)) + sm1;
+            %     sm2 = app.UITable1.Data(i,10) * Are_Sec(i) * int(Def_Rea(i)^2, Nod_Tot(i), Nod_Tot(i + 1)) + sm2;
+            % end
+            nde = 100;
+            sm1 = 0;
+            sm2 = 0;
             for i = 1:app.EditField1.Value - 1
-                sm1 = app.UITable1.Data(i,10) * Are_Sec(i) * int(Def_Rea(i), Nod_Tot(i), Nod_Tot(i + 1)) + sm1;
-                sm2 = app.UITable1.Data(i,10) * Are_Sec(i) * int(Def_Rea(i)^2, Nod_Tot(i), Nod_Tot(i + 1)) + sm2;
+                vdx = linspace(Nod_Tot(i), Nod_Tot(i + 1), nde);
+                vdy = double(subs(Def_Rea(i), vdx));
+                iy1 = abs(trapz(vdx, vdy));
+                iy2 = abs(trapz(vdx, vdy .^ 2));
+                sm1 = app.UITable1.Data(i,10) * Are_Sec(i) * iy1 + sm1;
+                sm2 = app.UITable1.Data(i,10) * Are_Sec(i) * iy2 + sm2;
             end
-%             if app.EditField1.Value - length(find(strcmp(app.UITable2.Data(:,1), 'Ninguno') == 1)) > 2
-%                 Vel_Ray = double((30 / pi) * sqrt(9.81 * (sm1 / sm2))) / 2;
-%                 Vel_Dun = ((30 / pi) * sqrt(9.81 / max(D_rea))) / 2;
-%             else
-            Vel_Ray = double((30 / pi) * sqrt(9.81 * (sm1 / sm2)));
+            Vel_Ray = (30 / pi) * sqrt(9.81 * (sm1 / sm2));
             Vel_Dun = (30 / pi) * sqrt(9.81 / max(D_rea));
-%             end
             app.TextArea1.Value = ['Su eje no debe operar entre las ', num2str(Vel_Dun), ' y ', num2str(Vel_Ray), ' rpm'];
             
             bar_pro.Message = 'Registrando cuadro resumen de resultados';pause(2)
@@ -1655,13 +1661,8 @@ classdef Modulo5_exported < matlab.apps.AppBase
             bar_pro.Message = 'Calculando velocidades criticas';pause(2)
             sm1 = trapz(X_dom, Def_Rea);
             sm2 = trapz(X_dom, Def_Rea .^ 2);
-%             if app.EditField1.Value - length(find(strcmp(app.UITable2.Data(:,1), 'Ninguno') == 1)) > 2
-%                 Vel_Ray = double((30 / pi) * sqrt(9.81 * (sm1 / sm2))) / 2;
-%                 Vel_Dun = ((30 / pi) * sqrt(9.81 / max(D_rea))) / 2;
-%             else
             Vel_Ray = double((30 / pi) * sqrt(9.81 * (sm1 / sm2)));
             Vel_Dun = (30 / pi) * sqrt(9.81 / max(D_rea));
-%             end
             app.TextArea1.Value = ['Su eje no debe operar entre las ', num2str(Vel_Dun), ' y ', num2str(Vel_Ray), ' rpm.', newline, MenAxi, newline, MenTor, newline, MenSis];
             
             bar_pro.Message = 'Registrando cuadro resumen de resultados';pause(2)
