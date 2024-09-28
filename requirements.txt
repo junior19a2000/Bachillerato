@@ -4,5 +4,5 @@ pandas
 streamlit
 matplotlib
 scipy
-st_cytoscape
+streamlit-flow-component
 Pillow
