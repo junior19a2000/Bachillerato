@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="_k8TURm8gIdta8wLQPci" name="Page-1">
-        <mxGraphModel dx="2487" dy="2233" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="583" pageHeight="413" math="0" shadow="0">
+        <mxGraphModel dx="924" dy="976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="583" pageHeight="413" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -583,16 +583,16 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="74" value="Esfuerzos estáticos y dinámicos" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="65" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1526" y="65" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="78" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="68" target="74" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="75" value="Límites inferior y superior de la velocidad crítica" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="285" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1526" y="285" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="76" value="Factores de seguridad estáticos y dinámicos" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="138" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1526" y="138" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="79" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="68" target="76" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -606,12 +606,12 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="77" value="Deformaciones lineales y angulares resultantes" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="212" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1526" y="212" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="80" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="68" target="77" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="102" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="143" source="84" edge="1">
+                <mxCell id="102" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="143" source="84" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="1334" y="435" as="targetPoint"/>
                         <Array as="points">
@@ -621,7 +621,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="84" value="Factores de seguridad estáticos y dinámicos mínimos" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="431" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1526" y="431" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="89" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="8" target="84" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -632,7 +632,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="85" value="Número de ciclos de vida" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="505" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1526" y="505" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="90" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="8" target="85" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -645,12 +645,12 @@
                 <mxCell id="99" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="86" target="84" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1748" y="388"/>
-                            <mxPoint x="1748" y="461"/>
+                            <mxPoint x="1760" y="388"/>
+                            <mxPoint x="1760" y="461"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="101" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="143" source="86" edge="1">
+                <mxCell id="101" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="143" source="86" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="1334" y="435" as="targetPoint"/>
                         <Array as="points">
@@ -661,7 +661,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="86" value="Esfuerzos estáticos y dinámicos máximos" style="rounded=0;whiteSpace=wrap;html=1;" parent="143" vertex="1">
-                    <mxGeometry x="1515" y="358" width="210" height="60" as="geometry"/>
+                    <mxGeometry x="1526" y="358" width="210" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="91" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="7" target="86" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -676,8 +676,8 @@
                 <mxCell id="93" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="74" target="86" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1748" y="95"/>
-                            <mxPoint x="1748" y="388"/>
+                            <mxPoint x="1760" y="95"/>
+                            <mxPoint x="1760" y="388"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -708,8 +708,8 @@
                 <mxCell id="132" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=20;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="143" source="75" target="124" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1754" y="315"/>
-                            <mxPoint x="1754" y="425"/>
+                            <mxPoint x="1760" y="315"/>
+                            <mxPoint x="1760" y="425"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
