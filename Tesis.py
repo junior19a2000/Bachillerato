@@ -28,6 +28,6 @@ slide9 = slides('slide9', '9. Recomendaciones', False).create()
 
 pg = st.navigation(pages = [slide0, slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9])
 
-st.sidebar.image('C:/Users/user/Downloads/unsa.png', use_column_width = True)
+st.sidebar.image('Imagenes/unsa.png', use_column_width = True)
 
 pg.run()
