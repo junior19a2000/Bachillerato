@@ -4,5 +4,5 @@ pandas
 streamlit
 matplotlib
 scipy
-streamlit-flow-component
+streamlit-flow-component==1.5.0
 Pillow
