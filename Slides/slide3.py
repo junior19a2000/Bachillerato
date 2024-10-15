@@ -33,7 +33,7 @@ class flowchart:
             edge('1-2', '1', '2', animated=True, edge_type='step'),
             edge('2-3', '2', '3', animated=True, edge_type='step'),
         ]
-        flowchart = flow(
+        flowcharts = flow(
             self.key,
             nodes,
             edges,
@@ -45,7 +45,7 @@ class flowchart:
             hide_watermark=True,
             height=200,
         )        
-        return flow
+        return flowcharts
 
 @st.cache_data()
 def load_resources(load):
