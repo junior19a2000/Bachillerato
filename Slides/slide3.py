@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_flow import streamlit_flow as flow
 from streamlit_flow.elements import StreamlitFlowNode as node
 from streamlit_flow.elements import StreamlitFlowEdge as edge
+from streamlit_flow.state import StreamlitFlowState
 from PIL import Image
 
 class titulo:
@@ -33,10 +34,10 @@ class flowchart:
             edge('1-2', '1', '2', animated=True, edge_type='step'),
             edge('2-3', '2', '3', animated=True, edge_type='step'),
         ]
+        state = StreamlitFlowState(nodes, edges)
         flowcharts = flow(
             self.key,
-            nodes,
-            edges,
+            state,
             fit_view=True,
             show_minimap=False,
             show_controls=False,
