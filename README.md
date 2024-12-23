@@ -1,8 +1,8 @@
 <br>
 <br>
-
+<a href="https://repositorio.unsa.edu.pe/items/c79c713a-9df3-407f-a3ec-1c6caa5db63f">
 <img src="ReadmeRSC/pstc.gif" width="100%">
-
+</a>
 <br>
 
 ## **1. Presentación de mi tesis**
